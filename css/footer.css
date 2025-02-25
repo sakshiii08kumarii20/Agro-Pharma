@@ -1,0 +1,27 @@
+
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding-top: 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+footer hr {
+  background-color: white;
+}
+
+footer .social-icons a {
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
