@@ -14,3 +14,7 @@ body {
 	text-align:center;
 	border-radius: 20px;
 }
+
+.dot{
+	color: red;
+}
