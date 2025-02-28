@@ -26,7 +26,8 @@
 .nav-links {
     list-style: none;
     display: flex;
-    margin: 0;
+
+    margin: 0px;
     padding: 0;
 	float: right;
 }
@@ -39,17 +40,30 @@
 .nav-links a {
     text-decoration: none;
     color: black;
-    padding: 10px 15px;
+    padding: 10px 14px;
     display: block;
-	
-	
+	margin-right: 2px;
+    width: 114px;
+
+   
+   border: 3px solid rgb(255, 255, 255);
+   border-radius: 15px; 
+   text-align: center;
 }
 
 .nav-links a:hover {
-	color:#62b100;
-    text-shadow: 10px 10px 7px #62b100;
-	
-   
+
+    color:white;
+    background-color:#49a010;
+   border: 3px solid #49a010;
+   border-radius: 15px; 
+
+   text-decoration: none;
+   padding: 10px 14px;
+   display: block;
+   margin-right: 2px;
+   width: 114px;
+   text-align: center;
 }
 
 /* Hamburger Menu (Hidden by Default) */
@@ -88,6 +102,32 @@
     /* Toggle Menu */
     #menu-toggle:checked + .hamburger + .nav-links {
         display: flex;
-		z-index: 2;
+	       	z-index: 2;
+       top:80px;
+       background-color:green;
+       text-align: center;
+       gap:2px;
+       
     }
+   
+   
+   .nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 14px;
+    display: block;
+   border: 3px solid green;
+   text-align: center;
+}
+
+.nav-links a:hover {
+
+    color:white;
+   text-decoration: none;
+   padding: 10px 14px;
+   display: block;
+   margin-right: 2px;
+   width: 114px;
+   text-align: center;
+}
 }

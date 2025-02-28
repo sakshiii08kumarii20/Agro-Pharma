@@ -49,3 +49,13 @@
 	
 	
 }
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+	
+	.product{
+		width:98%;
+	}
+	
+}
