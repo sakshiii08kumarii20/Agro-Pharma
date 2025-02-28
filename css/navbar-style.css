@@ -102,6 +102,32 @@
     /* Toggle Menu */
     #menu-toggle:checked + .hamburger + .nav-links {
         display: flex;
-		z-index: 2;
+	       	z-index: 2;
+       top:80px;
+       background-color:green;
+       text-align: center;
+       gap:2px;
+       
     }
+   
+   
+   .nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 14px;
+    display: block;
+   border: 3px solid green;
+   text-align: center;
+}
+
+.nav-links a:hover {
+
+    color:white;
+   text-decoration: none;
+   padding: 10px 14px;
+   display: block;
+   margin-right: 2px;
+   width: 114px;
+   text-align: center;
+}
 }
