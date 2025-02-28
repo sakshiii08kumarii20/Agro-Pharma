@@ -1,36 +1,190 @@
-
-
-/* Footer */
 footer {
-  background-color: #343a40;
-  color: white;
-  padding-top: 20px;
-  position:relative;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: #007bff;
-  text-decoration: underline;
-}
-
-footer hr {
-  background-color: white;
-}
-
-footer .social-icons a {
-  font-size: 1.5rem;
-  margin: 0 10px;
-}
-.bg_dark{
-  position:relative;
-  
-}
-.footer-div{
+  background: linear-gradient(135deg, #0a2e25, #1a3c34);
+  color: #e0f2e9;
+  padding: 40px 20px 20px;
   position: relative;
+  overflow: hidden;
 }
 
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+  text-align: left;
+}
+
+.footer-section h5 {
+  color: #f4c430;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-section h5::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: #f4c430;
+}
+
+.footer-section p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #d9e6e2;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #d9e6e2;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  color: #f4c430;
+  transform: translateX(5px);
+}
+
+.contact-info a {
+  color: #d9e6e2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #f4c430;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.social-icons {
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  color: #d9e6e2;
+  font-size: 22px;
+  margin: 0 8px;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #f4c430;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  color: #d9e6e2;
+}
+
+/* Unique Plant Animation */
+.footer-decoration {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 150px;
+  height: 150px;
+  background: url('https://www.transparenttextures.com/patterns/leaves-pattern.png') repeat;
+  opacity: 0.1;
+  pointer-events: none;
+  animation: float 6s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Newsletter Section */
+.newsletter {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.newsletter h5 {
+  color: #f4c430;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.newsletter input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.newsletter button {
+  background: #f4c430;
+  color: #1a3c34;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.newsletter button:hover {
+  background: #e0b428;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-section {
+    text-align: center;
+    flex: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-section h5::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .social-icons a {
+    margin: 0 8px;
+  }
+
+  .newsletter input {
+    width: 100%;
+  }
+}
