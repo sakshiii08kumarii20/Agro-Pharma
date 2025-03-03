@@ -1,35 +1,46 @@
+
 /* Navbar */
 .navbar1 {
 	
-   /* width:100%; */
-    padding: 15px 20px;
+   width:100%;
     color: black;
+    align-items: center;
 	height: 5.4rem;
+	position: relative;
+	
 }
 
 .logo {
-	float:left;
+    width: 10%;
+    position: absolute;
+    top: 15px;
 }
 .title{
-	float:left;
-	width: 200px;
-	margin-left: 30px;
-	margin-top: 15px;
+	width: 20%;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:hsl(164.57deg 46.67% 14.71%);
+    position: relative;
+    top:33px;
+    left: 8%;
+	
 }
 
 /* Navigation Links */
 .nav-links {
+    width: 25%;
+    position: absolute;
     list-style: none;
     display: flex;
-
-    margin: 0px;
-    padding: 0;
-	float: right;
+    top: 20px;
+    left: 45%;
+   
 }
 
 .nav-links li {
     margin: 0 10px;
-	color:red;
+  
+  
 }
 
 .nav-links a {
@@ -38,9 +49,8 @@
     padding: 10px 14px;
     display: block;
 	margin-right: 2px;
-    width: 114px;
+    width: 9%;
 
-   
    border: 3px solid rgb(255, 255, 255);
    border-radius: 15px; 
    text-align: center;
@@ -49,16 +59,18 @@
 .nav-links a:hover {
 
     color:white;
-    background-color:#49a010;
-   border: 3px solid #49a010;
+    
    border-radius: 15px; 
 
    text-decoration: none;
    padding: 10px 14px;
    display: block;
    margin-right: 2px;
-   width: 114px;
+   width: 9%;
+  color: rgb(29 161 242);
+   border: 3px solid #ffffff;
    text-align: center;
+   text-decoration:underline;
 }
 
 /* Hamburger Menu (Hidden by Default) */
