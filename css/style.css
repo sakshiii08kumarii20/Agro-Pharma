@@ -1,4 +1,9 @@
 /* General Styles #aae462 */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, sans-serif;
   display: flex;
@@ -6,6 +11,4 @@ body {
   min-height: 100vh;
 }
 
-.start-div{
-	
-}
+

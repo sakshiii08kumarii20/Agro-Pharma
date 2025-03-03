@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agro Pharma 1.0</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    
 	
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -17,88 +15,117 @@
     <link rel="stylesheet" href="../css/footer.css">
 	 <link rel="stylesheet" href="Testimonials.css">
      <link rel="stylesheet" href="star-rating.css" >
-     <link rel="stylesheet" href="../css/footer.css">
+     <link rel="stylesheet" href="../css/cards.css"/>
 	 
 	 
-	  <!-- footer cdn --->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-	 
-</head>
-<body>
+  </head>
+
+  <body>
+
     <nav class="navbar1">
-		<img class="logo"src="../resource/logo.jpg" style="width:60px; height:60px;">
-		<div class="title"><h4 >Agro Pharma</h4></div>
-		<input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="hamburger">&#9776;</label>
-        <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../About/AboutUs.html">About</a></li>
-            <li><a href="../Product/Products.html">Product</a></li>
-            <li><a href="Testimonials.html">Testimonials</a></li>
-            <li><a href="../Contact/contactusv.html">Contact</a></li>
-        </ul>
+      <img class="logo"src="logo.jpg" style="width:60px; height:60px;">
+
+      <div class="title"><h4 >Agro Pharma</h4></div>
+
+      <input type="checkbox" id="menu-toggle">
+
+          <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../About/AboutUs.html">About</a></li>
+                <li><a href="../Product/Products.html">Product</a></li>
+                <li><a href="Testimonials.html" style=" color: rgb(29 161 242); text-decoration: underline;">Testimonials</a></li>
+                <li><a href="../myContact/contact.html">Contact</a></li>
+            </ul>
     </nav>
-	
+
+	      <hr>
 	
     <div class="testimonials">
-		<h2>Customer reviews</h2>
+		  <h2 class="title-testimonials">Customer reviews</h2>
        
-			<section class="replayes">
+			<div class="cards">
         
-				<div class="replay">
-					<img class="profile_img" src="customer-photo/profile1.jpg" alt="profile1" style="width: 50%;">
-					
-					<h3 class="rep_text user_name">Mr.Anad Shelke</h3>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-					<p class="rep_text text_replay">I am absolutely thrilled with the [Product Name]! I was a bit skeptical at first, but after using it for a few weeks, I can honestly say it's been a game-changer for my [specific use case].
-                    </p>
-					
-				</div>
+        <div class="card">
+          <div class="card-image">
+            <img src="profile1.jpg" alt="Card Image">
+          </div>
+          
+          <div class="card-content">
+                        <h2 class="card-title">Mr.Anand Palkar</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p class="card-text"><b>Excellent Product!</b>
+                          "I am absolutely loving this product! The quality is top-notch and it's so easy to use. I've been using it for a week now and I can already see the difference it's made. Highly recommend!" - Emily R.
+                          </p>
+                      
+                      </div>
+            <div class="card-actions">
+              <button class="btn">Read More</button>
+            </div>
+          </div>
 
-                <div class="replay">
-					<img class="profile_img" src="customer-photo/profile2.jpg" alt="profile1" style="width: 50%;">
-					
-					<h3 class="rep_text user_name">Mr.Hansraj Kamble</h3>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star chedked"></span>
-                    <span class="fa fa-star"></span>
-					<p class="rep_text text_replay">The quality is top-notch, and it's clear that a lot of thought and care went into designing this product. It's easy to use, efficient, and has already saved me so much time and effort.
-                    </p>
-					
-				</div>
 
-                <div class="replay">
-					<img class="profile_img" src="customer-photo/profile3.jpg" alt="profile1" style="width: 50%;">
-					
-					<h3 class="rep_text user_name">Mr.Sandip Jadhaw</h3>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-					<p class="rep_text text_replay">I've tried similar products in the past, but this one blows them all out of the water. The customer support team has also been incredibly helpful and responsive.
+            <div class="card">
+              <div class="card-image">
+                <img src="profile2.jpg" alt="Card Image">
+              </div>
+              
+              <div class="card-content">
+                            <h2 class="card-title">Dr.Dhanraj Deshmukh</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <p class="card-text">Good but not perfect
+                              "I've been using this product for a few weeks now and overall, I'm happy with it. However, I do wish it had a few more features. The customer service team has been helpful though, so that's a plus. Would recommend, but not without some caveats." - David K.
+                              </p>
+                          </div>
+                <div class="card-actions">
+                  <button class="btn">Read More</button>
+                </div>
+              </div>
 
-                    </p>
+              <div class="card">
+                <div class="card-image">
+                  <img src="profile3.jpg" alt="Card Image">
+                </div>
+                
+                <div class="card-content">
+                              <h2 class="card-title">Mr.Sandesh Ingale</h2>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                              <p class="card-text">Decent product, but overpriced
+                                "I bought this product thinking it would be a game-changer, but unfortunately, it's just been okay. It does what it says it will do, but I don't think it's worth the price. Maybe if you're really invested in this type of product, it might be worth it for you. But for me, it's just been a meh experience." - Rachel G.
+                                </p>
+                            </div>
+                  <div class="card-actions">
+                    <button class="btn">Read More</button>
+                  </div>
+                </div>
+        
 					
-				</div>
+				
 
                 
 				
 				
 				
 				
-			</section>
+                </div>
 			
 		
-	</div>
-    <!-- Footer -->
+	  </div>
+
+
+     <!-- Footer -->
     <footer>
         <div class="footer-decoration"></div>
         <div class="footer-container">
@@ -146,6 +173,9 @@
           </div>
           <p>© 2025 Agro Pharma. All rights reserved.</p>
         </div>
+
       </footer>
-</body>
+
+  </body>
+
 </html>

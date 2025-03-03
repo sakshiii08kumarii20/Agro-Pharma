@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Slideshow</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .slideshow-container { position: relative; max-width: 600px; margin: auto; }
+        .slides { display: none; width: 100%; }
+        .active { display: block; animation: fade 1s; }
+        @keyframes fade { from { opacity: 0.4; } to { opacity: 1; } }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .prev { left: 0; }
+        .next { right: 0; }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <img class="slides" src="product1.jpg" alt="Slide 1">
+        <img class="slides" src="product2.jpg" alt="Slide 2">
+        <img class="slides" src="product3.jpg" alt="Slide 3">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    <script>
+        let index = 0;
+        function showSlides(n) {
+            let slides = document.getElementsByClassName("slides");
+            if (n >= slides.length) { index = 0; }
+            if (n < 0) { index = slides.length - 1; }
+            for (let slide of slides) { slide.style.display = "none"; }
+            slides[index].style.display = "block";
+        }
+        function changeSlide(n) {
+            index += n;
+            showSlides(index);
+        }
+        function autoSlide() {
+            index++;
+            showSlides(index);
+            setTimeout(autoSlide, 3000);
+        }
+        showSlides(index);
+        setTimeout(autoSlide, 3000);
+    </script>
+</body>
+</html>
