@@ -1,16 +1,89 @@
-body {
- 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
-.about-title{
-	text-align:center;
+*::selection {
+  color: white;
+  background-color: rgba(47, 176, 15, 0.516);
+  text-shadow: none;
 }
-.about-item{
-	
-	background-color: #d3cece;
-	width:90%;
-	
-	padding: 10px;
-	margin:8px auto;
-	text-align:center;
-	border-radius: 20px;
+
+.about-title {
+  margin-left: 3em;
+  font-size: 2.5em;
+  font-weight: 600;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.238);
+  color: rgba(91, 221, 58, 0.697);
+}
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  word-spacing: 0.07em;
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.about-item {
+  background-color: #d3cece;
+  width: 85%;
+  margin: 4em auto;
+  text-align: center;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+.about-item:hover {
+  transition: all 0.2s ease-in-out;
+  box-shadow: 8px 20px 20px rgba(0, 0, 0, 0.337);
+  transform: scale(1.02);
+  z-index: 10;
+}
+
+.who-we-are,
+.Our-vision,
+.why-choose-us {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+.who-we-are a {
+  text-decoration: none;
+  color: black;
+}
+.who-we-are a:hover {
+  transition: all 0.2s ease-in-out;
+  color: rgba(47, 176, 15, 0.516);
+}
+.img-container {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+}
+
+.img-container img {
+  height: 100%;
+  width: 30vw;
+  object-fit: cover;
+  box-shadow: 10px 0px 15px rgba(0, 0, 0, 0.442);
+}
+
+.Our-vision .img-container img {
+  height: 100%;
+  width: 30vw;
+  object-fit: cover;
+  box-shadow: -10px 0px 15px rgba(0, 0, 0, 0.442);
+}
+
+.content-container,
+ul {
+  margin: 0 5em 0 5em;
+  text-align: justify;
 }

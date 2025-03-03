@@ -1,19 +1,14 @@
-
 /* Navbar */
 .navbar1 {
 	
-   width:100%;
+   /* width:100%; */
     padding: 15px 20px;
     color: black;
-	
 	height: 5.4rem;
-	
-	
 }
 
 .logo {
 	float:left;
-	
 }
 .title{
 	float:left;
