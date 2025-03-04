@@ -11,13 +11,16 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 	 <link rel="stylesheet" type="text/css" href="css/navbar-style.css">
 	 <link rel="stylesheet" type="text/css" href="css/Start-div.css">
+   <link rel="stylesheet" href="css/h-CardContainer.css"/>
 	 <link rel="stylesheet" type="text/css" href="css/footer.css">
 	 <link rel="stylesheet" type="text/css" href="SlideShow/slideShow.css">
+   <link rel="stylesheet" type="text/css" href="css/index.css">
 	 
 	 
 	 
 </head>
 <body>
+  <!-----Navigation bar start here - ------<link rel="stylesheet" type="text/css" href="css/navbar-style.css">------>
     <nav class="navbar1">
 		<img class="logo"src="resource/logo.jpg" style="width:60px; height:60px;">
 		<div class="title"><h4 >Agro Pharma</h4></div>
@@ -58,7 +61,307 @@
 	
 	</div>
 	
+  <!------title div show title of scroll bar -->
+  <div class="title-div">
+    <div class="adv-title">
+      <h2 class="container-title">Our <br>Products</h2>
+    </div>
+    <div class="adv-qotes">
+      <p>
+        Boost your crops' nutrient absorption naturally with proven homeopathic remedies-safe, chemical-free,
+        cost-effective, and eco-friendly. Grow stronger, healthier plants for truly nutritious food.
+      </p>
+    </div>
+  </div>
+
+  <!--- Card container start here ----------------<link rel="stylesheet" href="../css/h-CardContainer.css"/>------------------------------------->
+  <div class="card-container">
+    
+			<div class="cards" id="card-scroll">
+        
+				<div class="card">
+          <div class="card-image">
+            <img src="Product/product-photo/product1.webp" alt="Card Image">
+          </div>
+          
+          <div class="card-content">
+                        <h2 class="card-title">AgroShield</h2>
+                     <p>100ml: ₹250
+                      </p>
+                        <p class="card-text">AgroShield is a broad-spectrum fungicide that controls a wide range of fungal diseases in crops. It is a systemic fungicide that is absorbed by the plant and translocated to the site of infection, providing long-lasting protection.
+                        </p>
+                      </div>
+            <div class="card-actions">
+              <button class="btn">Read More</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="Product/product-photo/product2.webp" alt="Card Image">
+            </div>
+            
+            <div class="card-content">
+                          <h2 class="card-title">CropMax
+                          </h2>
+                          <p>500g: ₹600
+                          </p>
+                          <p class="card-text">CropMax is a plant growth regulator that promotes healthy plant growth and development. It increases crop yields, improves fruit quality, and enhances plant resistance to disease.
+                          </p>
+                        </div>
+              <div class="card-actions">
+                <button class="btn">Read More</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img src="Product/product-photo/product3.webp" alt="Card Image">
+              </div>
+              
+              <div class="card-content">
+                            <h2 class="card-title">WeedOut
+                            </h2>
+                            <p>500ml: ₹800
+                            </p>
+                            <p class="card-text">WeedOut is a selective herbicide that controls a wide range of broadleaf weeds and grasses. It is a systemic herbicide that is absorbed by the plant and translocated to the site of action.
+                            </p>
+                          </div>
+                <div class="card-actions">
+                  <button class="btn">Read More</button>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-image">
+                  <img src="Product/product-photo/product4.webp" alt="Card Image">
+                </div>
+                
+                <div class="card-content">
+                              <h2 class="card-title">Card Title</h2>
+                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                            </div>
+                  <div class="card-actions">
+                    <button class="btn">Read More</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-image">
+                    <img src="Product/product-photo/product5.webp" alt="Card Image">
+                  </div>
+                  
+                  <div class="card-content">
+                                <h2 class="card-title">Card Title</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                              </div>
+                    <div class="card-actions">
+                      <button class="btn">Read More</button>
+                    </div>
+                  </div>
+
+
+		</div>	
+
+    <!-- Dots Navigation -->
+    <div class="dots" id="dotsContainer"></div>
+</div>
+
+  <script>
+    const scrollContainer = document.getElementById("card-scroll");
+    const dotsContainer = document.getElementById("dotsContainer");
+    const products = document.querySelectorAll(".card");
+    const totalDots = products.length;
+    let dots = [];
+
+    // Create dots dynamically
+    for (let i = 0; i < totalDots; i++) {
+        let dot = document.createElement("div");
+        dot.classList.add("dot");
+        dotsContainer.appendChild(dot);
+        dots.push(dot);
+    }
+    
+    // Function to update active dot
+    function updateActiveDot() {
+        let scrollLeft = scrollContainer.scrollLeft;
+        let maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+        let currentIndex = Math.round((scrollLeft / maxScroll) * (totalDots - 1));
+        
+        dots.forEach((dot, index) => {
+            dot.classList.toggle("active", index === currentIndex);
+        });
+    }
+
+    // Initial Active Dot
+    dots[0].classList.add("active");
+
+    // Scroll Event Listener
+    scrollContainer.addEventListener("scroll", updateActiveDot);
+    
+    // Click Event on Dots (optional)
+    dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+            let productWidth = products[0].offsetWidth + 10; // Include gap
+            scrollContainer.scrollTo({ left: index * productWidth, behavior: "smooth" });
+        });
+    });
+</script>
+
+<!--card container end here  ------------------------------------------------------------------------------->
 	
+ <!------title div show title of scroll bar -->
+ <div class="title-div">
+  <div class="adv-title">
+    <h2 class="container-title">What do your<br>Client say</h2>
+  </div>
+  <div class="adv-qotes">
+    <p>
+      Boost your crops' nutrient absorption naturally with proven homeopathic remedies-safe, chemical-free,
+      cost-effective, and eco-friendly. Grow stronger, healthier plants for truly nutritious food.
+    </p>
+  </div>
+</div>
+
+  <!--- Card container start here ----------------<link rel="stylesheet" href="../css/h-CardContainer.css"/>------------------------------------->
+  <div class="card-container">
+  
+    <div class="cards" id="card-scroll">
+
+      <div class="card">
+        <div class="card-image">
+          <img src="Testemonials/profile1.jpg" alt="Card Image">
+        </div>
+        
+        <div class="card-content">
+                      <h2 class="card-title">Mr.Sandesh Ingale</h2>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <p class="card-text">Decent product, but overpriced
+                        "I bought this product thinking it would be a game-changer, but unfortunately, it's just been okay. It does what it says it will do, but I don't think it's worth the price. Maybe if you're really invested in this type of product, it might be worth it for you. But for me, it's just been a meh experience." - Rachel G.
+                        </p>
+                    </div>
+          <div class="card-actions">
+            <button class="btn">Read More</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="Testemonials/profile2.jpg" alt="Card Image">
+          </div>
+          
+          <div class="card-content">
+                        <h2 class="card-title">Mr.Sandesh Ingale</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <p class="card-text">Decent product, but overpriced
+                          "I bought this product thinking it would be a game-changer, but unfortunately, it's just been okay. It does what it says it will do, but I don't think it's worth the price. Maybe if you're really invested in this type of product, it might be worth it for you. But for me, it's just been a meh experience." - Rachel G.
+                          </p>
+                      </div>
+            <div class="card-actions">
+              <button class="btn">Read More</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="Testemonials/profile3.jpg" alt="Card Image">
+            </div>
+            
+            <div class="card-content">
+                          <h2 class="card-title">Mr.Sandesh Ingale</h2>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <span class="fa fa-star"></span>
+                          <p class="card-text">Decent product, but overpriced
+                            "I bought this product thinking it would be a game-changer, but unfortunately, it's just been okay. It does what it says it will do, but I don't think it's worth the price. Maybe if you're really invested in this type of product, it might be worth it for you. But for me, it's just been a meh experience." - Rachel G.
+                            </p>
+                        </div>
+              <div class="card-actions">
+                <button class="btn">Read More</button>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img src="Testemonials/profile1.jpg" alt="Card Image">
+              </div>
+              
+              <div class="card-content">
+                            <h2 class="card-title">Mr.Sandesh Ingale</h2>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <p class="card-text">Decent product, but overpriced
+                              "I bought this product thinking it would be a game-changer, but unfortunately, it's just been okay. It does what it says it will do, but I don't think it's worth the price. Maybe if you're really invested in this type of product, it might be worth it for you. But for me, it's just been a meh experience." - Rachel G.
+                              </p>
+                          </div>
+                <div class="card-actions">
+                  <button class="btn">Read More</button>
+                </div>
+              </div>
+  
+     
+  
+    </div>
+  
+    <!-- Dots Navigation -->
+    <div class="dots" id="dotsContainer"></div>
+  </div>
+
+<script>
+  const scrollContainer = document.getElementById("card-scroll");
+  const dotsContainer = document.getElementById("dotsContainer");
+  const products = document.querySelectorAll(".card");
+  const totalDots = products.length;
+  let dots = [];
+
+  // Create dots dynamically
+  for (let i = 0; i < totalDots; i++) {
+      let dot = document.createElement("div");
+      dot.classList.add("dot");
+      dotsContainer.appendChild(dot);
+      dots.push(dot);
+  }
+  
+  // Function to update active dot
+  function updateActiveDot() {
+      let scrollLeft = scrollContainer.scrollLeft;
+      let maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+      let currentIndex = Math.round((scrollLeft / maxScroll) * (totalDots - 1));
+      
+      dots.forEach((dot, index) => {
+          dot.classList.toggle("active", index === currentIndex);
+      });
+  }
+
+  // Initial Active Dot
+  dots[0].classList.add("active");
+
+  // Scroll Event Listener
+  scrollContainer.addEventListener("scroll", updateActiveDot);
+  
+  // Click Event on Dots (optional)
+  dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+          let productWidth = products[0].offsetWidth + 10; // Include gap
+          scrollContainer.scrollTo({ left: index * productWidth, behavior: "smooth" });
+      });
+  });
+</script>
+
+<!--card container end here  ------------------------------------------------------------------------------->
 
     <!-- Footer -->
     <footer>

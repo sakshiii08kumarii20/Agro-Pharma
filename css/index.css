@@ -1,0 +1,24 @@
+.title-div{
+    width: 90%;
+    height: 60px;
+   
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+.adv-title{
+    width: 200px;
+    height: 60px;
+   
+    float: left;
+    margin-left: 30px;
+    border-right: 3px solid green;
+  }
+  
+  .adv-qotes {
+      width: 600px;
+      height: 60px;
+      margin-left: 50px;
+      
+      float: right;
+      margin-right: 250px;
+  }

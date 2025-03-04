@@ -1,24 +1,46 @@
+.container-title {
+
+  text-align: center;
+  margin-top: 8px;
+  font-size: 21px;
+  margin-bottom: 8px;
+  height: 20px;
+  color: #183a32;
+}
 .cards{
     width: 84%;
-    height: 500px;
+    height: 450px;
     overflow-x: scroll;
     overflow-y:hidden;
     padding: 5px;
     border: 1px solid #ccc;
    white-space: nowrap;
    margin-bottom: 30px;
+
+   scrollbar-width: none; /* Hide scrollbar for Firefox */
+   -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
   
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.product-container::-webkit-scrollbar {
+  display: none;
 }
 
 .card {
     width: 300px;
-    background-color: #fff;
+    height: 400px;
+    background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 3px;
+    margin: 10px 5px 10px 5px;
     display: inline-block;
     white-space: wrap;
+    overflow: hidden;
+    position: relative;
+
+   
   }
   
   .card-image {
@@ -38,7 +60,7 @@
   
   .card-content {
 	text-align: center;
-    padding: 20px;
+    padding: 10px;
   }
   .card-title {
     font-size: 18px;
@@ -52,7 +74,10 @@
   }
   
   .card-actions {
-    padding: 20px;
+    position: absolute;
+    left: 30%;
+    top:80%;
+    padding: 10px;
     text-align: center;
   }
   
@@ -68,3 +93,5 @@
   .btn:hover {
     background-color: #3e8e41;
   }
+
+  

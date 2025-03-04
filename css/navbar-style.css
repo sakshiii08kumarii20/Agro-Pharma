@@ -51,7 +51,7 @@
 	margin-right: 2px;
     width: 9%;
 
-   border: 3px solid rgb(255, 255, 255);
+  
    border-radius: 15px; 
    text-align: center;
 }
@@ -68,7 +68,7 @@
    margin-right: 2px;
    width: 9%;
   color: rgb(29 161 242);
-   border: 3px solid #ffffff;
+ 
    text-align: center;
    text-decoration:underline;
 }
@@ -87,6 +87,10 @@
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+    .title{
+        width: 50%;
+        margin-left: 10px;
+    }
     .nav-links {
         display: none;
         flex-direction: column;
@@ -104,6 +108,8 @@
 
     .hamburger {
         display: block;
+        float: right;
+
     }
 
     /* Toggle Menu */
