@@ -1,0 +1,134 @@
+.container-title {
+
+ 
+  margin-top: 8px;
+  font-size: 21px;
+  margin-bottom: 8px;
+  height: 20px;
+  color: #183a32;
+}
+
+.cards {
+
+  width: 100%;
+  
+  overflow-x: scroll;
+  
+  padding: 5px;
+  white-space: nowrap;
+ margin-top: 8px;
+
+  scrollbar-width: none;
+  /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none;
+  /* Hide scrollbar for IE/Edge */
+
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+    width: 300px;
+
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 5px 10px 5px;
+    display:inline-table;
+    white-space: wrap;
+ 
+    
+
+   
+  }
+  
+  .card-image {
+	text-align: center;
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+   
+  }
+  
+  .card-image img {
+    border-radius: 8px;
+	margin-top: 3px;
+    height: 230px;
+   
+  }
+  
+  .card-content {
+	text-align: left;
+    padding: 10px;
+  }
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .card-actions {
+    
+  
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    border: 2px solid  #4CAF50;
+  }
+  .add-to-cart {
+    background-color: #ffffff;
+    color: #4CAF50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    border: 2px solid  #4CAF50;
+  }
+  
+  .btn:hover {
+    background-color: #3e8e41;
+  }
+
+  .add-to-cart:hover{
+    color:white;
+  }
+
+  /* Dots Indicator */
+  .dots {
+    display: flex;
+    justify-content: center;
+   
+    margin-bottom: 8px;
+}
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background: lightgray;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.dot.active {
+    background: black;
+}
