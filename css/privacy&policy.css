@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5fff0; /* Light green tint */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Fix */
+.navbar {
+    padding: 8px 20px; /* Slightly reduce padding */
+    background-color: #e8ffe6; /* Matching theme */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
+}
+
+/* Hero Section */
+.hero {
+    height: 28vh; /* Reduce height for better fit */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #e8ffe6; /* Light green background */
+    border-bottom: 3px solid #65a30d; /* Subtle bottom border */
+    margin-bottom: -15px; /* Reduce gap */
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Hero Text */
+.hero h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #1c4b27; /* Dark Green */
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #4d774e;
+    margin-top: 0;
+    font-weight: 500;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Privacy Content Box */
+.privacy-container {
+    max-width: 900px;
+    margin: -30px auto 50px; /* Move it up */
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-left: 5px solid #65a30d; /* Green accent */
+}
+
+/* Section Headings */
+.privacy-container h2 {
+    color: #2d6a4f;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    border-bottom: 2px solid #65a30d; /* Underline effect */
+    padding-bottom: 5px;
+}
+
+/* List Styles */
+.privacy-container ul {
+    padding-left: 20px;
+}
+
+.privacy-container li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    padding: 5px 0;
+}
+
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide-Up Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
