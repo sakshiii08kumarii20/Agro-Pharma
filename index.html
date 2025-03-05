@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agro Pharma 1.0</title>
 
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="Testemonials/star-rating.css">
     
     <!-- Link to External CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -15,6 +16,7 @@
 	 <link rel="stylesheet" type="text/css" href="css/footer.css">
 	 <link rel="stylesheet" type="text/css" href="SlideShow/slideShow.css">
    <link rel="stylesheet" type="text/css" href="css/index.css">
+   <link rel="stylesheet" type="text/css" href="css/readMore.css"
 	 
 	 
 	 
@@ -32,6 +34,7 @@
             <li><a href="Product/Products.html">Product</a></li>
             <li><a href="Testemonials/Testimonials.html">Testimonials</a></li>
             <li><a href="myContact/contact.html">Contact</a></li>
+          
         </ul>
     </nav>
 	<hr>
@@ -64,7 +67,7 @@
   <!------title div show title of scroll bar -->
   <div class="title-div">
     <div class="adv-title">
-      <h2 class="container-title">Our <br>Products</h2>
+      <h2 class="container-title">Our top selling product </h2>
     </div>
     <div class="adv-qotes">
       <p>
@@ -79,21 +82,29 @@
     
 			<div class="cards" id="card-scroll">
         
-				<div class="card">
+        <div class="card">
           <div class="card-image">
             <img src="Product/product-photo/product1.webp" alt="Card Image">
           </div>
-          
+        
           <div class="card-content">
-                        <h2 class="card-title">AgroShield</h2>
-                     <p>100ml: ₹250
-                      </p>
-                        <p class="card-text">AgroShield is a broad-spectrum fungicide that controls a wide range of fungal diseases in crops. It is a systemic fungicide that is absorbed by the plant and translocated to the site of infection, providing long-lasting protection.
-                        </p>
-                      </div>
-            <div class="card-actions">
-              <button class="btn">Read More</button>
-            </div>
+            <h2 class="card-title">AgroShield</h2>
+            <p>100ml: ₹250
+            </p>
+            <p class="card-text">AgroShield is a broad-spectrum fungicide that controls<span class="hidden-text" style="display: none;"> a wide range of fungal diseases in
+              crops. It is a systemic fungicide that is absorbed by the plant and translocated to the site of infection,
+              providing long-lasting protection.</span>
+              
+              
+            </p>
+
+            <button class="read-more-btn" onclick="toggleText(this)" style="background:transparent;border-style: none;color:greenyellow">Read More</button>
+          </div>
+          <div class="card-actions">
+            <button class="btn add-to-cart">Add to cart</button><button class="btn">Buy now</button>
+          </div>
+            
+
           </div>
 
           <div class="card">
@@ -106,11 +117,12 @@
                           </h2>
                           <p>500g: ₹600
                           </p>
-                          <p class="card-text">CropMax is a plant growth regulator that promotes healthy plant growth and development. It increases crop yields, improves fruit quality, and enhances plant resistance to disease.
+                          <p class="card-text">CropMax is a plant growth regulator that promotes healthy <span class="hidden-text" style="display: none;">plant growth and development. It increases crop yields, improves fruit quality, and enhances plant resistance to disease.</span>
                           </p>
+                          <button class="read-more-btn" onclick="toggleText(this)" style="background:transparent;border-style: none;color:greenyellow">Read More</button>
                         </div>
               <div class="card-actions">
-                <button class="btn">Read More</button>
+                <button class="btn">Add to cart</button>
               </div>
             </div>
 
@@ -124,8 +136,10 @@
                             </h2>
                             <p>500ml: ₹800
                             </p>
-                            <p class="card-text">WeedOut is a selective herbicide that controls a wide range of broadleaf weeds and grasses. It is a systemic herbicide that is absorbed by the plant and translocated to the site of action.
+                            <p class="card-text">WeedOut is a selective herbicide that controls a wide range <span class="hidden-text" style="display: none;">of broadleaf weeds and grasses. It is a systemic herbicide that is absorbed by the plant and translocated to the site of action.
+                            </span>
                             </p>
+                            <button class="read-more-btn" onclick="toggleText(this)" style="background:transparent;border-style: none;color:greenyellow">Read More</button>
                           </div>
                 <div class="card-actions">
                   <button class="btn">Read More</button>
@@ -139,7 +153,8 @@
                 
                 <div class="card-content">
                               <h2 class="card-title">Card Title</h2>
-                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur <span class="hidden-text" style="display: none;">adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</span></p>
+                              <button class="read-more-btn" onclick="toggleText(this)" style="background:transparent;border-style: none;color:greenyellow">Read More</button>
                             </div>
                   <div class="card-actions">
                     <button class="btn">Read More</button>
@@ -153,7 +168,8 @@
                   
                   <div class="card-content">
                                 <h2 class="card-title">Card Title</h2>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="hidden-text" style="display: none;">Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</span></p>
+                                <button class="read-more-btn" onclick="toggleText(this)" style="background:transparent;border-style: none;color:greenyellow">Read More</button>
                               </div>
                     <div class="card-actions">
                       <button class="btn">Read More</button>
@@ -320,46 +336,7 @@
     <div class="dots" id="dotsContainer"></div>
   </div>
 
-<script>
-  const scrollContainer = document.getElementById("card-scroll");
-  const dotsContainer = document.getElementById("dotsContainer");
-  const products = document.querySelectorAll(".card");
-  const totalDots = products.length;
-  let dots = [];
 
-  // Create dots dynamically
-  for (let i = 0; i < totalDots; i++) {
-      let dot = document.createElement("div");
-      dot.classList.add("dot");
-      dotsContainer.appendChild(dot);
-      dots.push(dot);
-  }
-  
-  // Function to update active dot
-  function updateActiveDot() {
-      let scrollLeft = scrollContainer.scrollLeft;
-      let maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
-      let currentIndex = Math.round((scrollLeft / maxScroll) * (totalDots - 1));
-      
-      dots.forEach((dot, index) => {
-          dot.classList.toggle("active", index === currentIndex);
-      });
-  }
-
-  // Initial Active Dot
-  dots[0].classList.add("active");
-
-  // Scroll Event Listener
-  scrollContainer.addEventListener("scroll", updateActiveDot);
-  
-  // Click Event on Dots (optional)
-  dots.forEach((dot, index) => {
-      dot.addEventListener("click", () => {
-          let productWidth = products[0].offsetWidth + 10; // Include gap
-          scrollContainer.scrollTo({ left: index * productWidth, behavior: "smooth" });
-      });
-  });
-</script>
 
 <!--card container end here  ------------------------------------------------------------------------------->
 
@@ -433,5 +410,18 @@
         showSlides(index);
         setTimeout(autoSlide, 3000);
     </script>
+
+<script>
+  function toggleText(button) {
+      const hiddenText = button.previousElementSibling.querySelector('.hidden-text');
+      if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
+          hiddenText.style.display = "inline";
+          button.textContent = "Read Less";
+      } else {
+          hiddenText.style.display = "none";
+          button.textContent = "Read More";
+      }
+  }
+</script>
 </body>
 </html>

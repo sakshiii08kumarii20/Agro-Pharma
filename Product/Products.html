@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="product-div.css" />
   <link rel="stylesheet" href="../css/cards.css"/>
 	<link rel="stylesheet" href="../css/footer.css"/>
-  <link rel="stylesheet" href="../css/h-CardContainer.css"/>
+  <link rel="stylesheet" href="v-cardCont.css"/>
 
 </head>
 <body>
@@ -32,30 +32,61 @@
 
     <hr>
     <!---Navigation bar end here -->
-
-
+    <div>
+      <h2 class="container-title">Our Products</h2>
+      <select class="product-filter">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+        <option value="option4">Option 4</option>
+      </select>
+    
+      <input type="search" class="search-product" placeholder="Search product">
+    
+    </div>
 		<!--- Card container start here ----------------<link rel="stylesheet" href="../css/h-CardContainer.css"/>------------------------------------->
     <div class="card-container">
-		<h2 class="container-title">Our Products</h2>
+	
 			
 			<div class="cards" id="card-scroll">
         
-				<div class="card">
+        <div class="card">
           <div class="card-image">
             <img src="product-photo/product1.webp" alt="Card Image">
           </div>
-          
+        
           <div class="card-content">
-                        <h2 class="card-title">AgroShield</h2>
-                     <p>100ml: ₹250
-                      </p>
-                        <p class="card-text">AgroShield is a broad-spectrum fungicide that controls a wide range of fungal diseases in crops. It is a systemic fungicide that is absorbed by the plant and translocated to the site of infection, providing long-lasting protection.
-                        </p>
-                      </div>
+            <h2 class="card-title">AgroShield</h2>
+            <p>100ml: ₹250
+            </p>
+            <p class="card-text">AgroShield is a broad-spectrum fungicide that controls a wide range of fungal diseases in
+              crops. It is a systemic fungicide that is absorbed by the plant and translocated to the site of infection,
+              providing long-lasting protection.
+            </p>
+
+            <h3 style="font-size: 15px;margin-top: 10px;">Key Benefits:</h3>
+              <ul class="key-benefits">
+                <li> Controls fungal diseases such as powdery mildew, downy mildew, and leaf spot</li>
+                <li>Systemic action provides long-lasting protection</li>
+                <li>Can be used on a wide range of crops, including fruits, vegetables, and cereals</li>
+                <li>Low toxicity to humans and animals</li>
+              </ul> 
+
+              <h3 style="font-size: 15px;margin-top: 10px;" > Active Ingredient:</h3>
+               
+                <p style="font-size: 12px;">
+                - Azoxystrobin (20% w/w)
+                </p>
+
+         
+
             <div class="card-actions">
-              <button class="btn">Read More</button>
+              <button class="btn add-to-cart">Add to cart</button><button class="btn">Buy now</button>
             </div>
           </div>
+
+          </div>
+          
 
           <div class="card">
             <div class="card-image">
