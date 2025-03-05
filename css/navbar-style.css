@@ -48,13 +48,13 @@
     color: black;
     padding: 10px 14px;
     display: block;
-	margin-right: 2px;
-    width: 9%;
-
-  
-   border-radius: 15px; 
-   text-align: center;
+    margin-right: 2px;
+    min-width: 100px;  
+    white-space: nowrap;  
+    border-radius: 15px; 
+    text-align: center;
 }
+
 
 .nav-links a:hover {
 
