@@ -1,0 +1,144 @@
+
+
+    #contactus{
+        position: relative;
+    }
+
+
+#contactusimg{
+       
+        width: 100%;
+        height: 500px;
+    }
+
+    #info{
+        position:absolute;
+        color:rgb(221, 226, 220);
+        
+        top:50%;
+        left:5%;
+        font-weight: bolder;
+        padding: 25px 0px;
+        font-size:25px;
+    }
+
+    #bigcontainer{
+        height:500px;
+        width:90%;
+        
+        padding-left: 80px;
+       
+        
+    }
+
+    #container{
+        width:50%;
+        height:250px;
+        
+        gap:50px;
+        display:flex;
+        
+
+    }
+
+    #container2{
+        gap: 50px;
+        
+        height:350px;
+        width:50%;
+        display:flex;
+    }
+
+    .contactdetails{
+        height:200px;
+        width:350px;
+        
+        display:inline-block;
+        padding:30px;
+       
+       
+        
+    }
+
+    i {
+        font-size: 20px; /* Adjust icon size */
+        color: white; /* Change color */
+        margin-right: 5px; /* Adds spacing between icon and text */
+    }
+
+    #location{
+        width: 40px;  /* Adjust icon size */
+    height: auto; /* Keep aspect ratio */
+    margin-right: 10px; /* Space between icon and text */
+    vertical-align: middle; /* Align with text */
+
+    } 
+      
+    .heading{
+        display:inline-block;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    p{
+        font-size:20px;
+    }
+
+    h2{
+        padding-left: 5px;
+        margin-top: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 25px;
+    }
+
+    #space{
+        height:100px;
+        
+        width:100%;
+    }
+
+    .message{
+        width:500px;
+        height:50px;
+        margin-bottom: 20px;
+    }
+
+    #message{
+        height:400px;
+        width:700px;
+        
+        padding:50px;
+        top:50%;
+        left:5%;
+        padding-left: 90px;
+        padding-bottom: 250px;
+        display: flex;
+        margin-top: -20px;
+        
+        }
+
+        #up{
+            height:450px;
+            width:600px;
+           
+            padding-bottom: -350px;
+            
+        }
+
+        h3{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 25px;
+        }
+
+        #button{
+            width: 130px;
+            height:40px;
+            background-color: green;
+            border:1px solid black;
+            border-radius: 5px;
+            color:whitesmoke;
+            font-size: 18px;
+        }
+
+        
