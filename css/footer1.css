@@ -34,3 +34,7 @@ footer .social-icons a {
   position: relative;
 }
 
+.footer {
+  margin-top: 0px !important; /* Ensures no extra margin */
+  padding-top: 20px; /* Reduce if needed */
+}

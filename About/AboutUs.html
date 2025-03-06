@@ -6,86 +6,261 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>About Us</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="aboutus.css" />
     <link rel="stylesheet" href="../css/navbar-style.css" />
     <link rel="stylesheet" href="../css/footer.css" />
   </head>
   <body>
     <nav class="navbar1">
-      <img class="logo"src="../resource/logo.jpg" style="width:60px; height:60px;">
-      <div class="title"><h4 >Agro Pharma</h4></div>
-      <input type="checkbox" id="menu-toggle">
-          <label for="menu-toggle" class="hamburger">&#9776;</label>
-          <ul class="nav-links">
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="AboutUs.html">About</a></li>
-              <li><a href="../Product/Products.html">Product</a></li>
-              <li><a href="../Testemonials/Testimonials.html">Testimonials</a></li>
-              <li><a href="../Contact/contactusv.html">Contact</a></li>
-          </ul>
-      </nav>
+      <img
+        class="logo"
+        src="../resource/logo.jpg"
+        alt="company logo"
+        style="width: 60px; height: 60px"
+      />
+      <div class="title"><h4>Agro Pharma</h4></div>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="AboutUs.html">About</a></li>
+        <li><a href="../Product/Products.html">Product</a></li>
+        <li><a href="../Testemonials/Testimonials.html">Testimonials</a></li>
+        <li><a href="../Contact/contactusv.html">Contact</a></li>
+        <li>
+          <a href="../privacy&policy/privacy&policy.html">Privacy & Policy</a>
+        </li>
+      </ul>
+    </nav>
 
-    <section class="about">
-      <p class="about-title">About Us</p>
-      <div class="about-container">
-        <div class="about-content">
-          <div class="about-item who-we-are">
-            <div class="img-container">
-              <img src="owner.jpg" alt="owner_image" width="200" />
+    <section class="about-us">
+      <div class="about-us-title">
+        <div class="about-us-heading">
+          <p id="about-us-heading">About Us</p>
+        </div>
+        <div class="wave">
+          <svg
+            id="wave"
+            style="transform: rotate(0deg); transition: 0.3s"
+            viewBox="0 0 1440 270"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+                <stop
+                  stop-color="rgba(239, 239, 239, 0.65)"
+                  offset="100%"
+                ></stop>
+              </linearGradient>
+            </defs>
+            <path
+              style="transform: translate(0, 0px); opacity: 1"
+              fill="url(#sw-gradient-0)"
+              d="M0,162L48,148.5C96,135,192,108,288,108C384,108,480,135,576,157.5C672,180,768,198,864,207C960,216,1056,216,1152,207C1248,198,1344,180,1440,175.5C1536,171,1632,180,1728,193.5C1824,207,1920,225,2016,225C2112,225,2208,207,2304,166.5C2400,126,2496,63,2592,31.5C2688,0,2784,0,2880,40.5C2976,81,3072,162,3168,171C3264,180,3360,117,3456,76.5C3552,36,3648,18,3744,40.5C3840,63,3936,126,4032,157.5C4128,189,4224,189,4320,193.5C4416,198,4512,207,4608,207C4704,207,4800,198,4896,202.5C4992,207,5088,225,5184,225C5280,225,5376,207,5472,193.5C5568,180,5664,171,5760,144C5856,117,5952,72,6048,85.5C6144,99,6240,171,6336,193.5C6432,216,6528,189,6624,166.5C6720,144,6816,126,6864,117L6912,108L6912,270L6864,270C6816,270,6720,270,6624,270C6528,270,6432,270,6336,270C6240,270,6144,270,6048,270C5952,270,5856,270,5760,270C5664,270,5568,270,5472,270C5376,270,5280,270,5184,270C5088,270,4992,270,4896,270C4800,270,4704,270,4608,270C4512,270,4416,270,4320,270C4224,270,4128,270,4032,270C3936,270,3840,270,3744,270C3648,270,3552,270,3456,270C3360,270,3264,270,3168,270C3072,270,2976,270,2880,270C2784,270,2688,270,2592,270C2496,270,2400,270,2304,270C2208,270,2112,270,2016,270C1920,270,1824,270,1728,270C1632,270,1536,270,1440,270C1344,270,1248,270,1152,270C1056,270,960,270,864,270C768,270,672,270,576,270C480,270,384,270,288,270C192,270,96,270,48,270L0,270Z"
+            ></path>
+            <defs>
+              <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+                <stop
+                  stop-color="rgba(239, 239, 239, 0.78)"
+                  offset="100%"
+                ></stop>
+              </linearGradient>
+            </defs>
+            <path
+              style="transform: translate(0, 50px); opacity: 0.9"
+              fill="url(#sw-gradient-1)"
+              d="M0,108L48,103.5C96,99,192,90,288,112.5C384,135,480,189,576,180C672,171,768,99,864,76.5C960,54,1056,81,1152,94.5C1248,108,1344,108,1440,121.5C1536,135,1632,162,1728,144C1824,126,1920,63,2016,45C2112,27,2208,54,2304,94.5C2400,135,2496,189,2592,202.5C2688,216,2784,189,2880,153C2976,117,3072,72,3168,49.5C3264,27,3360,27,3456,58.5C3552,90,3648,153,3744,184.5C3840,216,3936,216,4032,211.5C4128,207,4224,198,4320,171C4416,144,4512,99,4608,72C4704,45,4800,36,4896,40.5C4992,45,5088,63,5184,67.5C5280,72,5376,63,5472,72C5568,81,5664,108,5760,108C5856,108,5952,81,6048,63C6144,45,6240,36,6336,67.5C6432,99,6528,171,6624,171C6720,171,6816,99,6864,63L6912,27L6912,270L6864,270C6816,270,6720,270,6624,270C6528,270,6432,270,6336,270C6240,270,6144,270,6048,270C5952,270,5856,270,5760,270C5664,270,5568,270,5472,270C5376,270,5280,270,5184,270C5088,270,4992,270,4896,270C4800,270,4704,270,4608,270C4512,270,4416,270,4320,270C4224,270,4128,270,4032,270C3936,270,3840,270,3744,270C3648,270,3552,270,3456,270C3360,270,3264,270,3168,270C3072,270,2976,270,2880,270C2784,270,2688,270,2592,270C2496,270,2400,270,2304,270C2208,270,2112,270,2016,270C1920,270,1824,270,1728,270C1632,270,1536,270,1440,270C1344,270,1248,270,1152,270C1056,270,960,270,864,270C768,270,672,270,576,270C480,270,384,270,288,270C192,270,96,270,48,270L0,270Z"
+            ></path>
+            <defs>
+              <linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgb(255, 255, 255)" offset="0%"></stop>
+                <stop stop-color="rgb(255, 255, 255)" offset="100%"></stop>
+              </linearGradient>
+            </defs>
+            <path
+              style="transform: translate(0, 100px); opacity: 0.8"
+              fill="url(#sw-gradient-2)"
+              d="M0,189L48,166.5C96,144,192,99,288,76.5C384,54,480,54,576,85.5C672,117,768,180,864,189C960,198,1056,153,1152,117C1248,81,1344,54,1440,36C1536,18,1632,9,1728,36C1824,63,1920,126,2016,130.5C2112,135,2208,81,2304,54C2400,27,2496,27,2592,27C2688,27,2784,27,2880,54C2976,81,3072,135,3168,166.5C3264,198,3360,207,3456,175.5C3552,144,3648,72,3744,45C3840,18,3936,36,4032,36C4128,36,4224,18,4320,36C4416,54,4512,108,4608,117C4704,126,4800,90,4896,72C4992,54,5088,54,5184,49.5C5280,45,5376,36,5472,63C5568,90,5664,153,5760,162C5856,171,5952,126,6048,117C6144,108,6240,135,6336,139.5C6432,144,6528,126,6624,135C6720,144,6816,180,6864,198L6912,216L6912,270L6864,270C6816,270,6720,270,6624,270C6528,270,6432,270,6336,270C6240,270,6144,270,6048,270C5952,270,5856,270,5760,270C5664,270,5568,270,5472,270C5376,270,5280,270,5184,270C5088,270,4992,270,4896,270C4800,270,4704,270,4608,270C4512,270,4416,270,4320,270C4224,270,4128,270,4032,270C3936,270,3840,270,3744,270C3648,270,3552,270,3456,270C3360,270,3264,270,3168,270C3072,270,2976,270,2880,270C2784,270,2688,270,2592,270C2496,270,2400,270,2304,270C2208,270,2112,270,2016,270C1920,270,1824,270,1728,270C1632,270,1536,270,1440,270C1344,270,1248,270,1152,270C1056,270,960,270,864,270C768,270,672,270,576,270C480,270,384,270,288,270C192,270,96,270,48,270L0,270Z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <div class="about-us-first-container">
+        <div class="who-we-are">
+          <div id="about-us-left-container">
+            We are an Agro Homeopathic Pharmaceutical Company with a vision for
+            creating a 100% organic and non toxic agricultural eco system.
+          </div>
+          <div class="about-us-right-container content">
+            Manakkal Agro Pharma is an agricultural homoeopathic pharmaceutical
+            company situated in Kakkadampoyil, Calicut, Kerala, India. The
+            company has its own 15 acres of agricultural land-named “Manakkal
+            Orchard” wherein all of its Agro Homeopathic medicines are tested
+            and achieved great success.
+          </div>
+        </div>
+      </div>
+      <div class="about-us-second-container">
+        <div class="second-child-container">
+          <div id="second-title">Manakkal Orchard</div>
+          <div class="second-container-content content">
+            Manakkal Orchard is situated in the heart of Kakkadampoyil, a well
+            known hilltop tourist destination of Kerala. It is full of various
+            types of crops and trees fertilised with our own Agro homoeopathic
+            medicines. Manakkal Agro pharma's products are well experimented and
+            successfully proven here.
+          </div>
+          <div class="second-container-img">
+            <img src="sample.jpg" alt="sample" />
+          </div>
+        </div>
+      </div>
+      <div class="about-us-third-container">
+        <div class="third-child-container">
+          <div class="third-title">Our Founder</div>
+          <div class="third-container-content content">
+            Dr. A.I. Hidayathullah, who has been actively working in the field
+            of homeopathy for over three decades in Malappuram district, Kerala,
+            is the founder of Manakkal Agro Pharma. Manakkal AgroPharma and all
+            its products are the result of his 10-year-long relentless research
+            in agricultural homeopathy.
+          </div>
+          <div class="our-founder">
+            <div class="our-founder-info">
+              <div class="founder-title">
+                <h3 id="founder-name" style="text-align: left">
+                  Dr. A I Hidayathullah
+                </h3>
+                <p id="founder-qualification" style="text-align: left">
+                  ( BHMS,SCPH )
+                </p>
+              </div>
             </div>
-            <div class="content-container">
-              <h3>Who We Are ?</h3>
-              <p>
-                At <b><a href="../index.html">AgroPharma</a></b>, we are committed to revolutionizing
-                agriculture and healthcare through innovative, sustainable
-                solutions. We develop cutting-edge agrochemicals, veterinary
-                products, and plant-based biopharmaceuticals that enhance
-                productivity and promote a healthier ecosystem.
-              </p>
+            <div class="founder-view">
+              <div class="left-container">
+                <div id="list-title">Managing director</div>
+                <ul>
+                  <li>Manakkal Agro Pharma</li>
+                  <li>Manakkal Orchard</li>
+                  <li>Manakkal Drugs India</li>
+                  <li>Manakkal Center for Cancer and Incurables</li>
+                </ul>
+              </div>
+              <div class="right-container">
+                <img
+                  src="founder.png"
+                  alt="founder"
+                  width="547px"
+                  height="436px"
+                />
+              </div>
+            </div>
+            <div class="founder-info founder-intro">
+              Dr. A.I. Hidayathullah, who has been actively working in the field
+              of homeopathy for over three decades in Malappuram district,
+              Kerala, is the founder of Manakkal Agro Pharma. Manakkal
+              AgroPharma and all its products are the result of his 10-year-long
+              relentless research in agricultural homeopathy.
+            </div>
+            <div class="social-links">
+              <div class="icon" id="facebook-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="100"
+                  height="100"
+                  viewBox="0 0 50 50"
+                >
+                  <path
+                    d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="icon" id="insta-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="100"
+                  height="100"
+                  viewBox="0 0 30 30"
+                >
+                  <path
+                    d="M 15 2 C 7.832 2 2 7.832 2 15 C 2 22.168 7.832 28 15 28 C 22.168 28 28 22.168 28 15 C 28 7.832 22.168 2 15 2 z M 11.666016 6 L 18.332031 6 C 21.457031 6 24 8.5420156 24 11.666016 L 24 18.332031 C 24 21.457031 21.457984 24 18.333984 24 L 11.667969 24 C 8.5429688 24 6 21.457984 6 18.333984 L 6 11.667969 C 6 8.5429688 8.5420156 6 11.666016 6 z M 11.666016 8 C 9.6450156 8 8 9.6459688 8 11.667969 L 8 18.333984 C 8 20.354984 9.6459688 22 11.667969 22 L 18.333984 22 C 20.354984 22 22 20.354031 22 18.332031 L 22 11.666016 C 22 9.6450156 20.354031 8 18.332031 8 L 11.666016 8 z M 19.667969 9.6660156 C 20.035969 9.6660156 20.333984 9.9640312 20.333984 10.332031 C 20.333984 10.700031 20.035969 11 19.667969 11 C 19.299969 11 19 10.700031 19 10.332031 C 19 9.9640312 19.299969 9.6660156 19.667969 9.6660156 z M 15 10 C 17.757 10 20 12.243 20 15 C 20 17.757 17.757 20 15 20 C 12.243 20 10 17.757 10 15 C 10 12.243 12.243 10 15 10 z M 15 12 A 3 3 0 0 0 15 18 A 3 3 0 0 0 15 12 z"
+                  ></path>
+                </svg>
+              </div>
             </div>
           </div>
-
-          <div class="about-item Our-vision">
-            <div class="content-container">
-              <h3>Our Vision for Company</h3>
-              <p>
-                We envision a future where agriculture and pharmaceuticals blend
-                seamlessly to create sustainable solutions for food security,
-                livestock health, and global well-being. Through advanced
-                research and eco-friendly practices, we aim to build a resilient
-                agricultural landscape.
-              </p>
-            </div>
-            <div class="img-container">
-              <img src="our-vision.jpg" alt="our_vision_image" />
-            </div>
-          </div>
-          <div class="about-item why-choose-us">
-            <div class="img-container">
-              <img src="why-choose-us.jpg" alt="owner_image" width="200" />
-            </div>
-            <div class="content-container">
-              <h3>Why Choose Us?</h3>
-              <ul>
-                <li>
-                  <i class="fas fa-flask"></i> Cutting-edge R&D for eco-friendly
-                  products
-                </li>
-                <li>
-                  <i class="fas fa-leaf"></i> Strong commitment to
-                  sustainability
-                </li>
-                <li>
-                  <i class="fas fa-globe"></i> Global standards for safety and
-                  efficacy
-                </li>
-                <li>
-                  <i class="fas fa-handshake"></i> Collaborative growth with
-                  industry experts
-                </li>
-              </ul>
-            </div>
+        </div>
+      </div>
+      <div class="about-us-forth-container">
+        <div class="wave">
+          <svg
+            id="wave"
+            style="transform: rotate(180deg); transition: 0.3s"
+            viewBox="0 0 1440 450"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+                <stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop>
+              </linearGradient>
+            </defs>
+            <path
+              style="transform: translate(0, 0px); opacity: 1"
+              fill="url(#sw-gradient-0)"
+              d="M0,405L40,367.5C80,330,160,255,240,217.5C320,180,400,180,480,210C560,240,640,300,720,330C800,360,880,360,960,367.5C1040,375,1120,390,1200,390C1280,390,1360,375,1440,352.5C1520,330,1600,300,1680,300C1760,300,1840,330,1920,300C2000,270,2080,180,2160,180C2240,180,2320,270,2400,262.5C2480,255,2560,150,2640,157.5C2720,165,2800,285,2880,330C2960,375,3040,345,3120,345C3200,345,3280,375,3360,360C3440,345,3520,285,3600,240C3680,195,3760,165,3840,172.5C3920,180,4000,225,4080,262.5C4160,300,4240,330,4320,330C4400,330,4480,300,4560,255C4640,210,4720,150,4800,165C4880,180,4960,270,5040,322.5C5120,375,5200,390,5280,345C5360,300,5440,195,5520,157.5C5600,120,5680,150,5720,165L5760,180L5760,450L5720,450C5680,450,5600,450,5520,450C5440,450,5360,450,5280,450C5200,450,5120,450,5040,450C4960,450,4880,450,4800,450C4720,450,4640,450,4560,450C4480,450,4400,450,4320,450C4240,450,4160,450,4080,450C4000,450,3920,450,3840,450C3760,450,3680,450,3600,450C3520,450,3440,450,3360,450C3280,450,3200,450,3120,450C3040,450,2960,450,2880,450C2800,450,2720,450,2640,450C2560,450,2480,450,2400,450C2320,450,2240,450,2160,450C2080,450,2000,450,1920,450C1840,450,1760,450,1680,450C1600,450,1520,450,1440,450C1360,450,1280,450,1200,450C1120,450,1040,450,960,450C880,450,800,450,720,450C640,450,560,450,480,450C400,450,320,450,240,450C160,450,80,450,40,450L0,450Z"
+            ></path>
+            <defs>
+              <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(255, 255, 255, 0.33)" offset="0%"></stop>
+                <stop
+                  stop-color="rgba(230.325, 230.325, 230.325, 0.19)"
+                  offset="100%"
+                ></stop>
+              </linearGradient>
+            </defs>
+            <path
+              style="transform: translate(0, 50px); opacity: 0.9"
+              fill="url(#sw-gradient-1)"
+              d="M0,45L40,37.5C80,30,160,15,240,45C320,75,400,150,480,187.5C560,225,640,225,720,232.5C800,240,880,255,960,217.5C1040,180,1120,90,1200,75C1280,60,1360,120,1440,165C1520,210,1600,240,1680,277.5C1760,315,1840,360,1920,382.5C2000,405,2080,405,2160,337.5C2240,270,2320,135,2400,90C2480,45,2560,90,2640,97.5C2720,105,2800,75,2880,120C2960,165,3040,285,3120,322.5C3200,360,3280,315,3360,262.5C3440,210,3520,150,3600,150C3680,150,3760,210,3840,225C3920,240,4000,210,4080,187.5C4160,165,4240,150,4320,150C4400,150,4480,165,4560,157.5C4640,150,4720,120,4800,142.5C4880,165,4960,240,5040,232.5C5120,225,5200,135,5280,97.5C5360,60,5440,75,5520,120C5600,165,5680,240,5720,277.5L5760,315L5760,450L5720,450C5680,450,5600,450,5520,450C5440,450,5360,450,5280,450C5200,450,5120,450,5040,450C4960,450,4880,450,4800,450C4720,450,4640,450,4560,450C4480,450,4400,450,4320,450C4240,450,4160,450,4080,450C4000,450,3920,450,3840,450C3760,450,3680,450,3600,450C3520,450,3440,450,3360,450C3280,450,3200,450,3120,450C3040,450,2960,450,2880,450C2800,450,2720,450,2640,450C2560,450,2480,450,2400,450C2320,450,2240,450,2160,450C2080,450,2000,450,1920,450C1840,450,1760,450,1680,450C1600,450,1520,450,1440,450C1360,450,1280,450,1200,450C1120,450,1040,450,960,450C880,450,800,450,720,450C640,450,560,450,480,450C400,450,320,450,240,450C160,450,80,450,40,450L0,450Z"
+            ></path>
+            <defs>
+              <linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="rgba(255, 255, 255, 0.56)" offset="0%"></stop>
+                <stop
+                  stop-color="rgba(255, 255, 255, 0.13)"
+                  offset="100%"
+                ></stop>
+              </linearGradient>
+            </defs>
+            <path
+              style="transform: translate(0, 100px); opacity: 0.8"
+              fill="url(#sw-gradient-2)"
+              d="M0,135L40,150C80,165,160,195,240,187.5C320,180,400,135,480,120C560,105,640,120,720,112.5C800,105,880,75,960,105C1040,135,1120,225,1200,255C1280,285,1360,255,1440,232.5C1520,210,1600,195,1680,165C1760,135,1840,90,1920,112.5C2000,135,2080,225,2160,217.5C2240,210,2320,105,2400,97.5C2480,90,2560,180,2640,202.5C2720,225,2800,180,2880,135C2960,90,3040,45,3120,37.5C3200,30,3280,60,3360,105C3440,150,3520,210,3600,202.5C3680,195,3760,120,3840,105C3920,90,4000,135,4080,180C4160,225,4240,270,4320,300C4400,330,4480,345,4560,315C4640,285,4720,210,4800,195C4880,180,4960,225,5040,262.5C5120,300,5200,330,5280,322.5C5360,315,5440,270,5520,225C5600,180,5680,135,5720,112.5L5760,90L5760,450L5720,450C5680,450,5600,450,5520,450C5440,450,5360,450,5280,450C5200,450,5120,450,5040,450C4960,450,4880,450,4800,450C4720,450,4640,450,4560,450C4480,450,4400,450,4320,450C4240,450,4160,450,4080,450C4000,450,3920,450,3840,450C3760,450,3680,450,3600,450C3520,450,3440,450,3360,450C3280,450,3200,450,3120,450C3040,450,2960,450,2880,450C2800,450,2720,450,2640,450C2560,450,2480,450,2400,450C2320,450,2240,450,2160,450C2080,450,2000,450,1920,450C1840,450,1760,450,1680,450C1600,450,1520,450,1440,450C1360,450,1280,450,1200,450C1120,450,1040,450,960,450C880,450,800,450,720,450C640,450,560,450,480,450C400,450,320,450,240,450C160,450,80,450,40,450L0,450Z"
+            ></path>
+          </svg>
+        </div>
+        <div id="know-more">
+          <p>
+            Want to <b>Know More</b> About <b>Agro Homeopathy</b> and Our
+            Products?
+          </p>
+          <div class="buttons">
+            <a href="tel:+1234567890" class="button call-button">
+              <img src="phone.svg" id="phone" alt="phone" /> CALL NOW
+            </a>
+            <a href="https://wa.me/1234567890" class="button whatsapp-button">
+              <img src="whatsapp.svg" id="whatsapp" alt="whatsapp" /> WHATSAPP
+            </a>
           </div>
         </div>
       </div>
@@ -111,7 +286,12 @@
             <li><a href="../index.html">Home</a></li>
             <li><a href="../About/AboutUs.html">About</a></li>
             <li><a href="../Product/Products.html">Products</a></li>
-            <li><a href="Contact/contactusv.html">Contact</a></li>
+            <li><a href="../myContact/contact.html">Contact</a></li>
+            <li>
+              <a href="../privacy&policy/privacy&policy.html"
+                >Privacy & Policy</a
+              >
+            </li>
           </ul>
         </div>
 

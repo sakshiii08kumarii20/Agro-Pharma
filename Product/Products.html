@@ -10,10 +10,12 @@
 	<link rel="stylesheet" href="product-div.css" />
   <link rel="stylesheet" href="../css/cards.css"/>
 	<link rel="stylesheet" href="../css/footer.css"/>
+  <link rel="stylesheet" href="v-cardCont.css"/>
 
 </head>
 <body>
 
+  <!---Navigation bar start here-----<link rel="stylesheet" href="../css/navbar-style.css">------------------------>
 		 <nav class="navbar1">
 		<img class="logo"src="../resource/logo.jpg" style="width:60px; height:60px;">
         <div class="title"><h4>Agro Pharma</h4></div>
@@ -23,35 +25,69 @@
             <li><a class="link1" href="../index.html">Home</a></li>
             <li><a class="link2" href="../About/AboutUs.html">About</a></li>
             <li><a class="link3" href="Products.html" style=" color: rgb(29 161 242); text-decoration: underline;">Product</a></li>
-			 <li><a href="../Testemonials/Testimonials.html">Testimonials</a></li>
+			       <li><a href="../Testemonials/Testimonials.html">Testimonials</a></li>
             <li><a class="link4" href="../Contact/contactusv.html">Contact</a></li>
+            <li><a href="../privacy&policy/privacy&policy.html">Privacy & Policy</a></li>
         </ul>
     </nav>
 
     <hr>
-
-	<div class="product-container">
+    <!---Navigation bar end here -->
+    <div>
+      <h2 class="container-title">Our Products</h2>
+      <select class="product-filter">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+        <option value="option4">Option 4</option>
+      </select>
+    
+      <input type="search" class="search-product" placeholder="Search product">
+    
+    </div>
+		<!--- Card container start here ----------------<link rel="stylesheet" href="../css/h-CardContainer.css"/>------------------------------------->
+    <div class="card-container">
+	
 			
-		<h2 class="our_product">Our Products</h2>
-			
-			<div class="cards">
+			<div class="cards" id="card-scroll">
         
-				<div class="card">
+        <div class="card">
           <div class="card-image">
             <img src="product-photo/product1.webp" alt="Card Image">
           </div>
-          
+        
           <div class="card-content">
-                        <h2 class="card-title">AgroShield</h2>
-                     <p>100ml: ₹250
-                      </p>
-                        <p class="card-text">AgroShield is a broad-spectrum fungicide that controls a wide range of fungal diseases in crops. It is a systemic fungicide that is absorbed by the plant and translocated to the site of infection, providing long-lasting protection.
-                        </p>
-                      </div>
+            <h2 class="card-title">AgroShield</h2>
+            <p>100ml: ₹250
+            </p>
+            <p class="card-text">AgroShield is a broad-spectrum fungicide that controls a wide range of fungal diseases in
+              crops. It is a systemic fungicide that is absorbed by the plant and translocated to the site of infection,
+              providing long-lasting protection.
+            </p>
+
+            <h3 style="font-size: 15px;margin-top: 10px;">Key Benefits:</h3>
+              <ul class="key-benefits">
+                <li> Controls fungal diseases such as powdery mildew, downy mildew, and leaf spot</li>
+                <li>Systemic action provides long-lasting protection</li>
+                <li>Can be used on a wide range of crops, including fruits, vegetables, and cereals</li>
+                <li>Low toxicity to humans and animals</li>
+              </ul> 
+
+              <h3 style="font-size: 15px;margin-top: 10px;" > Active Ingredient:</h3>
+               
+                <p style="font-size: 12px;">
+                - Azoxystrobin (20% w/w)
+                </p>
+
+         
+
             <div class="card-actions">
-              <button class="btn">Read More</button>
+              <button class="btn add-to-cart">Add to cart</button><button class="btn">Buy now</button>
             </div>
           </div>
+
+          </div>
+          
 
           <div class="card">
             <div class="card-image">
@@ -119,10 +155,56 @@
 
 
 		</div>	
-	</div>
+
+    <!-- Dots Navigation -->
+    <div class="dots" id="dotsContainer"></div>
+</div>
+
+  <script>
+    const scrollContainer = document.getElementById("card-scroll");
+    const dotsContainer = document.getElementById("dotsContainer");
+    const products = document.querySelectorAll(".card");
+    const totalDots = products.length;
+    let dots = [];
+
+    // Create dots dynamically
+    for (let i = 0; i < totalDots; i++) {
+        let dot = document.createElement("div");
+        dot.classList.add("dot");
+        dotsContainer.appendChild(dot);
+        dots.push(dot);
+    }
+    
+    // Function to update active dot
+    function updateActiveDot() {
+        let scrollLeft = scrollContainer.scrollLeft;
+        let maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+        let currentIndex = Math.round((scrollLeft / maxScroll) * (totalDots - 1));
+        
+        dots.forEach((dot, index) => {
+            dot.classList.toggle("active", index === currentIndex);
+        });
+    }
+
+    // Initial Active Dot
+    dots[0].classList.add("active");
+
+    // Scroll Event Listener
+    scrollContainer.addEventListener("scroll", updateActiveDot);
+    
+    // Click Event on Dots (optional)
+    dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+            let productWidth = products[0].offsetWidth + 10; // Include gap
+            scrollContainer.scrollTo({ left: index * productWidth, behavior: "smooth" });
+        });
+    });
+</script>
+
+<!--card container end here  ------------------------------------------------------------------------------->
 
 
- <!-- Footer -->
+ <!-- Footer ---------------------<link rel="stylesheet" href="../css/footer.css"/>------------------------------------------------->
     <footer>
         <div class="footer-decoration"></div>
         <div class="footer-container">
@@ -139,7 +221,8 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="About/AboutUs.html">About</a></li>
               <li><a href="Product/Products.html">Products</a></li>
-              <li><a href="Contact/contactusv.html">Contact</a></li>
+              <li><a href="../myContact/contact.html">Contact</a></li>
+              <li><a href="../privacy&policy/privacy&policy.html">Privacy & Policy</a></li>
             </ul>
           </div>
     
@@ -171,6 +254,7 @@
           <p>© 2025 Agro Pharma. All rights reserved.</p>
         </div>
       </footer>
+
 
 </body>
 </html>

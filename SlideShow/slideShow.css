@@ -2,11 +2,11 @@
 	position:absolute;
 	max-width:40%; 
 	left: 10%;
-	top: 10px;
+	top: 15px;
 	width:30%;
 	overflow: hidden;
-	border-radius: 50%;
-	border: 10px solid rgb(0, 98, 128);
+	
+	box-shadow: 2px 2px 5px gray,-2px -2px 5px gray;
 	}
 	
 
@@ -30,6 +30,7 @@
 .prev, .next {
             position: absolute;
             top: 50%;
+			opacity: 0.3;
             transform: translateY(-50%);
             background-color: rgba(0, 0, 0, 0.5);
             color: white;

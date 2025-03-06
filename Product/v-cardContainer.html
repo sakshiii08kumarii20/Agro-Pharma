@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Card Container</title>
+    <link rel="stylesheet" type="text/css" href="v-cardCont.css">
+    <link rel="stylesheet" type="text/css" href="../css/readMore.css">
+</head>
+<body>
+
+    <div class="card-container">
+
+        <div class="card">
+        
+            <div class="card-content">
+        
+                <div class="img-div">
+                    <img class="rel-img" src="product-photo/product1.webp" alt="photo">
+                </div>
+        
+                <div class="content-container">
+        
+                    <h3>AgroShield</h3>
+                    <h4>250$</h4>
+        
+                    <h4>Product Details:</h4>
+                    <p>AgroShield is a broad-spectrum fungicide that controls a wide range of fungal diseases in crops. It is a
+                        systemic fungicide that is absorbed by the plant and translocated to the site of infection, providing
+                        long-lasting protection.
+                    </p>
+        
+                    <label for="read-more-checkbox" >Read More</label>
+                </div>
+        
+                <div class="read-more-content">
+                    
+        
+                    <h4>Key Benefits:</h4>
+                    <p>
+                        - Controls fungal diseases such as powdery mildew, downy mildew, and leaf spot<br>
+                        - Systemic action provides long-lasting protection<br>
+                        - Can be used on a wide range of crops, including fruits, vegetables, and cereals<br>
+                        - Low toxicity to humans and animals<br>
+                    </p>
+        
+                    <h4>Active Ingredient:</h4>
+                    <p>
+                        - Azoxystrobin (20% w/w)
+                    </p>
+        
+                    <h4>Application:</h4>
+                    <p>
+                        - Mix 2-3 ml of AgroShield with 1 liter of water and spray on the crop<br>
+                        - Repeat the application at 10-14 day intervals or as necessary
+                    </p>
+        
+                    <h4> Precautions:</h4>
+                    <p>
+        
+                        - Wear protective clothing, gloves, and eyewear when handling the product<br>
+                        - Avoid inhalation and skin contact<br>
+                        - Keep out of reach of children and pets<br>
+        
+        
+                        Here are four more examples of agro-pharma products:<br>
+        
+                    </p>
+                    <label for="read-more-checkbox">Read less</label>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="card">Card 2
+
+            <!---Read more paragragh-------------------------------->
+            <div class="read-more">
+                <input type="checkbox" id="read-more-checkbox">
+                <h2>Product information</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos mollitia, aperiam atque sunt eius maiores ipsa omnis odio perferendis enim, quidem in odit sed autem quae alias nam ipsam rem.</p>
+                <label for="read-more-checkbox" >Read More</label>
+
+                <div class="read-more-content">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                    <label for="read-more-checkbox">Read less</label>
+                </div>
+              </div>
+              <!----Read more paragragh---------------------------->
+              
+        </div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
+        <div class="card">Card 5</div>
+        <div class="card">Card 6</div>
+        <div class="card">Card 7</div>
+        <div class="card">Card 8</div>
+    </div>
+    <script>
+        function toggleText(button) {
+            const hiddenText = button.previousElementSibling.querySelector('.hidden-text');
+            if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
+                hiddenText.style.display = "inline";
+                button.textContent = "Read Less";
+            } else {
+                hiddenText.style.display = "none";
+                button.textContent = "Read More";
+            }
+        }
+    </script>
+</body>
+</html>
