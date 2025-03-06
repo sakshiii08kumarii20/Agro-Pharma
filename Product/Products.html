@@ -94,6 +94,8 @@
     </svg>
      
       <div class="filter-search">
+      <h2 class="container-title">Our Products</h2>
+
       <select class="product-filter">
         <option value="option1">Option 1</option>
         <option value="option2">Option 2</option>
@@ -102,7 +104,9 @@
       </select>
     
       <input type="search" class="search-product" placeholder="Search product">
+
       </div>
+
     
     </div>
 		<!--- Card container start here ----------------<link rel="stylesheet" href="../css/h-CardContainer.css"/>------------------------------------->
@@ -118,6 +122,7 @@
         
           <div class="card-content">
             <h2 class="card-title">AgroShield</h2>
+
             <span class="fa fa-star checked"></span>
                       <span class="fa fa-star checked"></span>
                       <span class="fa fa-star"></span>
@@ -264,6 +269,7 @@
     // Initial Active Dot
     dots[0].classList.add("active");
 
+
     // Scroll Event Listener
     scrollContainer.addEventListener("scroll", updateActiveDot);
     
@@ -277,6 +283,23 @@
 </script>
 
 <!--card container end here  ------------------------------------------------------------------------------->
+
+
+
+    // Scroll Event Listener
+    scrollContainer.addEventListener("scroll", updateActiveDot);
+    
+    // Click Event on Dots (optional)
+    dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+            let productWidth = products[0].offsetWidth + 10; // Include gap
+            scrollContainer.scrollTo({ left: index * productWidth, behavior: "smooth" });
+        });
+    });
+</script>
+
+<!--card container end here  ------------------------------------------------------------------------------->
+
 
 
  <!-- Footer ---------------------<link rel="stylesheet" href="../css/footer.css"/>------------------------------------------------->
