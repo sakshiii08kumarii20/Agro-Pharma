@@ -1,8 +1,14 @@
-
+.title-div{
+    width: 100%;
+    height: 60vh;
+   
+   
+}
 
 .bg-img{
     width: 100%;
  
+    margin-top: -4px;
     display:inline-flex;
    
 }
@@ -16,10 +22,11 @@
 .container-title{
 
     position: absolute;
-    top: 20vh;
-    left: 45%;
+    top: 30vh;
+    left: 40%;
+    text-align: center;
     color: #f0fff2;
-    font-size: 2.813rem;
+    font-size: 3.813rem;
    
 }
 
@@ -27,18 +34,53 @@
 
     color:orange;
 }
-#wave{
+.wave{
     width: 100%;
     position: relative;
     top: -230px;
    z-index: 1;
    color:red;
+  
 }
 
-.filter-search{
+.fillter-search{
 
-    margin-top: -25vh;
+margin-top: 4vh;
+    
 }
+
+.search-product {
+    width: 40%;
+    height: 35px;
+    
+ 
+    margin-top: 8px;
+  
+    margin-bottom: 8px;
+    color: #183a32;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: 3%;
+  
+  }
+
+  .product-filter{
+    margin-left: 20%;
+    width: 15%;
+
+    height: 35px;
+    
+ 
+    margin-top: 8px;
+  
+    margin-bottom: 8px;
+    color: #183a32;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
 
 /* Mobile Styles */
 @media (max-width: 768px) {
