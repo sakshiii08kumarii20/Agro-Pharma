@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product List</title>
+
+    <!-- for star rating -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
     
    <link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/navbar-style.css">
@@ -38,10 +42,58 @@
       <div class="bg-img">
         <img src="bg_leaf.jpeg" class="bg-leaf" alt="bg-leaf"> <img src="bg_leaf.jpeg" class="bg-leaf" alt="bg-leaf"> <img src="bg_leaf.jpeg" class="bg-leaf" alt="bg-leaf"> <img src="bg_leaf.jpeg" class="bg-leaf" alt="bg-leaf">
       </div>
-     
+      
       <h2 class="container-title">Our Products</h2>
 
-
+      <svg
+      id="wave"
+      style="transform: rotate(0deg); transition: 0.3s"
+      viewBox="0 0 1440 270"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+          <stop stop-color="#f0fff2" offset="0%"></stop>
+          <stop
+            stop-color="rgba(239, 239, 239, 0.65)"
+            offset="100%"
+          ></stop>
+        </linearGradient>
+      </defs>
+      <path
+        style="transform: translate(0, 0px); opacity: 1"
+        fill="url(#sw-gradient-0)"
+        d="M0,162L48,148.5C96,135,192,108,288,108C384,108,480,135,576,157.5C672,180,768,198,864,207C960,216,1056,216,1152,207C1248,198,1344,180,1440,175.5C1536,171,1632,180,1728,193.5C1824,207,1920,225,2016,225C2112,225,2208,207,2304,166.5C2400,126,2496,63,2592,31.5C2688,0,2784,0,2880,40.5C2976,81,3072,162,3168,171C3264,180,3360,117,3456,76.5C3552,36,3648,18,3744,40.5C3840,63,3936,126,4032,157.5C4128,189,4224,189,4320,193.5C4416,198,4512,207,4608,207C4704,207,4800,198,4896,202.5C4992,207,5088,225,5184,225C5280,225,5376,207,5472,193.5C5568,180,5664,171,5760,144C5856,117,5952,72,6048,85.5C6144,99,6240,171,6336,193.5C6432,216,6528,189,6624,166.5C6720,144,6816,126,6864,117L6912,108L6912,270L6864,270C6816,270,6720,270,6624,270C6528,270,6432,270,6336,270C6240,270,6144,270,6048,270C5952,270,5856,270,5760,270C5664,270,5568,270,5472,270C5376,270,5280,270,5184,270C5088,270,4992,270,4896,270C4800,270,4704,270,4608,270C4512,270,4416,270,4320,270C4224,270,4128,270,4032,270C3936,270,3840,270,3744,270C3648,270,3552,270,3456,270C3360,270,3264,270,3168,270C3072,270,2976,270,2880,270C2784,270,2688,270,2592,270C2496,270,2400,270,2304,270C2208,270,2112,270,2016,270C1920,270,1824,270,1728,270C1632,270,1536,270,1440,270C1344,270,1248,270,1152,270C1056,270,960,270,864,270C768,270,672,270,576,270C480,270,384,270,288,270C192,270,96,270,48,270L0,270Z"
+      ></path>
+      <defs>
+        <linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+          <stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop>
+          <stop
+            stop-color="rgba(239, 239, 239, 0.78)"
+            offset="100%"
+          ></stop>
+        </linearGradient>
+      </defs>
+      <path
+        style="transform: translate(0, 50px); opacity: 0.9"
+        fill="url(#sw-gradient-1)"
+        d="M0,108L48,103.5C96,99,192,90,288,112.5C384,135,480,189,576,180C672,171,768,99,864,76.5C960,54,1056,81,1152,94.5C1248,108,1344,108,1440,121.5C1536,135,1632,162,1728,144C1824,126,1920,63,2016,45C2112,27,2208,54,2304,94.5C2400,135,2496,189,2592,202.5C2688,216,2784,189,2880,153C2976,117,3072,72,3168,49.5C3264,27,3360,27,3456,58.5C3552,90,3648,153,3744,184.5C3840,216,3936,216,4032,211.5C4128,207,4224,198,4320,171C4416,144,4512,99,4608,72C4704,45,4800,36,4896,40.5C4992,45,5088,63,5184,67.5C5280,72,5376,63,5472,72C5568,81,5664,108,5760,108C5856,108,5952,81,6048,63C6144,45,6240,36,6336,67.5C6432,99,6528,171,6624,171C6720,171,6816,99,6864,63L6912,27L6912,270L6864,270C6816,270,6720,270,6624,270C6528,270,6432,270,6336,270C6240,270,6144,270,6048,270C5952,270,5856,270,5760,270C5664,270,5568,270,5472,270C5376,270,5280,270,5184,270C5088,270,4992,270,4896,270C4800,270,4704,270,4608,270C4512,270,4416,270,4320,270C4224,270,4128,270,4032,270C3936,270,3840,270,3744,270C3648,270,3552,270,3456,270C3360,270,3264,270,3168,270C3072,270,2976,270,2880,270C2784,270,2688,270,2592,270C2496,270,2400,270,2304,270C2208,270,2112,270,2016,270C1920,270,1824,270,1728,270C1632,270,1536,270,1440,270C1344,270,1248,270,1152,270C1056,270,960,270,864,270C768,270,672,270,576,270C480,270,384,270,288,270C192,270,96,270,48,270L0,270Z"
+      ></path>
+      <defs>
+        <linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0">
+          <stop stop-color="rgb(255, 255, 255)" offset="0%"></stop>
+          <stop stop-color="rgb(255, 255, 255)" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <path
+        style="transform: translate(0, 100px); opacity: 0.8"
+        fill="url(#sw-gradient-2)"
+        d="M0,189L48,166.5C96,144,192,99,288,76.5C384,54,480,54,576,85.5C672,117,768,180,864,189C960,198,1056,153,1152,117C1248,81,1344,54,1440,36C1536,18,1632,9,1728,36C1824,63,1920,126,2016,130.5C2112,135,2208,81,2304,54C2400,27,2496,27,2592,27C2688,27,2784,27,2880,54C2976,81,3072,135,3168,166.5C3264,198,3360,207,3456,175.5C3552,144,3648,72,3744,45C3840,18,3936,36,4032,36C4128,36,4224,18,4320,36C4416,54,4512,108,4608,117C4704,126,4800,90,4896,72C4992,54,5088,54,5184,49.5C5280,45,5376,36,5472,63C5568,90,5664,153,5760,162C5856,171,5952,126,6048,117C6144,108,6240,135,6336,139.5C6432,144,6528,126,6624,135C6720,144,6816,180,6864,198L6912,216L6912,270L6864,270C6816,270,6720,270,6624,270C6528,270,6432,270,6336,270C6240,270,6144,270,6048,270C5952,270,5856,270,5760,270C5664,270,5568,270,5472,270C5376,270,5280,270,5184,270C5088,270,4992,270,4896,270C4800,270,4704,270,4608,270C4512,270,4416,270,4320,270C4224,270,4128,270,4032,270C3936,270,3840,270,3744,270C3648,270,3552,270,3456,270C3360,270,3264,270,3168,270C3072,270,2976,270,2880,270C2784,270,2688,270,2592,270C2496,270,2400,270,2304,270C2208,270,2112,270,2016,270C1920,270,1824,270,1728,270C1632,270,1536,270,1440,270C1344,270,1248,270,1152,270C1056,270,960,270,864,270C768,270,672,270,576,270C480,270,384,270,288,270C192,270,96,270,48,270L0,270Z"
+      ></path>
+    </svg>
+     
+      <div class="filter-search">
       <select class="product-filter">
         <option value="option1">Option 1</option>
         <option value="option2">Option 2</option>
@@ -50,6 +102,7 @@
       </select>
     
       <input type="search" class="search-product" placeholder="Search product">
+      </div>
     
     </div>
 		<!--- Card container start here ----------------<link rel="stylesheet" href="../css/h-CardContainer.css"/>------------------------------------->
@@ -65,6 +118,11 @@
         
           <div class="card-content">
             <h2 class="card-title">AgroShield</h2>
+            <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
             <p>100ml: ₹250
             </p>
             <p class="card-text">AgroShield is a broad-spectrum fungicide that controls a wide range of fungal diseases in
@@ -104,14 +162,21 @@
             <div class="card-content">
                           <h2 class="card-title">CropMax
                           </h2>
+                          <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
                           <p>500g: ₹600
                           </p>
                           <p class="card-text">CropMax is a plant growth regulator that promotes healthy plant growth and development. It increases crop yields, improves fruit quality, and enhances plant resistance to disease.
                           </p>
+
+                          <div class="card-actions">
+                            <button class="btn add-to-cart">Add to cart</button><button class="btn">Buy now</button>
+                          </div>
                         </div>
-              <div class="card-actions">
-                <button class="btn">Read More</button>
-              </div>
+              
             </div>
 
             <div class="card">
@@ -126,10 +191,12 @@
                             </p>
                             <p class="card-text">WeedOut is a selective herbicide that controls a wide range of broadleaf weeds and grasses. It is a systemic herbicide that is absorbed by the plant and translocated to the site of action.
                             </p>
+
+                            <div class="card-actions">
+                              <button class="btn add-to-cart">Add to cart</button><button class="btn">Buy now</button>
+                            </div>
                           </div>
-                <div class="card-actions">
-                  <button class="btn">Read More</button>
-                </div>
+              
               </div>
 
               <div class="card">
@@ -154,10 +221,11 @@
                   <div class="card-content">
                                 <h2 class="card-title">Card Title</h2>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                                <div class="card-actions">
+                                  <button class="btn add-to-cart">Add to cart</button><button class="btn">Buy now</button>
+                                </div>
                               </div>
-                    <div class="card-actions">
-                      <button class="btn">Read More</button>
-                    </div>
+                 
                   </div>
 
 
