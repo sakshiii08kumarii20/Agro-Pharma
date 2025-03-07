@@ -86,7 +86,7 @@
           </div>
         
           <div class="card-content">
-            <h2 class="card-title">AgroShield</h2>
+            <h2 id="product-name" class="card-title">AgroShield</h2>
 
             <span class="fa fa-star checked"></span>
                       <span class="fa fa-star checked"></span>
@@ -117,7 +117,7 @@
          
 
             <div class="card-actions">
-              <button class="btn add-to-cart">Add to cart</button><button class="btn">Buy now</button>
+              <button class="btn add-to-cart">Add to cart</button><button class="btn" onclick="whatsappSend('AgroShield')">Buy now</button>
             </div>
           </div>
 
@@ -130,7 +130,7 @@
             </div>
             
             <div class="card-content">
-                          <h2 class="card-title">CropMax
+                          <h2 id="product-name"  class="card-title">CropMax
                           </h2>
                           <span class="fa fa-star checked"></span>
                       <span class="fa fa-star checked"></span>
@@ -143,7 +143,7 @@
                           </p>
 
                           <div class="card-actions">
-                            <button class="btn add-to-cart">Add to cart</button><button class="btn">Buy now</button>
+                            <button class="btn add-to-cart">Add to cart</button><button class="btn" onclick="whatsappSend('CropMax')">Buy now</button>
                           </div>
                         </div>
               
@@ -163,7 +163,7 @@
                             </p>
 
                             <div class="card-actions">
-                              <button class="btn add-to-cart">Add to cart</button><button class="btn">Buy now</button>
+                              <button class="btn add-to-cart">Add to cart</button><button class="btn" onclick="whatsappSend('WeedOut')">Buy now</button>
                             </div>
                           </div>
               
@@ -301,7 +301,23 @@
           <p>© 2025 Agro Pharma. All rights reserved.</p>
         </div>
       </footer>
+      <script>
+        function whatsappSend(msg) {
+          
 
+            // Mobile number (without + or leading zeros, only country code and number)
+            let phoneNumber = "918446898397"; // Change this to your desired number
+
+            // Custom message
+            let message = msg;
+
+            // WhatsApp URL
+            let whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" +"I intersted in " +message+" so plz give more information about that product.";
+
+            // Open WhatsApp
+            window.open(whatsappUrl, "_blank");
+        }
+    </script>
 
 </body>
 </html>
