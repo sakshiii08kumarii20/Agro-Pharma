@@ -1,7 +1,7 @@
 [
    
     {
-      "imgpath": "./product-photo/product2.webp",
+      "imgpath": "./product-photo/pestshild.webp",
       "productCategory": "Pesticides",
       "productName": "PestShield",
       "srarrating": 4,
@@ -9,7 +9,7 @@
       "addtocart": 1
     },
     {
-      "imgpath": "./product-photo/product3.webp",
+      "imgpath": "./product-photo/HybridMaiz.webp",
       "productCategory": "Seeds",
       "productName": "HybridMaize",
       "srarrating": 5,
@@ -17,7 +17,7 @@
       "addtocart": 1
     },
     {
-      "imgpath": "./product-photo/product4.webp",
+      "imgpath": "./product-photo/SoilTester.webp",
       "productCategory": "Tools",
       "productName": "SoilTester",
       "srarrating": 4,
@@ -25,7 +25,7 @@
       "addtocart": 1
     },
     {
-      "imgpath": "./product-photo/product5.webp",
+      "imgpath": "./product-photo/NitroBoost.webp",
       "productCategory": "Fertilizers",
       "productName": "NitroBoost",
       "srarrating": 5,
@@ -33,7 +33,7 @@
       "addtocart": 1
     },
     {
-      "imgpath": "./product-photo/product6.webp",
+      "imgpath": "./product-photo/BugFree.webp",
       "productCategory": "Pesticides",
       "productName": "BugFree",
       "srarrating": 4,
