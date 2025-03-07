@@ -3,11 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-*::selection {
-  background-color: #65b955d8;
-  color: black;
+.navbar1{
+  background-color: #F0FFF2;
 }
+body, .about-us-forth-container{
+  background-color: #317D3F; 
+}
+
 .content {
   color: #808285;
   line-height: 1.85714285714286;
@@ -28,11 +30,6 @@
   font-size: 3.8rem;
   font-weight: 600;
 }
-.wave {
-  position: relative;
-  bottom: 128px;
-}
-
 .who-we-are {
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -53,7 +50,7 @@
   width: 50%;
 }
 .about-us-second-container {
-  background-color: #f9f9f9ca;
+  background-color: #F9F9F9;
   text-align: center;
   padding: 4em 0;
 }
@@ -171,19 +168,27 @@ left:10px;
   fill: #83C941;
   cursor: pointer;
 }
-.about-us-forth-container .wave{
-  position: relative;
-  bottom:100px;
-}
 
+#bottom-wave-section {
+  width: 100%; 
+}
+.bottom-wave-container{
+  background-color: #117303;
+  position: relative;
+  width: 100%;
+  bottom: 0px;
+  transform: rotate(180deg);
+}
 .about-us-forth-container {
- background-color:  rgb(43, 169, 62);
+  /* background-color:  #09711c; */
   text-align: center;
   color: white;
   position: relative;
-  top:100px;
+  top:-100;
+  padding-top: 0;
 }
 .about-us-forth-container p{
+  padding-top: 200px;
   font-size: 40px;
 }
 #know-more{
@@ -223,5 +228,5 @@ left:10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 .whatsapp-button {
-  background-color: #117303;
+  background-color: #0b6101;
 }
