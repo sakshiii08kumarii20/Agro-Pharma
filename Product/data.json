@@ -1,0 +1,107 @@
+[
+    {
+      "imgpath": "./product-photo/product1.webp",
+      "productCategory": "Fertilizers",
+      "productName": "CropMax",
+      "srarrating": 5,
+      "productinfo": "CropMax is a plant growth regulator that promotes healthy plant growth and development. It increases crop yields, improves fruit quality, and enhances plant resistance to disease.",
+      "addtocart": 1
+    },
+    {
+      "imgpath": "./product-photo/product2.webp",
+      "productCategory": "Pesticides",
+      "productName": "PestShield",
+      "srarrating": 4,
+      "productinfo": "PestShield is an effective pesticide that protects crops from insects and pests, ensuring a healthy harvest.",
+      "addtocart": 1
+    },
+    {
+      "imgpath": "./product-photo/product3.webp",
+      "productCategory": "Seeds",
+      "productName": "HybridMaize",
+      "srarrating": 5,
+      "productinfo": "HybridMaize seeds offer high yield potential and disease resistance, making them ideal for commercial farming.",
+      "addtocart": 1
+    },
+    {
+      "imgpath": "./product-photo/product4.webp",
+      "productCategory": "Tools",
+      "productName": "SoilTester",
+      "srarrating": 4,
+      "productinfo": "SoilTester helps farmers analyze soil health, pH levels, and nutrient availability for better crop planning.",
+      "addtocart": 1
+    },
+    {
+      "imgpath": "./product-photo/product5.webp",
+      "productCategory": "Fertilizers",
+      "productName": "NitroBoost",
+      "srarrating": 5,
+      "productinfo": "NitroBoost is a nitrogen-rich fertilizer that enhances plant growth and green foliage.",
+      "addtocart": 1
+    },
+    {
+      "imgpath": "./product-photo/product6.webp",
+      "productCategory": "Pesticides",
+      "productName": "BugFree",
+      "srarrating": 4,
+      "productinfo": "BugFree is a natural pesticide that keeps pests away without harming beneficial insects.",
+      "addtocart": 1
+    },
+    {
+      "imgpath": "./product-photo/product7.webp",
+      "productCategory": "Irrigation",
+      "productName": "DripMaster",
+      "srarrating": 5,
+      "productinfo": "DripMaster provides efficient water distribution, reducing wastage and improving irrigation.",
+      "addtocart": 1
+    },
+    {
+      "imgpath": "./product-photo/product8.webp",
+      "productCategory": "Seeds",
+      "productName": "GoldenWheat",
+      "srarrating": 4,
+      "productinfo": "GoldenWheat is a premium wheat variety with high disease resistance and excellent yield.",
+      "addtocart": 1
+    },
+    {
+      "imgpath": "./product-photo/product9.webp",
+      "productCategory": "Fertilizers",
+      "productName": "GreenGrow",
+      "srarrating": 5,
+      "productinfo": "GreenGrow is an organic fertilizer that promotes sustainable agriculture with natural nutrients.",
+      "addtocart": 1
+    },
+    {
+      "imgpath": "./product-photo/product10.webp",
+      "productCategory": "Pesticides",
+      "productName": "WeedAway",
+      "srarrating": 4,
+      "productinfo": "WeedAway is a powerful herbicide that controls weeds and unwanted plant growth effectively.",
+      "addtocart": 1
+    },
+    {
+      "imgpath": "./product-photo/product11.webp",
+      "productCategory": "Tools",
+      "productName": "GardenHoe",
+      "srarrating": 5,
+      "productinfo": "GardenHoe is a durable farming tool for soil preparation and weeding.",
+      "addtocart": 1
+    },
+    {
+      "imgpath": "./product-photo/product12.webp",
+      "productCategory": "Irrigation",
+      "productName": "RainSaver",
+      "srarrating": 4,
+      "productinfo": "RainSaver collects and stores rainwater for efficient water use in agriculture.",
+      "addtocart": 1
+    },
+    {
+      "imgpath": "./product-photo/product13.webp",
+      "productCategory": "Seeds",
+      "productName": "SuperRice",
+      "srarrating": 5,
+      "productinfo": "SuperRice is a high-yield rice variety with enhanced resistance to pests and diseases.",
+      "addtocart": 1
+    }
+  ]
+  

@@ -61,14 +61,14 @@
       <div class="fillter-search">
         <h2 class="container-title">Our Products</h2>
       
-        <select class="product-filter">
-          <option value="option1"> Fertilizers </option>
-          <option value="option2">Pesticide</option>
-          <option value="option3">Fungicide</option>
-          <option value="option4">Plant growth regulator</option>
+        <select id="productFilter" class="product-filter" onchange="filterData()">
+          <option value="all"> All</option>
+          <option value="Seeds"> Seeds</option>
+          <option value="Fertilizers"> Fertilizers </option>
+          <option value="Pesticides">Pesticides</option>
         </select>
       
-        <input type="search" class="search-product" placeholder="Search product">
+        <input type="search" id="searchInput"  class="search-product" placeholder="Search product" onkeyup="filterData()">
       
       </div>
 
@@ -78,174 +78,16 @@
     <div class="card-container">
 	
 			
-			<div class="cards" id="card-scroll">
+			<div class="cards" id="cards"></div>
         
-        <div class="card">
-          <div class="card-image">
-            <img src="product-photo/product1.webp" alt="Card Image">
-          </div>
-        
-          <div class="card-content">
-            <h2 id="product-name" class="card-title">AgroShield</h2>
-
-            <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-            <p>100ml: ₹250
-            </p>
-            <p class="card-text">AgroShield is a broad-spectrum fungicide that controls a wide range of fungal diseases in
-              crops. It is a systemic fungicide that is absorbed by the plant and translocated to the site of infection,
-              providing long-lasting protection.
-            </p>
-
-            <h3 style="font-size: 15px;margin-top: 10px;">Key Benefits:</h3>
-              <ul class="key-benefits">
-                <li> Controls fungal diseases such as powdery mildew, downy mildew, and leaf spot</li>
-                <li>Systemic action provides long-lasting protection</li>
-                <li>Can be used on a wide range of crops, including fruits, vegetables, and cereals</li>
-                <li>Low toxicity to humans and animals</li>
-              </ul> 
-
-              <h3 style="font-size: 15px;margin-top: 10px;" > Active Ingredient:</h3>
-               
-                <p style="font-size: 12px;">
-                - Azoxystrobin (20% w/w)
-                </p>
-
-         
-
-            <div class="card-actions">
-              <button class="btn add-to-cart">Add to cart</button><button class="btn" onclick="whatsappSend('AgroShield')">Buy now</button>
-            </div>
-          </div>
-
-          </div>
-          
-
-          <div class="card">
-            <div class="card-image">
-              <img src="product-photo/product2.webp" alt="Card Image">
-            </div>
-            
-            <div class="card-content">
-                          <h2 id="product-name"  class="card-title">CropMax
-                          </h2>
-                          <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                      <span class="fa fa-star"></span>
-                          <p>500g: ₹600
-                          </p>
-                          <p class="card-text">CropMax is a plant growth regulator that promotes healthy plant growth and development. It increases crop yields, improves fruit quality, and enhances plant resistance to disease.
-                          </p>
-
-                          <div class="card-actions">
-                            <button class="btn add-to-cart">Add to cart</button><button class="btn" onclick="whatsappSend('CropMax')">Buy now</button>
-                          </div>
-                        </div>
-              
-            </div>
-
-            <div class="card">
-              <div class="card-image">
-                <img src="product-photo/product3.webp" alt="Card Image">
-              </div>
-              
-              <div class="card-content">
-                            <h2 class="card-title">WeedOut
-                            </h2>
-                            <p>500ml: ₹800
-                            </p>
-                            <p class="card-text">WeedOut is a selective herbicide that controls a wide range of broadleaf weeds and grasses. It is a systemic herbicide that is absorbed by the plant and translocated to the site of action.
-                            </p>
-
-                            <div class="card-actions">
-                              <button class="btn add-to-cart">Add to cart</button><button class="btn" onclick="whatsappSend('WeedOut')">Buy now</button>
-                            </div>
-                          </div>
-              
-              </div>
-
-              <div class="card">
-                <div class="card-image">
-                  <img src="product-photo/product4.webp" alt="Card Image">
-                </div>
-                
-                <div class="card-content">
-                              <h2 class="card-title">Card Title</h2>
-                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-                            </div>
-                  <div class="card-actions">
-                    <button class="btn">Read More</button>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="card-image">
-                    <img src="product-photo/product5.webp" alt="Card Image">
-                  </div>
-                  
-                  <div class="card-content">
-                                <h2 class="card-title">Card Title</h2>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-                                <div class="card-actions">
-                                  <button class="btn add-to-cart">Add to cart</button><button class="btn">Buy now</button>
-                                </div>
-                              </div>
-                 
-                  </div>
+    </div>	
 
 
-		</div>	
-
-    <!-- Dots Navigation -->
-    <div class="dots" id="dotsContainer"></div>
-</div>
-
-  <script>
-    const scrollContainer = document.getElementById("card-scroll");
-    const dotsContainer = document.getElementById("dotsContainer");
-    const products = document.querySelectorAll(".card");
-    const totalDots = products.length;
-    let dots = [];
-
-    // Create dots dynamically
-    for (let i = 0; i < totalDots; i++) {
-        let dot = document.createElement("div");
-        dot.classList.add("dot");
-        dotsContainer.appendChild(dot);
-        dots.push(dot);
-    }
-    
-    // Function to update active dot
-    function updateActiveDot() {
-        let scrollLeft = scrollContainer.scrollLeft;
-        let maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
-        let currentIndex = Math.round((scrollLeft / maxScroll) * (totalDots - 1));
-        
-        dots.forEach((dot, index) => {
-            dot.classList.toggle("active", index === currentIndex);
-        });
-    }
-
-    // Initial Active Dot
-    dots[0].classList.add("active");
 
 
-    // Scroll Event Listener
-    scrollContainer.addEventListener("scroll", updateActiveDot);
-    
-    // Click Event on Dots (optional)
-    dots.forEach((dot, index) => {
-        dot.addEventListener("click", () => {
-            let productWidth = products[0].offsetWidth + 10; // Include gap
-            scrollContainer.scrollTo({ left: index * productWidth, behavior: "smooth" });
-        });
-    });
-</script>
+
+
+  
 
 <!--card container end here  ------------------------------------------------------------------------------->
 
@@ -318,6 +160,8 @@
             window.open(whatsappUrl, "_blank");
         }
     </script>
+
+<script src="fetchJson.js"></script>
 
 </body>
 </html>
