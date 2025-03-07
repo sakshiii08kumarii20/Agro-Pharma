@@ -4,201 +4,233 @@
   box-sizing: border-box;
 }
 
-*::selection {
-  background-color: #65b955d8;
-  color: black;
-}
+/* Content properties which should be in grey color */
 .content {
   color: #808285;
-  line-height: 1.85714285714286;
+  line-height: 1.86;
   font-size: 1em;
 }
 
-.about-us-title {
-  position: relative;
-  background-image: url("../resource/homebaground.webp");
-  box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.807);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 60vh;
-}
-#about-us-heading {
-  padding: 2em 3em;
-  color: white;
-  font-size: 3.8rem;
-  font-weight: 600;
-}
-.wave {
-  position: relative;
-  bottom: 128px;
+/* Background Image Properties */
+.bg-img {
+  background: url("../resource/homebaground.webp") no-repeat center center/cover;
+  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.807); /*Shadow Inside the Background Image*/
+  filter: brightness(60%); /*Reduces Brightness of Background Image*/
+  height: 75vh;
 }
 
+/*Background Image Heading or Title*/
+
+.bg-parent p {
+  position: absolute;
+  top: 345px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+/* who we are container also Parent Container for right and left container*/
 .who-we-are {
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 5em 10em;
-  max-width: 100%;
+  padding: 6.5em 10em;  
 }
+
+/* Right and Left container*/
 #about-us-left-container,
 #about-us-right-container {
   padding: 0 2em;
 }
+
 #about-us-left-container {
   width: 40%;
   font-weight: 500;
   font-size: 1.3em;
 }
+
 .about-us-right-container {
   width: 50%;
 }
+
+/*about us Second Container */
 .about-us-second-container {
-  background-color: #f9f9f9ca;
+  background-color: #f9f9f9;
   text-align: center;
   padding: 4em 0;
 }
+
+/* Child Container for about us Second container*/
 .second-child-container {
-  margin: 0 auto;
-  width: 1140px;
+  width: 1140px; /* Ensures Width for whole about us second container*/
+  margin: 0 auto; /* centers content */
 }
+
+/* Title for about us second container*/
 #second-title {
-  display: block;
   font-size: 2.5em;
   font-weight: 500;
   margin-bottom: 40px;
 }
 
+/* Second container content alignment */
 .about-us-second-container .content {
-  display: block;
   width: 560px;
   height: 100px;
   margin: 1em auto;
 }
 
+/* Second container Image alignment */
 .second-container-img img {
-  display: block;
   width: 100%;
   max-width: 1140px;
   height: auto;
   border-radius: 15px;
-  display: block;
   margin: 4.5em auto;
 }
-.about-us-third-container .third-title{
-  display: block;
-  font-size: 2.5em;
-  font-weight: 500;
-}
-.about-us-third-container .content {
-  display: block;
-  width: 570px;
-  height: 100px;
-  margin: 2em auto 6em auto;
-}
+
+/*about us third container */
 .about-us-third-container {
-  background-color: #ffff;
+  background-color: #fff;
   text-align: center;
   padding: 4em 0;
 }
+
+/* Third container Title alignment */
+.about-us-third-container .third-title {
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+/* Third container content alignment */
+.about-us-third-container .content {
+  width: 570px;
+  height: 100px;
+  margin: 2em auto 6em;
+}
+
+/* Our Founder Information container alignment */
 .our-founder-info {
   display: inline-block;
   margin: 1em;
 }
+
+/*our Founder container Title alignment */
 .founder-title {
   padding-right: 35em;
 }
+
+/*Properties for our Founder container*/
 #founder-name {
   font-size: 29px;
-  border-top: 2px solid #75c32c;
+  border-top: 2px solid #75c32c; /*Applies top border only*/
   padding-top: 10px;
 }
-.founder-view{
+
+/* Founder Card Properties */
+.founder-view {
   display: flex;
   justify-content: space-evenly;
-  margin:auto;
+  margin: auto;
   border-radius: 20px;
-  background-color: #317D3F;
+  background-color: #317d3f;
   color: white;
   width: 912px;
   height: 236px;
   line-height: 1.7;
-  
 }
-.left-container{
+
+/* Content Property in founder card */
+.left-container {
   padding: 2em 1em 0 2.3em;
   text-align: left;
 }
-#list-title{
-  position: relative;
+
+/* List Title Alignment */
+#list-title {
   font-size: 20px;
   font-weight: bold;
+  position: relative;
   right: 14px;
 }
-.right-container{
-position: relative;
-bottom: 200px;
-left:10px;
-}
-.founder-intro{
+
+/* founder Png alignment */
+.right-container {
   position: relative;
+  bottom: 200px;
+  left: 10px;
+}
+
+/* Founder intro below card */
+.founder-intro {
   font-size: 1.1em;
   width: 54%;
   margin: 2em auto;
   padding-bottom: 3em;
   line-height: 1.6;
   text-align: left;
-  right:40px;
+  right: 40px;
 }
+
+/* Links for facebook and instagram */
 .social-links {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
-  gap: 0.5em; 
+  gap: 0.5em;
   border-bottom: 2px solid #75c32c;
   margin: 2em auto;
   width: 5%;
-  padding-bottom: 0.5em; 
+  padding-bottom: 0.5em;
 }
 
+/* icons Properties for Instagram and facebook logo */
 .icon svg {
   height: 2em;
-  width: 2em; 
+  width: 2em;
   fill: #4a4a4a;
   transition: all 0.3s ease-in-out;
 }
 
+/* icons Hover Properties for Instagram and facebook logo */
 .icon svg:hover {
-  fill: #83C941;
+  fill: #83c941;
   cursor: pointer;
 }
-.about-us-forth-container .wave{
+
+/* Fourth Container Properties */
+.about-us-fourth-container {
+  background-color: #317d3f;
+  color: white;
+  text-align: center;
   position: relative;
-  bottom:100px;
+  padding-top: 0;
 }
 
-.about-us-forth-container {
- background-color:  rgb(43, 169, 62);
-  text-align: center;
-  color: white;
-  position: relative;
-  top:100px;
-}
-.about-us-forth-container p{
+/* Fourth Container Title Properties */
+.about-us-fourth-container p {
+  padding-top: 200px;
   font-size: 40px;
 }
-#know-more{
+
+#know-more {
   width: 60%;
   margin: auto;
 }
+
+/* Buttons Properties */
 .buttons {
   display: flex;
   justify-content: center;
 }
+
 .button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin:2em 0.5em 6em 0.5em;
+  margin: 2em 0.5em 6em;
   font-size: 19px;
   font-weight: bold;
   border-radius: 40px;
@@ -208,20 +240,28 @@ left:10px;
   width: 204px;
   height: 58px;
 }
-#phone{
+
+/* Call logo Properties */
+#phone {
   height: 22px;
   width: 22px;
   padding-right: 5px;
 }
-#whatsapp{
+
+/* Whatsapp logo Properties */
+#whatsapp {
   height: 26px;
   padding-right: 3px;
   width: 26px;
 }
+
+/* Call Button Properties */
 .call-button {
   background-color: #ff5722;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
+
+/* Whatsapp Button Properties */
 .whatsapp-button {
   background-color: #117303;
 }

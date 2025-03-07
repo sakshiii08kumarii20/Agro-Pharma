@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product List</title>
+
+    <!-- for star rating -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
     
    <link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/navbar-style.css">
@@ -11,7 +15,7 @@
   <link rel="stylesheet" href="../css/cards.css"/>
 	<link rel="stylesheet" href="../css/footer.css"/>
   <link rel="stylesheet" href="v-cardCont.css"/>
-
+  <link rel="stylesheet" href="../css/wave.css">
 </head>
 <body>
 
@@ -26,7 +30,7 @@
             <li><a class="link2" href="../About/AboutUs.html">About</a></li>
             <li><a class="link3" href="Products.html" style=" color: rgb(29 161 242); text-decoration: underline;">Product</a></li>
 			       <li><a href="../Testemonials/Testimonials.html">Testimonials</a></li>
-            <li><a class="link4" href="../Contact/contactusv.html">Contact</a></li>
+            <li><a class="link4" href="../myContact/contact.html">Contact</a></li>
             <li><a href="../privacy&policy/privacy&policy.html">Privacy & Policy</a></li>
         </ul>
     </nav>
@@ -34,7 +38,23 @@
     <hr>
     <!---Navigation bar end here -->
     <div>
-      <h2 class="container-title">Our Products</h2>
+
+      <div class="bg-parent">
+        <div class="bg-img"></div>
+          <p class="container-title">Our Products</p>
+        </div>
+
+      <div class="top-wave-section">
+        <div class="product-top-wave-container">
+          <div class="wave wave1"></div>
+          <div class="wave wave2"></div>
+          <div class="wave wave3"></div>
+          <div class="wave wave4"></div>
+        </div>
+      </div>
+     
+      <div class="filter-search">
+
       <select class="product-filter">
         <option value="option1">Option 1</option>
         <option value="option2">Option 2</option>
@@ -43,6 +63,9 @@
       </select>
     
       <input type="search" class="search-product" placeholder="Search product">
+
+      </div>
+
     
     </div>
 		<!--- Card container start here ----------------<link rel="stylesheet" href="../css/h-CardContainer.css"/>------------------------------------->
@@ -58,6 +81,12 @@
         
           <div class="card-content">
             <h2 class="card-title">AgroShield</h2>
+
+            <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
             <p>100ml: ₹250
             </p>
             <p class="card-text">AgroShield is a broad-spectrum fungicide that controls a wide range of fungal diseases in
@@ -97,14 +126,21 @@
             <div class="card-content">
                           <h2 class="card-title">CropMax
                           </h2>
+                          <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
                           <p>500g: ₹600
                           </p>
                           <p class="card-text">CropMax is a plant growth regulator that promotes healthy plant growth and development. It increases crop yields, improves fruit quality, and enhances plant resistance to disease.
                           </p>
+
+                          <div class="card-actions">
+                            <button class="btn add-to-cart">Add to cart</button><button class="btn">Buy now</button>
+                          </div>
                         </div>
-              <div class="card-actions">
-                <button class="btn">Read More</button>
-              </div>
+              
             </div>
 
             <div class="card">
@@ -119,10 +155,12 @@
                             </p>
                             <p class="card-text">WeedOut is a selective herbicide that controls a wide range of broadleaf weeds and grasses. It is a systemic herbicide that is absorbed by the plant and translocated to the site of action.
                             </p>
+
+                            <div class="card-actions">
+                              <button class="btn add-to-cart">Add to cart</button><button class="btn">Buy now</button>
+                            </div>
                           </div>
-                <div class="card-actions">
-                  <button class="btn">Read More</button>
-                </div>
+              
               </div>
 
               <div class="card">
@@ -147,10 +185,11 @@
                   <div class="card-content">
                                 <h2 class="card-title">Card Title</h2>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                                <div class="card-actions">
+                                  <button class="btn add-to-cart">Add to cart</button><button class="btn">Buy now</button>
+                                </div>
                               </div>
-                    <div class="card-actions">
-                      <button class="btn">Read More</button>
-                    </div>
+                 
                   </div>
 
 
@@ -189,6 +228,7 @@
     // Initial Active Dot
     dots[0].classList.add("active");
 
+
     // Scroll Event Listener
     scrollContainer.addEventListener("scroll", updateActiveDot);
     
@@ -202,6 +242,22 @@
 </script>
 
 <!--card container end here  ------------------------------------------------------------------------------->
+
+
+
+    <!-- // Scroll Event Listener
+    scrollContainer.addEventListener("scroll", updateActiveDot);
+    
+    // Click Event on Dots (optional)
+    dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+            let productWidth = products[0].offsetWidth + 10; // Include gap
+            scrollContainer.scrollTo({ left: index * productWidth, behavior: "smooth" });
+        });
+    }); -->
+
+<!--card container end here  ------------------------------------------------------------------------------->
+
 
 
  <!-- Footer ---------------------<link rel="stylesheet" href="../css/footer.css"/>------------------------------------------------->

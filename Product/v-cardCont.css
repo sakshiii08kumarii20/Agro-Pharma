@@ -1,157 +1,138 @@
 .container-title {
+  margin-top: 8px;
+  font-size: 21px;
+  margin-bottom: 8px;
+  height: 20px;
+  color: #183a32;
+  text-align: center;
+}
 
- 
-    margin-top: 8px;
-    font-size: 21px;
-    margin-bottom: 8px;
-    height: 20px;
-    color: #183a32;
-    text-align: center;
-  }
+.search-product {
+  width: 40%;
+  height: 35px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #183a32;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 8px;
+  margin-left: 3%;
+}
 
-  .search-product {
-    width: 40%;
-    height: 35px;
-    
- 
-    margin-top: 8px;
-  
-    margin-bottom: 8px;
-    color: #183a32;
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 8px;
-    margin-left: 3%;
-  
-  }
+.product-filter {
+  margin-left: 20%;
+  width: 15%;
 
-  .product-filter{
-    margin-left: 20%;
-    width: 15%;
+  height: 35px;
 
-    height: 35px;
-    
- 
-    margin-top: 8px;
-  
-    margin-bottom: 8px;
-    color: #183a32;
-    border: 1px solid black;
-    padding: 10px;
-    border-radius: 8px;
-  }
-  
-  
+  margin-top: 8px;
+
+  margin-bottom: 8px;
+  color: #183a32;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 8px;
+}
 
 .card-container {
-
- display: flex;
- justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
-
 
 .cards {
-
   width: 70%;
-  
-
-  
   padding: 5px;
-
- margin-top: 8px;
-
-  
-
+  margin-top: 8px;
 }
 
-
 .card {
-    width: 100%;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
+  margin: 10px 5px 10px 5px;
+  display: inline-flex;
+  white-space: wrap;
+  padding: 10px;
+  transition: all .2s ease-in;
+}
+.card:hover{
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.377);
+  transform: scale(1.05);
+}
+.card-image {
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
 
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 10px 5px 10px 5px;
-    display:inline-flex;
-    white-space: wrap;
-    padding: 10px;
-    
+.card-image img {
+  border-radius: 8px;
+  margin-top: 3px;
+  height: 300px;
+}
 
-   
-  }
-  
-  .card-image {
-	text-align: center;
-    width: 100%;
-    height: 300px;
+.card-content {
+  text-align: left;
+  padding: 10px;
+}
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.card-actions {
+  padding: 10px;
+  text-align: center;
+}
+
+.btn {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  border: 2px solid #4caf50;
+  float: right;
+}
+.add-to-cart {
+  background-color: #ffffff;
+  color: #4caf50;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  border: 2px solid #4caf50;
+  float: right;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+}
+
+.add-to-cart:hover {
+  color: #fff;
+}
+
+.key-benefits li {
+  font-size: 12px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .card {
+    display: block;
     overflow: hidden;
-    border-radius: 10px 10px 0 0;
-   
   }
-  
-  .card-image img {
-    border-radius: 8px;
-	margin-top: 3px;
-    height: 300px;
-   
-  }
-  
-  .card-content {
-	text-align: left;
-    padding: 10px;
-  }
-  .card-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .card-text {
-    font-size: 14px;
-    color: #666;
-  }
-  
-  .card-actions {
-    
-  
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .btn {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 5px;
-    border: 2px solid  #4CAF50;
-    float: right;
-  }
-  .add-to-cart {
-    background-color: #ffffff;
-    color: #4CAF50;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 5px;
-    border: 2px solid  #4CAF50;
-    float: right;
-  }
-  
-  .btn:hover {
-    background-color: #3e8e41;
-  }
-
-  .add-to-cart:hover{
-
-    color:#fff;
-  }
-
-  .key-benefits li{
-    font-size: 12px;
-  }
+}
