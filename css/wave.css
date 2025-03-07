@@ -1,129 +1,104 @@
-/* ---------------------- HOME PAGE WAVE ANIMATION ---------------------- */
+
+/* ---------------------- ABOUT PAGE WAVE ANIMATION ---------------------- */
+/* Wave Positioning Purpose */
+
+.about-top-wave-container{
+  position: relative;
+  width: 100%;
+}
+
+.about-bottom-wave-container{
+  position: relative;
+  width: 100%;
+  top: 0;
+  transform: rotate(180deg);
+}
+
+/* ---------------------- PRODUCT PAGE WAVE ANIMATION ---------------------- */
+/* Wave Positioning Purpose */
 
 #product-top-wave-section{
   width: 100%;
- 
+  
 }
 .product-top-wave-container{
   position: relative;
   width: 100%;
-  bottom: 0px;
-}
-#product-top-wave-section .wave{
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-height: 100px;
-background: url(../resource/wave.png);
-background-size: 1000px 100px;
-}
-#product-top-wave-section .wave.wave1{
-animation: animate 30s linear infinite;
-z-index: 1000;
-opacity: 1;
-animation-delay: 0s;
-bottom: 0;
-}
-#product-top-wave-section.wave2{
-animation: animate2 15s linear infinite;
-z-index: 999;
-opacity: 0.5;
-animation-delay: -5s;
-bottom: 10px;
-}
-#product-top-wave-section .wave.wave3{
-animation: animate 30s linear infinite;
-z-index: 1000;
-opacity: 1;
-animation-delay: 0s;
-bottom: 0;
-}
-#product-top-wave-section .wave.wave4{
-animation: animate2 5s linear infinite;
-z-index: 997;
-opacity: 0.7;
-animation-delay: -5s;
-bottom: 20px;
+  top:0;
 }
 
-/* ---------------------- ABOUT PAGE WAVE ANIMATION ---------------------- */
-
-
-#about-top-wave-section, #about-bottom-wave-section {
-    width: 100%;
-   
-  }
-  .about-top-wave-container{
-    position: relative;
-    width: 100%;
-    top: 157px;
-  }
-  .about-bottom-wave-container{
-    position: relative;
-    width: 100%;
-    top: 0;
-    transform: rotate(180deg);
-  }
+/* ---------------------- TESTINOMIALS PAGE WAVE ANIMATION ---------------------- */
+/* Wave Positioning Purpose */
   
-  #about-top-wave-section .wave,
-  #about-bottom-wave-section .wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+
+.testinomial-top-wave-container{
+  position: relative;
   width: 100%;
-  height: 100px;
-  background: url(../resource/wave.png);
-  background-size: 1000px 100px;
-  }
-  #about-top-wave-section .wave.wave1,
-  #about-bottom-wave-section .wave.wave1{
-  animation: animate 30s linear infinite;
-  z-index: 1000;
-  opacity: 1;
-  animation-delay: 0s;
-  bottom: 0;
-  }
-  #about-top-wave-section.wave2,
-  #about-bottom-wave-section .wave2{
-  animation: animate2 15s linear infinite;
-  z-index: 999;
-  opacity: 0.5;
-  animation-delay: -5s;
-  bottom: 10px;
-  }
-  #about-top-wave-section .wave.wave3,
-  #about-bottom-wave-section .wave.wave3 {
-  animation: animate 30s linear infinite;
-  z-index: 1000;
-  opacity: 1;
-  animation-delay: 0s;
-  bottom: 0;
-  }
-  #about-top-wave-section .wave.wave4,
-  #about-bottom-wave-section .wave.wave4 {
-  animation: animate2 5s linear infinite;
-  z-index: 997;
-  opacity: 0.7;
-  animation-delay: -5s;
-  bottom: 20px;
-  }
+  top:0;
+}
 
 /* ---------------------- ALL PAGES ANIMATION ---------------------- */
 
+.top-wave-section, .bottom-wave-section{
+  width: 100%; 
+}
+
+.top-wave-section .wave,
+  .bottom-wave-section .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../resource/wave.png);
+    background-size: 1000px 100px;
+  }
+  .top-wave-section .wave.wave1,
+  .bottom-wave-section .wave.wave1{
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+  }
+  .top-wave-section.wave2,
+  .bottom-wave-section .wave2{
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+  }
+  .about-top-wave-section .wave.wave3,
+  .about-bottom-wave-section .wave.wave3 {
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+  }
+  .top-wave-section .wave.wave4,
+  .bottom-wave-section .wave.wave4 {
+    animation: animate2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+  }
+
   @keyframes animate {
-  0% {
-    background-position-x: 0;
-  }
-  100% {
-    background-position-x: 1000px;
-  }
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: 1000px;
+    }
   }
   @keyframes animate2 {
-  0% {
-    background-position-x: 0;
-  }
-  100% {
-    background-position-x: -1000px;
-  }
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: -1000px;
+    }
   }

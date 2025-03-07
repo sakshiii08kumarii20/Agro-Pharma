@@ -1,18 +1,17 @@
-/* General Styles #aae462 */
+
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+*::selection {
+  background-color: #47cd4e;
+  color: black;
 }
 body {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #ffff;
-}
-
-*::selection {
-  background-color: #65b955d8;
-  color: black;
+  background-color: #ffffff;
 }

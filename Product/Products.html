@@ -16,7 +16,6 @@
 	<link rel="stylesheet" href="../css/footer.css"/>
   <link rel="stylesheet" href="v-cardCont.css"/>
   <link rel="stylesheet" href="../css/wave.css">
-
 </head>
 <body>
 
@@ -31,7 +30,7 @@
             <li><a class="link2" href="../About/AboutUs.html">About</a></li>
             <li><a class="link3" href="Products.html" style=" color: rgb(29 161 242); text-decoration: underline;">Product</a></li>
 			       <li><a href="../Testemonials/Testimonials.html">Testimonials</a></li>
-            <li><a class="link4" href="../Contact/contactusv.html">Contact</a></li>
+            <li><a class="link4" href="../myContact/contact.html">Contact</a></li>
             <li><a href="../privacy&policy/privacy&policy.html">Privacy & Policy</a></li>
         </ul>
     </nav>
@@ -40,9 +39,12 @@
     <!---Navigation bar end here -->
     <div>
 
-      <div class="bg-img"> <p class="container-title">Our Products</p></div>
+      <div class="bg-parent">
+        <div class="bg-img"></div>
+          <p class="container-title">Our Products</p>
+        </div>
 
-      <div id="product-top-wave-section">
+      <div class="top-wave-section">
         <div class="product-top-wave-container">
           <div class="wave wave1"></div>
           <div class="wave wave2"></div>
@@ -50,9 +52,8 @@
           <div class="wave wave4"></div>
         </div>
       </div>
-
+     
       <div class="filter-search">
-      <h2 class="container-title">Our Products</h2>
 
       <select class="product-filter">
         <option value="option1">Option 1</option>
@@ -254,7 +255,6 @@
             scrollContainer.scrollTo({ left: index * productWidth, behavior: "smooth" });
         });
     }); -->
-<!-- </script> -->
 
 <!--card container end here  ------------------------------------------------------------------------------->
 

@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="aboutus.css" />
     <link rel="stylesheet" href="../css/navbar-style.css" />
     <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/wave.css">
+    <link rel="stylesheet" href="../css/wave.css" />
   </head>
   <body>
+    <!-- Navbar Starts -->
+
     <nav class="navbar1">
       <img
         class="logo"
@@ -28,27 +30,37 @@
         <li><a href="AboutUs.html">About</a></li>
         <li><a href="../Product/Products.html">Product</a></li>
         <li><a href="../Testemonials/Testimonials.html">Testimonials</a></li>
-        <li><a href="../Contact/contactusv.html">Contact</a></li>
+        <li><a href="../myContact/contact.html">Contact</a></li>
         <li>
           <a href="../privacy&policy/privacy&policy.html">Privacy & Policy</a>
         </li>
       </ul>
     </nav>
 
+    <!-- Navbar Ends -->
+
+    <!-- Heading Banner And Title Starts -->
+
     <section class="about-us">
-      <div class="about-us-title">
-        <div class="about-us-heading">
-          <p id="about-us-heading">About Us</p>
-        </div>
-        <div id="about-top-wave-section">
-          <div class="about-top-wave-container">
-            <div class="wave wave1"></div>
-            <div class="wave wave2"></div>
-            <div class="wave wave3"></div>
-            <div class="wave wave4"></div>
-          </div>
+      <div class="bg-parent">
+        <div class="bg-img"></div>
+        <p class="container-title">About Us</p>
+      </div>
+
+      <!-- Heading Banner And Title Ends -->
+
+      <!-- Wave Container Starts -->
+      <div class="top-wave-section">
+        <div class="about-top-wave-container">
+          <div class="wave wave1"></div>
+          <div class="wave wave2"></div>
+          <div class="wave wave3"></div>
+          <div class="wave wave4"></div>
         </div>
       </div>
+      <!-- Wave Container Ends -->
+
+      <!-- Who we are or First container Starts -->
       <div class="about-us-first-container">
         <div class="who-we-are">
           <div id="about-us-left-container">
@@ -64,6 +76,9 @@
           </div>
         </div>
       </div>
+      <!-- Who we are or First container Ends -->
+
+      <!-- Second container Starts -->
       <div class="about-us-second-container">
         <div class="second-child-container">
           <div id="second-title">Manakkal Orchard</div>
@@ -75,10 +90,13 @@
             successfully proven here.
           </div>
           <div class="second-container-img">
-            <img src="sample.jpg" alt="sample" />
+            <img src="dream.jpg" alt="dream" />
           </div>
         </div>
       </div>
+      <!-- Second container Ends -->
+
+      <!-- Third container Starts -->
       <div class="about-us-third-container">
         <div class="third-child-container">
           <div class="third-title">Our Founder</div>
@@ -89,6 +107,8 @@
             its products are the result of his 10-year-long relentless research
             in agricultural homeopathy.
           </div>
+
+          <!-- Our Founder & card Starts -->
           <div class="our-founder">
             <div class="our-founder-info">
               <div class="founder-title">
@@ -126,41 +146,73 @@
               AgroPharma and all its products are the result of his 10-year-long
               relentless research in agricultural homeopathy.
             </div>
+            <!-- Card Ends -->
+
+            <!-- Instagram & Facebook Logo/Link Starts -->
             <div class="social-links">
-              <div class="icon" id="facebook-link">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  width="100"
-                  height="100"
-                  viewBox="0 0 50 50"
-                >
-                  <path
-                    d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"
-                  ></path>
-                </svg>
-              </div>
-              <div class="icon" id="insta-link">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  width="100"
-                  height="100"
-                  viewBox="0 0 30 30"
-                >
-                  <path
-                    d="M 15 2 C 7.832 2 2 7.832 2 15 C 2 22.168 7.832 28 15 28 C 22.168 28 28 22.168 28 15 C 28 7.832 22.168 2 15 2 z M 11.666016 6 L 18.332031 6 C 21.457031 6 24 8.5420156 24 11.666016 L 24 18.332031 C 24 21.457031 21.457984 24 18.333984 24 L 11.667969 24 C 8.5429688 24 6 21.457984 6 18.333984 L 6 11.667969 C 6 8.5429688 8.5420156 6 11.666016 6 z M 11.666016 8 C 9.6450156 8 8 9.6459688 8 11.667969 L 8 18.333984 C 8 20.354984 9.6459688 22 11.667969 22 L 18.333984 22 C 20.354984 22 22 20.354031 22 18.332031 L 22 11.666016 C 22 9.6450156 20.354031 8 18.332031 8 L 11.666016 8 z M 19.667969 9.6660156 C 20.035969 9.6660156 20.333984 9.9640312 20.333984 10.332031 C 20.333984 10.700031 20.035969 11 19.667969 11 C 19.299969 11 19 10.700031 19 10.332031 C 19 9.9640312 19.299969 9.6660156 19.667969 9.6660156 z M 15 10 C 17.757 10 20 12.243 20 15 C 20 17.757 17.757 20 15 20 C 12.243 20 10 17.757 10 15 C 10 12.243 12.243 10 15 10 z M 15 12 A 3 3 0 0 0 15 18 A 3 3 0 0 0 15 12 z"
-                  ></path>
-                </svg>
-              </div>
+              <!-- Facebook Link -->
+              <a
+                href="https://www.facebook.com/YOUR_PAGE"
+                target="_blank"
+                id="facebook-link"
+              >
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100"
+                    height="100"
+                    viewBox="0 0 50 50"
+                  >
+                    <path
+                      d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 
+                  c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 
+                  l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+
+              <!-- Instagram Link -->
+              <a
+                href="https://www.instagram.com/YOUR_PROFILE"
+                target="_blank"
+                id="insta-link"
+              >
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="100"
+                    height="100"
+                    viewBox="0 0 30 30"
+                  >
+                    <path
+                      d="M 15 2 C 7.832 2 2 7.832 2 15 C 2 22.168 7.832 28 15 28 C 22.168 28 28 22.168 28 15 C 28 7.832 22.168 2 15 2 z 
+              M 11.666016 6 L 18.332031 6 C 21.457031 6 24 8.5420156 24 11.666016 L 24 18.332031 C 24 21.457031 21.457984 24 
+              18.333984 24 L 11.667969 24 C 8.5429688 24 6 21.457984 6 18.333984 L 6 11.667969 C 6 8.5429688 8.5420156 6 
+              11.666016 6 z M 11.666016 8 C 9.6450156 8 8 9.6459688 8 11.667969 L 8 18.333984 C 8 20.354984 9.6459688 22 
+              11.667969 22 L 18.333984 22 C 20.354984 22 22 20.354031 22 18.332031 L 22 11.666016 C 22 9.6450156 
+              20.354031 8 18.332031 8 L 11.666016 8 z M 19.667969 9.6660156 C 20.035969 9.6660156 20.333984 9.9640312 
+              20.333984 10.332031 C 20.333984 10.700031 20.035969 11 19.667969 11 C 19.299969 11 19 10.700031 19 
+              10.332031 C 19 9.9640312 19.299969 9.6660156 19.667969 9.6660156 z M 15 10 C 17.757 10 20 12.243 
+              20 15 C 20 17.757 17.757 20 15 20 C 12.243 20 10 17.757 10 15 C 10 12.243 12.243 10 15 10 z M 15 12 
+              A 3 3 0 0 0 15 18 A 3 3 0 0 0 15 12 z"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
             </div>
+            <!-- Instagram & Facebook Logo/Link Ends -->
           </div>
+          <!-- Our Founder Ends -->
         </div>
       </div>
-      <div class="about-us-forth-container">
-        <div id="about-bottom-wave-section">
+
+      <!-- Third container/Our Founder Ends -->
+
+      <!-- Fourth container/Know More Starts -->
+      <div class="about-us-fourth-container">
+        <!-- Bottom Wave Starts -->
+        <div class="bottom-wave-section">
           <div class="about-bottom-wave-container">
             <div class="wave wave1"></div>
             <div class="wave wave2"></div>
@@ -168,22 +220,32 @@
             <div class="wave wave4"></div>
           </div>
         </div>
+        <!-- Bottom Wave Ends -->
+
+        <!-- Know more container Starts -->
         <div id="know-more">
           <p>
             Want to <b>Know More</b> About <b>Agro Homeopathy</b> and Our
             Products?
           </p>
+          <!-- Know more buttons container starts -->
           <div class="buttons">
+            <!-- Call Button -->
             <a href="tel:+1234567890" class="button call-button">
               <img src="phone.svg" id="phone" alt="phone" /> CALL NOW
             </a>
+            <!-- WhatsApp Button -->
             <a href="https://wa.me/1234567890" class="button whatsapp-button">
               <img src="whatsapp.svg" id="whatsapp" alt="whatsapp" /> WHATSAPP
             </a>
           </div>
+          <!-- Know more buttons container Ends -->
         </div>
+        <!-- Know more container Ends -->
       </div>
     </section>
+    <!-- Fourth container/Know More Ends -->
+
     <!-- Footer -->
     <footer>
       <div class="footer-decoration"></div>
