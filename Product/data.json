@@ -1,12 +1,5 @@
 [
-    {
-      "imgpath": "./product-photo/product1.webp",
-      "productCategory": "Fertilizers",
-      "productName": "CropMax",
-      "srarrating": 5,
-      "productinfo": "CropMax is a plant growth regulator that promotes healthy plant growth and development. It increases crop yields, improves fruit quality, and enhances plant resistance to disease.",
-      "addtocart": 1
-    },
+   
     {
       "imgpath": "./product-photo/product2.webp",
       "productCategory": "Pesticides",
@@ -101,6 +94,15 @@
       "productName": "SuperRice",
       "srarrating": 5,
       "productinfo": "SuperRice is a high-yield rice variety with enhanced resistance to pests and diseases.",
+      "addtocart": 1
+    },
+
+    {
+      "imgpath": "./product-photo/product1.webp",
+      "productCategory": "Fertilizers",
+      "productName": "CropMax",
+      "srarrating": 5,
+      "productinfo": "CropMax is a plant growth regulator that promotes healthy plant growth and development. It increases crop yields, improves fruit quality, and enhances plant resistance to disease.",
       "addtocart": 1
     }
   ]
