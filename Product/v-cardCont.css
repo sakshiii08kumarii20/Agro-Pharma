@@ -124,5 +124,21 @@
   overflow: hidden;
 }
 
+.card-content {
+	text-align: center;
+    padding: 10px;
+  }
+
+  .card-actions{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+  }
+
+  .key-benefits li{
+    list-style: none;
+  }
+
 }
 
