@@ -1,0 +1,139 @@
+/* Testimonials Section */
+.testimonials {
+    background: #f0faeb; /* Light Green Background */
+    padding: 60px 20px;
+
+}
+
+/* Container */
+.testimonials .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.testimonials-header {
+    display: flex;
+    align-items: center; /* Align items in one line */
+    gap: 15px; /* Space between elements */
+    text-align: left;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+/* Title */
+.testimonials-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+/* Green Line - Positioned Between Title and Description */
+.green-line2 {
+    width: 4px;
+    height: 70px;
+    background-color: green;
+}
+
+/* Description */
+.testimonials-description {
+    font-size: 16px;
+    color: #333;
+    max-width: 600px;
+}
+
+/* Testimonials Slider */
+.testimonials-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 0;
+    scrollbar-width: none;
+}
+
+.testimonials-slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    min-width: 280px;
+    max-width: 300px;
+}
+
+/* Hover Effect */
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Client Image */
+.client-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Client Name */
+.testimonial-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Star Ratings */
+.stars {
+    font-size: 18px;
+    color: #f4c542;
+    margin-bottom: 10px;
+}
+
+/* Testimonial Text */
+.testimonial-text {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Slider Dots */
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #d3d3d3;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: background 0.3s;
+}
+
+.dot.active {
+    background: green;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .testimonials-slider {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .testimonials-title {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial-card {
+        min-width: 260px;
+    }
+}

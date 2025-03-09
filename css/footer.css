@@ -1,50 +1,36 @@
-footer {
-  background: linear-gradient(135deg, #0a2e25, #1a3c34);
-  color: #e0f2e9;
-  padding: 40px 20px 20px;
-  position: relative;
-  overflow: hidden;
-  /* top: 100px; */
+/* --------------------- */
+/* Footer Section */
+/* --------------------- */
+.footer {
+  background-color: #1e4d2b;
+  color: white;
+  padding: 50px 20px;
 }
 
 .footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
 }
 
-.footer-section {
-  flex: 1;
-  min-width: 200px;
-  padding: 10px;
-  text-align: left;
+/* Footer Left - Text */
+.footer-left h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
 }
 
-.footer-section h5 {
-  color: #f4c430;
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  position: relative;
-  display: inline-block;
+.footer-left strong {
+  color: yellow;
 }
 
-.footer-section h5::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 40px;
-  height: 2px;
-  background: #f4c430;
-}
-
-.footer-section p {
-  font-size: 14px;
-  margin-bottom: 10px;
-  color: #d9e6e2;
+/* Footer Links */
+.footer-links {
+  display: flex;
+  gap: 60px;
 }
 
 .footer-links ul {
@@ -56,136 +42,93 @@ footer {
   margin-bottom: 10px;
 }
 
-.footer-links a {
-  color: #d9e6e2;
+.footer-links ul li a {
+  color: white;
   text-decoration: none;
   font-size: 14px;
-  transition: color 0.3s ease, transform 0.3s ease;
-  display: inline-block;
+  transition: 0.3s;
 }
 
-.footer-links a:hover {
-  color: #f4c430;
-  transform: translateX(5px);
+.footer-links ul li a:hover {
+  color: #ffcc00;
 }
 
-.contact-info a {
-  color: #d9e6e2;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.contact-info a:hover {
-  color: #f4c430;
-}
-
-.footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  margin-top: 30px;
-  padding-top: 20px;
+/* Footer Contact */
+.footer-contact {
   text-align: center;
 }
 
-.social-icons {
-  margin-bottom: 15px;
-}
-
-.social-icons a {
-  color: #d9e6e2;
+.footer-contact h3 {
   font-size: 22px;
-  margin: 0 8px;
-  text-decoration: none;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.social-icons a:hover {
-  transform: scale(1.2);
-  color: #f4c430;
-}
-
-.footer-bottom p {
-  font-size: 14px;
-  color: #d9e6e2;
-}
-
-/* Unique Plant Animation */
-.footer-decoration {
-  position: absolute;
-  bottom: -30px;
-  right: -30px;
-  width: 150px;
-  height: 150px;
-  background: url('https://www.transparenttextures.com/patterns/leaves-pattern.png') repeat;
-  opacity: 0.1;
-  pointer-events: none;
-  animation: float 6s infinite ease-in-out;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-/* Newsletter Section */
-.newsletter {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 15px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.newsletter h5 {
-  color: #f4c430;
-  font-size: 18px;
   margin-bottom: 10px;
 }
 
-.newsletter input {
-  width: 100%;
+/* Input Box */
+.footer-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.footer-input input {
+  border: none;
   padding: 8px;
-  border: none;
   border-radius: 5px;
-  margin-bottom: 10px;
-  font-size: 14px;
+  width: 180px;
 }
 
-.newsletter button {
-  background: #f4c430;
-  color: #1a3c34;
-  border: none;
+.get-started-btn {
   padding: 8px 15px;
-  border-radius: 5px;
-  font-size: 14px;
+  background-color: #ffcc00;
+  color: #1e4d2b;
+  border: none;
   cursor: pointer;
-  transition: background 0.3s ease;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
-.newsletter button:hover {
-  background: #e0b428;
+.get-started-btn:hover {
+  background-color: #e6b800;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .footer-section {
-    text-align: center;
-    flex: 100%;
-    margin-bottom: 20px;
-  }
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+}
 
-  .footer-section h5::after {
-    left: 50%;
-    transform: translateX(-50%);
-  }
+.social-icons img {
+  width: 30px;
+  transition: 0.3s;
+}
 
-  .social-icons a {
-    margin: 0 8px;
-  }
+.social-icons img:hover {
+  opacity: 0.8;
+}
 
-  .newsletter input {
-    width: 100%;
-  }
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+}
+/* Footer Partition Line */
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3); /* Light white line */
+  margin: 30px 0; /* Space above and below */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 15px;
+  color: rgba(255, 255, 255, 0.7); /* Light white text */
 }
