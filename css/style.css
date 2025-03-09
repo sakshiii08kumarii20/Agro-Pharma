@@ -1,8 +1,12 @@
-/* General Styles #aae462 */
+
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+*::selection {
+  background-color: #47cd4e;
+  color: black;
 }
 body {
   font-family: Arial, sans-serif;
@@ -17,5 +21,3 @@ body {
 
 
 }
-
-

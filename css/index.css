@@ -1,27 +1,27 @@
-.title-div{
-    width: 90%;
-    height: 60px;
-   
-    margin-top: 55px;
-    margin-bottom: 30px;
+.title-div {
+  width: 90%;
+  height: 60px;
+
+  margin-top: 55px;
+  margin-bottom: 30px;
 }
-.adv-title{
-    width: 200px;
-    height: 60px;
-   
-    float: left;
-    margin-left: 30px;
-    border-right: 3px solid green;
-  }
-  
-  .adv-qotes {
-      width: 600px;
-      height: 60px;
-      margin-left: 50px;
-      
-      float: right;
-      margin-right: 250px;
-  }
+.adv-title {
+  width: 200px;
+  height: 60px;
+
+  float: left;
+  margin-left: 30px;
+  border-right: 3px solid green;
+}
+
+.adv-qotes {
+  width: 600px;
+  height: 60px;
+  margin-left: 50px;
+
+  float: right;
+  margin-right: 250px;
+}
 
 
 
@@ -30,6 +30,15 @@
 
 /* Hero Section */
 .hero {
+  position: relative;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
     position: relative;
     height: 85vh; /* Increased height for better spacing */
     display: flex;
@@ -60,9 +69,9 @@
 
 /* Hero Content */
 .hero-content {
-    position: relative;
-    max-width: 700px;
-    text-align: center;
+  position: relative;
+  max-width: 700px;
+  text-align: center;
 }
 
 /* Hero Info Box */
@@ -160,156 +169,156 @@
 
 /* Container Box */
 .founder .container {
-    max-width: 1100px;
-    width: 100%;
-    background: #f9f9f9;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  max-width: 1100px;
+  width: 100%;
+  background: #f9f9f9;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Title Section (Left-Aligned) */
 .title-section {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
 /* "Our Founder" Styling */
 .title-text h2 {
-    font-size: 30px;
-    color: black;
-    font-weight: bold;
-    text-align: left;
-    line-height: 1.2;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1.2;
 }
 
 /* Green Divider */
 .green-line {
-    width: 3px;
-    height: 50px;
-    background-color: green;
+  width: 3px;
+  height: 50px;
+  background-color: green;
 }
 
 /* Founder Name */
 .founder-name h1 {
-    font-size: 34px;
-    color: black;
-    font-weight: bold;
-    text-align: left;
+  font-size: 34px;
+  color: black;
+  font-weight: bold;
+  text-align: left;
 }
 
 /* Degree Styling */
 .degree {
-    font-size: 18px;
-    color: black;
-    margin-top: -8px;
-    text-align: left;
+  font-size: 18px;
+  color: black;
+  margin-top: -8px;
+  text-align: left;
 }
 
 /* Founder Box (Image + Text Side by Side) */
 .founder-box {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    width: 100%;
-    text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  text-align: left;
 }
 
 /* Left Side - Image */
 .founder-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .founder-image img {
-    width: 320px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Right Side - Text */
 .founder-info {
-    flex: 2;
+  flex: 2;
 }
 
 /* Description */
 .founder-info p {
-    font-size: 18px;
-    color: #333;
-    margin: 10px 0;
-    line-height: 1.6;
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+  line-height: 1.6;
 }
 
 /* Founder List */
 .founder-info ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 15px;
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
 }
 
 .founder-info ul li {
-    font-size: 18px;
-    color: black;
-    margin: 6px 0;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
+  font-size: 18px;
+  color: black;
+  margin: 6px 0;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
 }
 
 /* Green Bullet Points */
 .founder-info ul li::before {
-    content: "•";
-    color: green;
-    font-size: 22px;
-    font-weight: bold;
-    margin-right: 8px;
+  content: "•";
+  color: green;
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 8px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .founder .container {
-        padding: 30px;
-    }
+  .founder .container {
+    padding: 30px;
+  }
 
-    .title-section {
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 10px;
-    }
+  .title-section {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
 
-    .title-text h2, 
-    .founder-name h1,
-    .degree {
-        text-align: left;
-    }
+  .title-text h2,
+  .founder-name h1,
+  .degree {
+    text-align: left;
+  }
 
-    .green-line {
-        height: 40px;
-    }
+  .green-line {
+    height: 40px;
+  }
 
-    .founder-box {
-        flex-direction: column;
-        text-align: center;
-    }
+  .founder-box {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .founder-image img {
-        width: 250px;
-    }
+  .founder-image img {
+    width: 250px;
+  }
 
-    .founder-info {
-        text-align: center;
-    }
+  .founder-info {
+    text-align: center;
+  }
 
-    .founder-info ul {
-        text-align: center;
-    }
+  .founder-info ul {
+    text-align: center;
+  }
 
-    .founder-info ul li {
-        justify-content: center;
-    }
+  .founder-info ul li {
+    justify-content: center;
+  }
 }
 
 
@@ -325,6 +334,28 @@
     padding: 50px 0;
     background-color: #f0faeb;
     margin-bottom: -20px; /* Ensures it is placed right above the footer */
+
+/* Why Choose Us Section */
+.why-choose-us {
+  background: #f9f9f9; /* Light grey background */
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.why-choose-us h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.benefits-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
 }
 
 .subscribe-box {
