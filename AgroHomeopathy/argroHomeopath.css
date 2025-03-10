@@ -1,0 +1,17 @@
+.bg-parent p {
+    position: absolute;
+    top: 345px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 42px;
+    font-weight: 700;
+  }
+
+  /* Background Image Properties */
+.bg-img {
+    background: url("../resource/homebaground.webp") no-repeat center center/cover;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.807); /*Shadow Inside the Background Image*/
+    filter: brightness(60%); /*Reduces Brightness of Background Image*/
+    height: 75vh;
+  }

@@ -5,18 +5,20 @@
     align-items: center;
     height: 5.4rem;
     display: flex;
-    justify-content: space-between; /* Ensures items are spaced correctly */
+   
 }
 
 /* Logo */
 .logo {
- flex:10%;
+ width: 50px;
+ margin-right: 5px;
 }
 
 /* Title */
 .title {
-    flex:20%;
-    font-size: 2rem;
+    width: 300px;
+    margin-right: 50px;
+    font-size: 1.3rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: hsl(164.57deg 46.67% 14.71%);
    
@@ -25,11 +27,13 @@
 
 /* Navigation Links */
 .nav-links {
-    flex: 30%;
+    
+   
     list-style: none;
     display: flex;
-    gap: 15px; /* Adds space between links */
+    gap: 0px; /* Adds space between links */
     margin-left: auto; /* Pushes the menu to the right */
+   
 }
 
 .nav-links li {

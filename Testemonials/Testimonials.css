@@ -17,7 +17,7 @@ flex-direction: column;
 }
 .bg-parent p{
     position: absolute;
-    top: 345px;
+    top: 215px;
     left: 50%;
     transform: translateX(-50%);
     color: white;
@@ -33,7 +33,7 @@ flex-direction: column;
 .container-title{
 
     position: absolute;
-    top: 30vh;
+    top: 15vh;
     left: 15%;
     text-align: center;
     color: #f0fff2;

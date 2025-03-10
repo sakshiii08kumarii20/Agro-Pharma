@@ -10,7 +10,7 @@
 
 .bg-parent p {
     position: absolute;
-    top: 345px;
+    top: 215px;
     left: 50%;
     transform: translateX(-50%);
     color: white;
