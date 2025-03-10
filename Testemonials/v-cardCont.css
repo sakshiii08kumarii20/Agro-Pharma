@@ -132,3 +132,12 @@
 .key-benefits li {
   font-size: 12px;
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .card {
+    display: block;
+    overflow: hidden;
+  }
+}
+
