@@ -150,7 +150,23 @@
   </div>
 </footer>
 
+<script>
+  function whatsappSend(msg) {
+    
 
+      // Mobile number (without + or leading zeros, only country code and number)
+      let phoneNumber = "918446898397"; // Change this to your desired number
+
+      // Custom message
+      let message = msg;
+
+      // WhatsApp URL
+      let whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" +"I intersted in " +message+" so plz give more information about that product.";
+
+      // Open WhatsApp
+      window.open(whatsappUrl, "_blank");
+  }
+</script>
 <script src="fetchJson.js"></script>
 
 </body>
