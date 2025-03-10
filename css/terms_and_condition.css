@@ -21,7 +21,9 @@ h3{
         background-image: url(../resource/Logo.jpg);
         background-repeat: no-repeat;
         background-size: contain;
-        height:1100px;
+        background-position:center ;
+        /* height:1100px;*/
+        height: auto;
         width:100%;
         border:1px solid red;
         padding-left: 8%;
@@ -37,3 +39,5 @@ h3{
      .heading1{
         padding-top: 15px;
      }
+
+     
