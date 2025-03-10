@@ -122,7 +122,7 @@
     /* Toggle Menu */
     #menu-toggle:checked + .hamburger + .nav-links {
         display: flex;
-        z-index: 2;
+        z-index: 50;
         top: 80px;
         background-color: green;
         text-align: center;
