@@ -1,0 +1,39 @@
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+}
+
+h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color:rgb(53, 51, 51);
+
+}
+
+.termsandcondn{
+    font-size: 18px;
+    line-height:1.5;
+    color:rgb(53, 51, 51);
+    }
+
+    #outercontainer{
+    
+        background-image: url(../resource/Logo.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height:1100px;
+        width:100%;
+        border:1px solid red;
+        padding-left: 8%;
+        
+
+     }
+
+     .heading{
+        padding-bottom: 18px;
+        padding-top: 25px;
+     }
+
+     .heading1{
+        padding-top: 15px;
+     }
