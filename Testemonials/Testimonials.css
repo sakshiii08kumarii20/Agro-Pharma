@@ -45,5 +45,8 @@ flex-direction: column;
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    
+    .card {
+        display: block;
+        overflow: hidden;
+      }
 }
