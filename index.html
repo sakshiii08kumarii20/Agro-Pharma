@@ -10,8 +10,8 @@
     
     <!-- comman External CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/navbar-style.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="css/footer.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/navbar-style.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
     
     <link rel="stylesheet" type="text/css" href="indexSrc/index.css">
     <link rel="stylesheet" type="text/css" href="indexSrc/home_product.css">
@@ -277,23 +277,6 @@
 <!-- Footer Section -->
 <div id="Footer">
 </div>
-<script>
-    fetch('Footer.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('Footer').innerHTML = data;
-  })
-  .catch(error => {
-    console.error('Error loading Footer:', error);
-  });
-fetch('Navbar.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('Navbar').innerHTML = data;
-  })
-  .catch(error => {
-    console.error('Error loading Navbar:', error);
-  });
-</script>
+<script src="Daynamic.js"></script>
 </body>
 </html>

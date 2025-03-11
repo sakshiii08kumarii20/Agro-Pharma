@@ -6,143 +6,162 @@
     <title>Document</title>
 </head>
 <body>
-   <style>
-    /* --------------------- */
-/* Footer Section */
-/* --------------------- */
-.footer {
-  background-color: #1e4d2b;
-  color: white;
-  padding: 50px 20px;
+    <style>
+        /* Navbar */
+.navbar1 {
+    width: 100%;
+    color: black;
+    align-items: center;
+    height: 5.4rem;
+    display: flex;
+   
 }
 
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: auto;
+/* Logo */
+.logo {
+ width: 50px;
+ margin-right: 5px;
 }
 
-/* Footer Left - Text */
-.footer-left h2 {
-  font-size: 26px;
-  font-weight: bold;
-  color: white;
+/* Title */
+.title {
+    width: 300px;
+    margin-right: 50px;
+    font-size: 1.3rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: hsl(164.57deg 46.67% 14.71%);
+   
+   
 }
 
-.footer-left strong {
-  color: yellow;
+/* Navigation Links */
+.nav-links {
+    
+   
+    list-style: none;
+    display: flex;
+    gap: 0px; /* Adds space between links */
+    margin-left: auto; /* Pushes the menu to the right */
+   
 }
 
-/* Footer Links */
-.footer-links {
-  display: flex;
-  gap: 60px;
+.nav-links li {
+    margin: 0;
 }
 
-.footer-links ul {
-  list-style: none;
-  padding: 0;
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 14px;
+    display: block;
+    min-width: 100px;
+    white-space: nowrap;
+    border-radius: 15px;
+    text-align: center;
 }
 
-.footer-links ul li {
-  margin-bottom: 10px;
+.nav-links a:hover {
+    color: white;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 10px 14px;
+    display: block;
+    width: auto;
+    color: rgb(29 161 242);
+    text-align: center;
+    text-decoration: underline;
 }
 
-.footer-links ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-  transition: 0.3s;
+/* Contact Button */
+.contact-btn {
+    display: inline-block;
+    padding: 12px 24px; /* Adjust padding for a rectangular shape */
+    background-color: #6ef98e; /* Green background */
+    color: white; /* White text */
+    border-radius: 0; /* Remove rounded corners to make it fully rectangular */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+    border: none; /* Ensure no border is applied */
+    font-size: 16px; /* Adjust font size for readability */
+    text-align: center;
+}
+.contact-btn:hover {
+    background-color: #218838; /* Slightly darker green on hover */
 }
 
-.footer-links ul li a:hover {
-  color: #ffcc00;
+#menu-toggle{
+    display: none;
+}
+.hamburger{
+    display: none;
 }
 
-/* Footer Contact */
-.footer-contact {
-  text-align: center;
-}
+/* Mobile Styles */
+@media (max-width: 768px) {
+ 
+    .logo{
+        float: left;
+        flex: 10%;
+    }
+    .title {
+        float: left;
+        flex: 70%;
+        text-align: center;
+        margin-left: 0;
+        top: 10px;
+    }
 
-.footer-contact h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
-}
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #333;
+    }
 
-/* Input Box */
-.footer-input {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: white;
-  padding: 5px;
-  border-radius: 5px;
-}
+    .nav-links li {
+        text-align: center;
+        padding: 10px;
+    }
 
-.footer-input input {
-  border: none;
-  padding: 8px;
-  border-radius: 5px;
-  width: 180px;
-}
+    .hamburger {
+        display: block;
+        float: right;
+    }
 
-.get-started-btn {
-  padding: 8px 15px;
-  background-color: #ffcc00;
-  color: #1e4d2b;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: 0.3s;
-}
+    /* Toggle Menu */
+    #menu-toggle:checked + .hamburger + .nav-links {
+        display: flex;
+        z-index: 50;
+        top: 80px;
+        background-color: green;
+        text-align: center;
+        gap: 2px;
+    }
 
-.get-started-btn:hover {
-  background-color: #e6b800;
-}
+    .nav-links a {
+        text-decoration: none;
+        color: black;
+        padding: 10px 14px;
+        display: block;
+        border: 3px solid green;
+        text-align: center;
+        width: 100%;
+    }
 
-/* Social Icons */
-.social-icons {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  margin-top: 15px;
+    .nav-links a:hover {
+        color: white;
+        text-decoration: none;
+        padding: 10px 14px;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
 }
-
-.social-icons img {
-  width: 30px;
-  transition: 0.3s;
-}
-
-.social-icons img:hover {
-  opacity: 0.8;
-}
-
-/* Footer Bottom */
-.footer-bottom {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 14px;
-}
-/* Footer Partition Line */
-.footer-divider {
-  width: 100%;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.3); /* Light white line */
-  margin: 30px 0; /* Space above and below */
-}
-
-/* Footer Bottom */
-.footer-bottom {
-  text-align: center;
-  font-size: 14px;
-  padding-top: 15px;
-  color: rgba(255, 255, 255, 0.7); /* Light white text */
-}
-
-   </style>
+  </style>
   <footer class="footer">
     <div class="footer-container">
         <div class="footer-left">
