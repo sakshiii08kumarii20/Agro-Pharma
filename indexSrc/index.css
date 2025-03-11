@@ -22,12 +22,6 @@
   float: right;
   margin-right: 250px;
 }
-
-
-
-
-
-
 /* Hero Section */
 .hero {
   position: relative;
@@ -319,6 +313,12 @@
   .founder-info ul li {
     justify-content: center;
   }
+
+  .hero-info-box{
+    top:300px;
+  }
+
+  
 }
 
 
@@ -398,3 +398,4 @@
     background-color: #155a24;
 }
 
+}
