@@ -3,185 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Agro Pharma</title>
     <style>
-        /* Navbar */
-    .navbar1 {
-        width: 100%;
-        color: black;
-        align-items: center;
-        height: 5.4rem;
-        display: flex;
-       
-    }
-    
-    /* Logo */
-    .logo {
-     width: 50px;
-     margin-right: 5px;
-    }
-    
-    /* Title */
-    .title {
-        width: 300px;
-        margin-right: 50px;
-        font-size: 1.3rem;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: hsl(164.57deg 46.67% 14.71%);
-       
-       
-    }
-    
-    /* Navigation Links */
-    .nav-links {
-        
-       
-        list-style: none;
-        display: flex;
-        gap: 0px; /* Adds space between links */
-        margin-left: auto; /* Pushes the menu to the right */
-       
-    }
-    
-    .nav-links li {
-        margin: 0;
-    }
-    
-    .nav-links a {
-        text-decoration: none;
-        color: black;
-        padding: 10px 14px;
-        display: block;
-        min-width: 100px;
-        white-space: nowrap;
-        border-radius: 15px;
-        text-align: center;
-    }
-    
-    .nav-links a:hover {
-        color: white;
-        border-radius: 15px;
-        text-decoration: none;
-        padding: 10px 14px;
-        display: block;
-        width: auto;
-        color: rgb(29 161 242);
-        text-align: center;
-        text-decoration: underline;
-    }
-    
-    /* Contact Button */
-    .contact-btn {
-        display: inline-block;
-        padding: 12px 24px; /* Adjust padding for a rectangular shape */
-        background-color: #6ef98e; /* Green background */
-        color: white; /* White text */
-        border-radius: 0; /* Remove rounded corners to make it fully rectangular */
-        text-decoration: none;
-        font-weight: bold;
-        transition: background 0.3s ease-in-out;
-        border: none; /* Ensure no border is applied */
-        font-size: 16px; /* Adjust font size for readability */
-        text-align: center;
-    }
-    .contact-btn:hover {
-        background-color: #218838; /* Slightly darker green on hover */
-    }
-    
-    #menu-toggle{
-        display: none;
-    }
-    .hamburger{
-        display: none;
-    }
-    
-    /* Mobile Styles */
-    @media (max-width: 768px) {
-     
-        .logo{
-            float: left;
-            flex: 10%;
-        }
-        .title {
-            float: left;
-            flex: 70%;
-            text-align: center;
-            margin-left: 0;
-            top: 10px;
-        }
-    
-        .nav-links {
-            display: none;
-            flex-direction: column;
+            /* Navbar */
+            .navbar1 {
             width: 100%;
-            position: absolute;
-            top: 60px;
-            left: 0;
-            background: #333;
-        }
-    
-        .nav-links li {
-            text-align: center;
-            padding: 10px;
-        }
-    
-        .hamburger {
-            display: block;
-            float: right;
-        }
-    
-        /* Toggle Menu */
-        #menu-toggle:checked + .hamburger + .nav-links {
+            color: black;
+            align-items: center;
+            height: 5.4rem;
             display: flex;
-            z-index: 50;
-            top: 80px;
-            background-color: green;
-            text-align: center;
-            gap: 2px;
+            justify-content: space-between;
+            padding: 0 20px;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
-    
+
+        /* Logo */
+        .logo {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+        }
+
+        /* Title */
+        .title {
+            font-size: 1.3rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: hsl(164.57deg 46.67% 14.71%);
+            flex: 1;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+
+        .nav-links li {
+            margin: 0;
+        }
+
         .nav-links a {
             text-decoration: none;
             color: black;
             padding: 10px 14px;
             display: block;
-            border: 3px solid green;
+            min-width: 80px;
+            white-space: nowrap;
+            border-radius: 5px;
             text-align: center;
-            width: 100%;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
-    
+
+        /* Highlight Home Link */
+        .nav-links a[href="./index.html"] {
+            color: white;
+            background-color: rgb(29 161 242);
+            font-weight: bold;
+        }
+
         .nav-links a:hover {
             color: white;
+            background-color: rgb(29 161 242);
             text-decoration: none;
-            padding: 10px 14px;
-            display: block;
-            width: 100%;
+        }
+
+        /* Contact Button */
+        .contact-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #6ef98e;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease-in-out, transform 0.2s ease;
+            border: none;
+            font-size: 16px;
             text-align: center;
         }
-    }
+
+        .contact-btn:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .logo {
+                float: left;
+                flex: 10%;
+            }
+
+            .title {
+                float: left;
+                flex: 70%;
+                text-align: center;
+                margin-left: 0;
+                top: 10px;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                background: #333;
+                gap: 0;
+            }
+
+            .nav-links li {
+                text-align: center;
+                padding: 10px;
+            }
+
+            .hamburger {
+                display: block;
+                float: right;
+                cursor: pointer;
+                font-size: 24px;
+            }
+
+            /* Toggle Menu */
+            #menu-toggle:checked + .hamburger + .nav-links {
+                display: flex;
+                z-index: 50;
+                top: 80px;
+                background-color: green;
+                text-align: center;
+                gap: 2px;
+            }
+
+            .nav-links a {
+                text-decoration: none;
+                color: white;
+                padding: 10px 14px;
+                display: block;
+                border: 2px solid green;
+                text-align: center;
+                width: 100%;
+            }
+
+            .nav-links a:hover {
+                color: white;
+                background-color: rgb(29 161 242);
+                text-decoration: none;
+            }
+        }
     </style>
+</head>
+
+<body>
     <nav class="navbar1">
-        <img class="logo" src="./resource/Logo.jpg" style="width:60px; height:60px;">
+        <img class="logo" src="/Agro-Pharma/resource/Logo.jpg" alt="Logo">
         <div class="title">
             <h4>Agro Pharma</h4>
         </div>
         <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <label for="menu-toggle" class="hamburger">☰</label>
         <ul class="nav-links">
-            <li><a href="index.html" style=" color: rgb(29 161 242); text-decoration: underline;">Home</a></li>
-            <li><a href="Product/Products.html">Product</a></li>
-            <li><a href="AgroHomeopathy/AgroHomeopathy.html">Agro Homeopathy</a></li>
-            <li><a href="Testemonials/Testimonials.html">Testimonials</a></li>
-            <li><a href="myContact/contact.html">FAQ'S</a></li>
-            <li><a href="privacy&policy/privacy&policy.html">Privacy & Policy</a></li>
-            <li><a href="./About/AboutUs.html">About Us</a></li>
+            <li><a href="/Agro-Pharma/index.html">Home</a></li>
+            <li><a href="/Agro-Pharma/Product/Products.html">Product</a></li>
+            <li><a href="/Agro-Pharma/AgroHomeopathy/AgroHomeopathy.html">Agro Homeopathy</a></li>
+            <li><a href="/Agro-Pharma/Testemonials/Testimonials.html">Testimonials</a></li>
+            <li><a href="/Agro-Pharma/myContact/contact.html">FAQ'S</a></li>
+            <li><a href="/Agro-Pharma/privacy&policy/privacy&policy.html">Privacy & Policy</a></li>
+            <li><a href="/Agro-Pharma/About/AboutUs.html">About Us</a></li>
             <li>
-                <a href="myContact/contact.html" class="contact-btn">Contact Us</a>
+                <a href="/Agro-Pharma/myContact/contact.html" class="contact-btn">Contact Us</a>
             </li>
-    
         </ul>
     </nav>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPageUrl = window.location.href;
+            const navLinks = document.querySelectorAll(".nav-links a");
+
+            navLinks.forEach(link => {
+                if (link.href === currentPageUrl) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
 </body>
 </html>

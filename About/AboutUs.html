@@ -1,293 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About Us</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="aboutus.css" />
-    <link rel="stylesheet" href="../css/navbar-style.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/wave.css" />
-  </head>
-  <body>
-    <!-----Navigation bar start here - ------<link rel="stylesheet" type="text/css" href="css/navbar-style.css">------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Pharma</title>
+    <style>
+        /* Navbar */
+        .navbar1 {
+            width: 100%;
+            color: black;
+            align-items: center;
+            height: 5.4rem;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            background-color: #f8f9fa;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Logo */
+        .logo {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+        }
+
+        /* Title */
+        .title {
+            font-size: 1.3rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: hsl(164.57deg 46.67% 14.71%);
+            flex: 1;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+
+        .nav-links li {
+            margin: 0;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 14px;
+            display: block;
+            min-width: 80px;
+            white-space: nowrap;
+            border-radius: 5px;
+            text-align: center;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Active Link Style */
+        .nav-links a.active {
+            color: white;
+            background-color: rgb(29 161 242);
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: white;
+            background-color: rgb(29 161 242);
+            text-decoration: none;
+        }
+
+        /* Contact Button */
+        .contact-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #6ef98e;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease-in-out, transform 0.2s ease;
+            border: none;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .contact-btn:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        .hamburger {
+            display: none;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .logo {
+                float: left;
+                flex: 10%;
+            }
+
+            .title {
+                float: left;
+                flex: 70%;
+                text-align: center;
+                margin-left: 0;
+                top: 10px;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                background: #333;
+                gap: 0;
+            }
+
+            .nav-links li {
+                text-align: center;
+                padding: 10px;
+            }
+
+            .hamburger {
+                display: block;
+                float: right;
+                cursor: pointer;
+                font-size: 24px;
+            }
+
+            /* Toggle Menu */
+            #menu-toggle:checked + .hamburger + .nav-links {
+                display: flex;
+                z-index: 50;
+                top: 80px;
+                background-color: green;
+                text-align: center;
+                gap: 2px;
+            }
+
+            .nav-links a {
+                text-decoration: none;
+                color: white;
+                padding: 10px 14px;
+                display: block;
+                border: 2px solid green;
+                text-align: center;
+                width: 100%;
+            }
+
+            .nav-links a:hover {
+                color: white;
+                background-color: rgb(29 161 242);
+                text-decoration: none;
+            }
+        }
+    </style>
+</head>
+<body>
     <nav class="navbar1">
-      <img class="logo"src="../resource/logo.jpg" style="width:60px; height:60px;">
-      <div class="title"><h4 >Agro Pharma</h4></div>
-      <input type="checkbox" id="menu-toggle">
-          <label for="menu-toggle" class="hamburger">&#9776;</label>
-          <ul class="nav-links">
-            <li><a href="../index.html" >Home</a></li>
-            <li><a href="/Product/Products.html">Product</a></li>
-            <li><a href="/AgroHomeopathy/AgroHomeopathy.html">Agro Homeopathy</a></li>
-            <li><a href="/Testemonials/Testimonials.html">Testimonials</a></li>
-            <li><a href="/FAQ/FAQ.html">FAQ'S</a></li>
-            <li><a href="/privacy&policy/privacy&policy.html">Privacy & Policy</a></li>
-            <li><a href="/About/AboutUs.html" style=" color: rgb(29 161 242); text-decoration: underline;">About Us</a></li>
+        <img class="logo" src="../resource/Logo.jpg" alt="Logo">
+        <div class="title">
+            <h4>Agro Pharma</h4>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <ul class="nav-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Product/Products.html">Product</a></li>
+            <li><a href="AgroHomeopathy/AgroHomeopathy.html">Agro Homeopathy</a></li>
+            <li><a href="Testemonials/Testimonials.html">Testimonials</a></li>
+            <li><a href="myContact/contact.html">FAQ'S</a></li>
+            <li><a href="privacy&policy/privacy&policy.html">Privacy & Policy</a></li>
+            <li><a href="./About/AboutUs.html">About Us</a></li>
             <li>
-              <a href="/myContact/contact.html" class="contact-btn">Contact Us</a>
-          </ul>
-      </nav>
-    <hr>
+                <a href="myContact/contact.html" class="contact-btn">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <script src="../Daynamic.js"></script>
 
-    <!-- Navbar Ends -->
+    <script>
+        // JavaScript to highlight the active link
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPageUrl = window.location.href; // Get the current page URL
+            const navLinks = document.querySelectorAll(".nav-links a"); // Get all navigation links
 
-    <!-- Heading Banner And Title Starts -->
-    
-    <section class="about-us">
-      <div class="bg-parent">
-        <div class="bg-img">
-
-          <img  class="bg-photo" src="dream.jpg" width="100%" />
-        </div>
-        <p class="container-title">About Us</p>
-      </div>
-    
-      <!-- Heading Banner And Title Ends -->
-    
-      <!-- Wave Container Starts -->
-      <div class="top-wave-section">
-        <div class="about-top-wave-container">
-          <div class="wave wave1"></div>
-          <div class="wave wave2"></div>
-          <div class="wave wave3"></div>
-          <div class="wave wave4"></div>
-        </div>
-      </div>
-      <!-- Wave Container Ends -->
-
-      <!-- Who we are or First container Starts -->
-      <div class="about-us-first-container">
-        <div class="who-we-are">
-          <div id="about-us-left-container">
-            We are an Agro Homeopathic Pharmaceutical Company with a vision for
-            creating a 100% organic and non toxic agricultural eco system.
-          </div>
-          <div class="about-us-right-container content">
-            Manakkal Agro Pharma is an agricultural homoeopathic pharmaceutical
-            company situated in Kakkadampoyil, Calicut, Kerala, India. The
-            company has its own 15 acres of agricultural land-named “Manakkal
-            Orchard” wherein all of its Agro Homeopathic medicines are tested
-            and achieved great success.
-          </div>
-        </div>
-      </div>
-      <!-- Who we are or First container Ends -->
-
-      <!-- Second container Starts -->
-      <div class="about-us-second-container">
-        <div class="second-child-container">
-          <div id="second-title">Manakkal Orchard</div>
-          <div class="second-container-content content">
-            Manakkal Orchard is situated in the heart of Kakkadampoyil, a well
-            known hilltop tourist destination of Kerala. It is full of various
-            types of crops and trees fertilised with our own Agro homoeopathic
-            medicines. Manakkal Agro pharma's products are well experimented and
-            successfully proven here.
-          </div>
-          <div class="second-container-img">
-            <img src="dream.jpg" alt="dream" />
-          </div>
-        </div>
-      </div>
-      <!-- Second container Ends -->
-
-      <!-- Third container Starts -->
-      <div class="about-us-third-container">
-        <div class="third-child-container">
-          <div class="third-title">Our Founder</div>
-          <div class="third-container-content content">
-            Dr. A.I. Hidayathullah, who has been actively working in the field
-            of homeopathy for over three decades in Malappuram district, Kerala,
-            is the founder of Manakkal Agro Pharma. Manakkal AgroPharma and all
-            its products are the result of his 10-year-long relentless research
-            in agricultural homeopathy.
-          </div>
-
-          <!-- Our Founder & card Starts -->
-          <div class="our-founder">
-            <div class="our-founder-info">
-              <div class="founder-title">
-                <h3 id="founder-name" style="text-align: left">
-                  Dr. A I Hidayathullah
-                </h3>
-                <p id="founder-qualification" style="text-align: left">
-                  ( BHMS,SCPH )
-                </p>
-              </div>
-            </div>
-            <div class="founder-view">
-              <div class="left-container">
-                <div id="list-title">Managing director</div>
-                <ul>
-                  <li>Manakkal Agro Pharma</li>
-                  <li>Manakkal Orchard</li>
-                  <li>Manakkal Drugs India</li>
-                  <li>Manakkal Center for Cancer and Incurables</li>
-                </ul>
-              </div>
-              <div class="right-container">
-                <img
-                  src="founder.png"
-                  alt="founder"
-                  width="547px"
-                  height="436px"
-                />
-              </div>
-            </div>
-            <div class="founder-info founder-intro">
-              Dr. A.I. Hidayathullah, who has been actively working in the field
-              of homeopathy for over three decades in Malappuram district,
-              Kerala, is the founder of Manakkal Agro Pharma. Manakkal
-              AgroPharma and all its products are the result of his 10-year-long
-              relentless research in agricultural homeopathy.
-            </div>
-            <!-- Card Ends -->
-
-            <!-- Instagram & Facebook Logo/Link Starts -->
-            <div class="social-links">
-              <!-- Facebook Link -->
-              <a
-                href="https://www.facebook.com/YOUR_PAGE"
-                target="_blank"
-                id="facebook-link"
-              >
-                <div class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="100"
-                    height="100"
-                    viewBox="0 0 50 50"
-                  >
-                    <path
-                      d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 
-                  c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 
-                  l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"
-                    ></path>
-                  </svg>
-                </div>
-              </a>
-
-              <!-- Instagram Link -->
-              <a
-                href="https://www.instagram.com/YOUR_PROFILE"
-                target="_blank"
-                id="insta-link"
-              >
-                <div class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="100"
-                    height="100"
-                    viewBox="0 0 30 30"
-                  >
-                    <path
-                      d="M 15 2 C 7.832 2 2 7.832 2 15 C 2 22.168 7.832 28 15 28 C 22.168 28 28 22.168 28 15 C 28 7.832 22.168 2 15 2 z 
-              M 11.666016 6 L 18.332031 6 C 21.457031 6 24 8.5420156 24 11.666016 L 24 18.332031 C 24 21.457031 21.457984 24 
-              18.333984 24 L 11.667969 24 C 8.5429688 24 6 21.457984 6 18.333984 L 6 11.667969 C 6 8.5429688 8.5420156 6 
-              11.666016 6 z M 11.666016 8 C 9.6450156 8 8 9.6459688 8 11.667969 L 8 18.333984 C 8 20.354984 9.6459688 22 
-              11.667969 22 L 18.333984 22 C 20.354984 22 22 20.354031 22 18.332031 L 22 11.666016 C 22 9.6450156 
-              20.354031 8 18.332031 8 L 11.666016 8 z M 19.667969 9.6660156 C 20.035969 9.6660156 20.333984 9.9640312 
-              20.333984 10.332031 C 20.333984 10.700031 20.035969 11 19.667969 11 C 19.299969 11 19 10.700031 19 
-              10.332031 C 19 9.9640312 19.299969 9.6660156 19.667969 9.6660156 z M 15 10 C 17.757 10 20 12.243 
-              20 15 C 20 17.757 17.757 20 15 20 C 12.243 20 10 17.757 10 15 C 10 12.243 12.243 10 15 10 z M 15 12 
-              A 3 3 0 0 0 15 18 A 3 3 0 0 0 15 12 z"
-                    ></path>
-                  </svg>
-                </div>
-              </a>
-            </div>
-            <!-- Instagram & Facebook Logo/Link Ends -->
-          </div>
-          <!-- Our Founder Ends -->
-        </div>
-      </div>
-
-      <!-- Third container/Our Founder Ends -->
-
-      <!-- Fourth container/Know More Starts -->
-      <div class="about-us-fourth-container">
-        <!-- Bottom Wave Starts -->
-        <div class="bottom-wave-section">
-          <div class="about-bottom-wave-container">
-            <div class="wave wave1"></div>
-            <div class="wave wave2"></div>
-            <div class="wave wave3"></div>
-            <div class="wave wave4"></div>
-          </div>
-        </div>
-        <!-- Bottom Wave Ends -->
-
-        <!-- Know more container Starts -->
-        <div id="know-more">
-          <p>
-            Want to <b>Know More</b> About <b>Agro Homeopathy</b> and Our
-            Products?
-          </p>
-          <!-- Know more buttons container starts -->
-          <div class="buttons">
-            <!-- Call Button -->
-            <a href="tel:+1234567890" class="button call-button">
-              <img src="phone.svg" id="phone" alt="phone" /> CALL NOW
-            </a>
-            <!-- WhatsApp Button -->
-            <a href="https://wa.me/1234567890" class="button whatsapp-button">
-              <img src="whatsapp.svg" id="whatsapp" alt="whatsapp" /> WHATSAPP
-            </a>
-          </div>
-          <!-- Know more buttons container Ends -->
-        </div>
-        <!-- Know more container Ends -->
-      </div>
-    </section>
-    <!-- Fourth container/Know More Ends -->
-
-    <!-- Footer Section -->
-
-<footer class="footer">
-  <div class="footer-container">
-      <div class="footer-left">
-          <h2>Think Apart <br> <strong>Think Us</strong></h2>
-      </div>
-      <div class="footer-links">
-        <ul>
-          <li><a href="/About/AboutUs.html">About US</a></li>
-          <li><a href="#">Agro Homeopathy</a></li>
-          <li><a href="/Product/Products.html">Our Products</a></li>
-          <li><a href="/Testemonials/Testimonials.html">Testimonials</a></li>
-          <li><a href="#">Buy Online</a></li>
-          <li><a href="#">Orders</a></li>
-      </ul>
-      <ul>
-          <li><a href="/privacy&policy/privacy&policy.html">Privacy Policy</a></li>
-          <li><a href="#">Return Policy</a></li>
-          <li><a href="#">Shipping Policy</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-          <li><a href="/myContact/contact.html">Contact Us</a></li>
-      </div>
-
-      <div class="footer-contact">
-          <h3>Let’s Connect</h3>
-          <div class="footer-input">
-              <input type="email" placeholder="Enter your email">
-              <button class="get-started-btn">Get Started</button>
-          </div>
-          <div class="social-icons">
-              <a href="#"><img src="/resource/facebook.webp" alt="Facebook"></a>
-              <a href="#"><img src="/resource/twitter.webp" alt="Twitter"></a>
-              <a href="#"><img src="/resource/linkedIn.jpeg" alt="LinkedIn"></a>
-          </div>
-      </div>
-  </div>
-
-  <!-- Partition Line -->
-  <div class="footer-divider"></div>
-
-  <div class="footer-bottom">
-      <p>Copyright &copy; 2025 | Powered by TEAM MANNAKAL</p>
-  </div>
-</footer>
-  </body>
+            navLinks.forEach(link => {
+                if (link.href === currentPageUrl) {
+                    link.classList.add("active"); // Add the 'active' class to the current page link
+                }
+            });
+        });
+    </script>
+</body>
 </html>
