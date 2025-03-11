@@ -1,15 +1,25 @@
-.bg-parent{
-    text-align: center;
+/* Filter and Search */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 10px;
+  margin-bottom: 20px;
 }
-
-
-
-.checked {
-  color: orange;
+.search-product, .product-filter {
+  width: 25%;
+  height: 45px;
+  padding: 10px 15px;
+  border: 2px solid #3498DB;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
-.filter-search{
-    padding-top: 7em;
+.search-product:focus, .product-filter:focus {
+  border-color: #E74C3C;
+  box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
 }
-/* Mobile Styles */
-@media (max-width: 768px) {
+.search-product::placeholder {
+  color: #6c757d;
 }
