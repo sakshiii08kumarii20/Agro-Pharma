@@ -3,100 +3,260 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product List</title>
-
-    <!-- for star rating -->
+    <title>Our Products - Agro Pharma</title>
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <!-- <link rel="stylesheet" href="../css/style.css"> -->
-	<!-- <link rel="stylesheet" href="../css/navbar-style.css"> -->
-	<!-- <link rel="stylesheet" href="product-div.css" /> -->
-  <!-- <link rel="stylesheet" href="../css/cards.css"/> -->
-	<!-- <link rel="stylesheet" href="../css/footer.css"/> -->
-  <link rel="stylesheet" href="v-cardCont.css"/>
-  <link rel="stylesheet" href="../css/wave.css">
-  <!-- <link rel="stylesheet" type="text/css" href="../css/navbar-style.css"> -->
-  <!-- <link rel="stylesheet"  type="text/css" href="../css/footer.css"> -->
-  <!-- <link rel="stylesheet" type="text/css" href="../css/style.css"> -->
-  <!-- <link rel="stylesheet" type="text/css" href="../css/index.css"> -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="v-cardCont.css">
+    <link rel="stylesheet" href="../css/wave.css">
+    <style>
+        /* Reset and General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ECF0F1;
+            color: #2C3E50;
+            line-height: 1.6;
+        }
+
+        /* Header and Banner */
+        .bg-parent {
+            position: relative;
+            overflow: hidden;
+        }
+        .bg-img {
+            width: 100%;
+        }
+        .bg-photo {
+            width: 100%;
+            height: auto;
+            filter: brightness(0.7);
+            transition: filter 0.5s ease;
+        }
+        .bg-parent:hover .bg-photo {
+            filter: brightness(0.9);
+        }
+        .container-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Wave Section */
+        .top-wave-section {
+            position: relative;
+            height: 50px;
+            overflow: hidden;
+        }
+
+        /* Filter and Search */
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px 10px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .search-product, .product-filter {
+            width: 25%;
+            height: 45px;
+            padding: 10px 15px;
+            border: 2px solid #3498DB;
+            border-radius: 25px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .search-product:focus, .product-filter:focus {
+            border-color: #E74C3C;
+            box-shadow: 0 0 5px rgba(231, 76, 60, 0.5);
+        }
+        .search-product::placeholder {
+            color: #6c757d;
+        }
+
+        /* Card Container */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        /* Card Styles */
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(46, 134, 222, 0.3);
+        }
+        .card-image {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .card:hover .card-image img {
+            transform: scale(1.1);
+        }
+        .card-content {
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2C3E50;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        .card:hover .card-title {
+            color: #E74C3C;
+        }
+        .card-text {
+            font-size: 0.95rem;
+            color: #495057;
+            margin-bottom: 15px;
+        }
+        .card-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #e9ecef;
+        }
+        .btn {
+            background-color: #3498DB;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .btn:hover {
+            background-color: #2980B9;
+            transform: scale(1.05);
+        }
+        .add-to-cart {
+            background-color: transparent;
+            color: #3498DB;
+            padding: 10px 20px;
+            border: 2px solid #3498DB;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .add-to-cart:hover {
+            background-color: #3498DB;
+            color: #ffffff;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .filter-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .search-product, .product-filter {
+                width: 80%;
+            }
+            .cards {
+                grid-template-columns: 1fr;
+            }
+            .container-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!----- Navigation bar start here ----->
+    <div id="Navbar"></div>
+    <!--- Navigation bar end here -->
 
-  <!-----Navigation bar start here - ------<link rel="stylesheet" type="text/css" href="css/navbar-style.css">------>
-  <div id="Navbar">  </div>
-
-    <!---Navigation bar end here -->
     <div>
-
-      <div class="bg-parent">
-        <div class="bg-img">
-          <img class="bg-photo"  src="bg-leaf-1.jpg" width="100%" />
+        <div class="bg-parent">
+            <div class="bg-img">
+                <img class="bg-photo" src="bg-leaf-1.jpg" width="100%" />
+            </div>
+            <p class="container-title">Our Products</p>
         </div>
-        <p class="container-title">Our Products</p>
-      </div>
-      
-      <div class="top-wave-section">
-        <div class="product-top-wave-container">
-          <div class="wave wave1"></div>
-          <div class="wave wave2"></div>
-          <div class="wave wave3"></div>
-          <div class="wave wave4"></div>
-        </div>
-      </div>
-        <select id="productFilter" class="product-filter" onchange="filterData()">
-          <option value="all"> All</option>
-          <option value="Seeds"> Seeds</option>
-          <option value="Fertilizers"> Fertilizers </option>
-          <option value="Pesticides">Pesticides</option>
-        </select>
-      
-        <input type="search" id="searchInput"  class="search-product" placeholder="Search product" onkeyup="filterData()">
-      </div>
 
-    
+        <div class="top-wave-section">
+            <div class="product-top-wave-container">
+                <div class="wave wave1"></div>
+                <div class="wave wave2"></div>
+                <div class="wave wave3"></div>
+                <div class="wave wave4"></div>
+            </div>
+        </div>
+
+        <div class="filter-container">
+            <select id="productFilter" class="product-filter" onchange="filterData()">
+                <option value="all">All</option>
+                <option value="Seeds">Seeds</option>
+                <option value="Fertilizers">Fertilizers</option>
+                <option value="Pesticides">Pesticides</option>
+            </select>
+            <input type="search" id="searchInput" class="search-product" placeholder="Search product..." onkeyup="filterData()">
+        </div>
     </div>
-		<!--- Card container start here ----------------<link rel="stylesheet" href="../css/h-CardContainer.css"/>------------------------------------->
+
+    <!--- Card container start here -->
     <div class="card-container">
-	
-			
-			<div class="cards" id="cards"></div>
-    </div>	
-<!--card container end here  ------------------------------------------------------------------------------->
+        <div class="cards" id="cards"></div>
+    </div>
+    <!--- Card container end here -->
 
+    <!--- Footer Section -->
+    <div id="Footer"></div>
 
-
-    <!-- // Scroll Event Listener
-    scrollContainer.addEventListener("scroll", updateActiveDot);
-    
-    // Click Event on Dots (optional)
-    dots.forEach((dot, index) => {
-        dot.addEventListener("click", () => {
-            let productWidth = products[0].offsetWidth + 10; // Include gap
-            scrollContainer.scrollTo({ left: index * productWidth, behavior: "smooth" });
-        });
-    }); -->
-
-<!--card container end here  ------------------------------------------------------------------------------->
-
-
-
-<!-- Footer Section -->
-
-<div id="Footer">     </div>
-
-<script>
-  function whatsappSend(msg) {
-      // Mobile number (without + or leading zeros, only country code and number)
-      let phoneNumber = "918446898397"; // Change this to your desired number
-      // Custom message
-      let message = msg;
-      // WhatsApp URL
-      let whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" +"I intersted in " +message+" so plz give more information about that product.";
-      // Open WhatsApp
-      window.open(whatsappUrl, "_blank");
-  }
-</script>
-<script src="fetchJson.js"></script>
-<script src="../Daynamic.js"></script>
-
+    <script>
+        function whatsappSend(msg) {
+            let phoneNumber = "918446898397";
+            let message = encodeURIComponent(msg); // Encode message for URL
+            let whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}. Please provide more information about this product.`;
+            window.open(whatsappUrl, "_blank");
+        }
+    </script>
+    <script src="fetchJson.js"></script>
+    <script src="../Daynamic.js"></script>
 </body>
 </html>

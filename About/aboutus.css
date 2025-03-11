@@ -2,6 +2,8 @@
 
 /* Content properties which should be in grey color */
 .content {
+  font-family: 'Roboto', 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+
   color: #808285;
   line-height: 1.86;
   font-size: 1em;
