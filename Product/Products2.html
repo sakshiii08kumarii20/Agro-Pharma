@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+
+    <!-- for star rating -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    
+   <link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/navbar-style.css">
+	<link rel="stylesheet" href="product-div.css" />
+  <link rel="stylesheet" href="../css/cards.css"/>
+	<link rel="stylesheet" href="../css/footer.css"/>
+  <link rel="stylesheet" href="v-cardCont.css"/>
+  <link rel="stylesheet" href="page-title-div.css"/>
+
+</head>
+<body>
+
+  <!---Navigation bar start here-----<link rel="stylesheet" href="../css/navbar-style.css">------------------------>
+		 <nav class="navbar1">
+		<img class="logo"src="../resource/logo.jpg" style="width:60px; height:60px;">
+        <div class="title"><h4>Agro Pharma</h4></div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <ul class="nav-links">
+            <li><a class="link1" href="../index.html">Home</a></li>
+            <li><a class="link2" href="../About/AboutUs.html">About</a></li>
+            <li><a class="link3" href="Products.html" style=" color: rgb(29 161 242); text-decoration: underline;">Product</a></li>
+			       <li><a href="../Testemonials/Testimonials.html">Testimonials</a></li>
+            <li><a class="link4" href="../Contact/contactusv.html">Contact</a></li>
+            <li><a href="../privacy&policy/privacy&policy.html">Privacy & Policy</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+    <!---Navigation bar end here -->
+   
+      <!-- page title div start here-->
+      <div class="title-div">
+
+        <div class="bg-img">
+          <img src="bg_leaf.jpeg" class="bg-leaf" alt="bg-leaf"> <img src="bg_leaf.jpeg" class="bg-leaf" alt="bg-leaf"> <img
+            src="bg_leaf.jpeg" class="bg-leaf" alt="bg-leaf"> <img src="bg_leaf.jpeg" class="bg-leaf" alt="bg-leaf">
+        </div>
+
+        <div class="bg-img">
+          <img src="bg_leaf.jpeg" class="bg-leaf" alt="bg-leaf"> <img src="bg_leaf.jpeg" class="bg-leaf" alt="bg-leaf"> <img
+            src="bg_leaf.jpeg" class="bg-leaf" alt="bg-leaf"> <img src="bg_leaf.jpeg" class="bg-leaf" alt="bg-leaf">
+        </div>
+      
+        <h2 class="container-title">Our Products</h2>
+      
+       <img src="multi-wave.svg" class="wave" height=350>
+      </div>
+      <!-------page title div end here-->
+     
+      <div class="fillter-search">
+        <h2 class="container-title">Our Products</h2>
+      
+        <select class="product-filter">
+          <option value="option1"> Fertilizers </option>
+          <option value="option2">Pesticide</option>
+          <option value="option3">Fungicide</option>
+          <option value="option4">Plant growth regulator</option>
+        </select>
+      
+        <input type="search" class="search-product" placeholder="Search product">
+      
+      </div>
+
+    
+    </div>
+		<!--- Card container start here ----------------<link rel="stylesheet" href="../css/h-CardContainer.css"/>------------------------------------->
+    <div class="card-container">
+	
+			
+			<div class="cards" id="card-scroll">
+        
+        <div class="card">
+          <div class="card-image">
+            <img src="product-photo/product1.webp" alt="Card Image">
+          </div>
+        
+          <div class="card-content">
+            <h2 id="product-name" class="card-title">AgroShield</h2>
+
+            <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+            <p>100ml: ₹250
+            </p>
+            <p class="card-text">AgroShield is a broad-spectrum fungicide that controls a wide range of fungal diseases in
+              crops. It is a systemic fungicide that is absorbed by the plant and translocated to the site of infection,
+              providing long-lasting protection.
+            </p>
+
+            <h3 style="font-size: 15px;margin-top: 10px;">Key Benefits:</h3>
+              <ul class="key-benefits">
+                <li> Controls fungal diseases such as powdery mildew, downy mildew, and leaf spot</li>
+                <li>Systemic action provides long-lasting protection</li>
+                <li>Can be used on a wide range of crops, including fruits, vegetables, and cereals</li>
+                <li>Low toxicity to humans and animals</li>
+              </ul> 
+
+              <h3 style="font-size: 15px;margin-top: 10px;" > Active Ingredient:</h3>
+               
+                <p style="font-size: 12px;">
+                - Azoxystrobin (20% w/w)
+                </p>
+
+         
+
+            <div class="card-actions">
+              <button class="btn add-to-cart">Add to cart</button><button class="btn" onclick="whatsappSend('AgroShield')">Buy now</button>
+            </div>
+          </div>
+
+          </div>
+          
+
+          <div class="card">
+            <div class="card-image">
+              <img src="product-photo/product2.webp" alt="Card Image">
+            </div>
+            
+            <div class="card-content">
+                          <h2 id="product-name"  class="card-title">CropMax
+                          </h2>
+                          <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                      <span class="fa fa-star"></span>
+                          <p>500g: ₹600
+                          </p>
+                          <p class="card-text">CropMax is a plant growth regulator that promotes healthy plant growth and development. It increases crop yields, improves fruit quality, and enhances plant resistance to disease.
+                          </p>
+
+                          <div class="card-actions">
+                            <button class="btn add-to-cart">Add to cart</button><button class="btn" onclick="whatsappSend('CropMax')">Buy now</button>
+                          </div>
+                        </div>
+              
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img src="product-photo/product3.webp" alt="Card Image">
+              </div>
+              
+              <div class="card-content">
+                            <h2 class="card-title">WeedOut
+                            </h2>
+                            <p>500ml: ₹800
+                            </p>
+                            <p class="card-text">WeedOut is a selective herbicide that controls a wide range of broadleaf weeds and grasses. It is a systemic herbicide that is absorbed by the plant and translocated to the site of action.
+                            </p>
+
+                            <div class="card-actions">
+                              <button class="btn add-to-cart">Add to cart</button><button class="btn" onclick="whatsappSend('WeedOut')">Buy now</button>
+                            </div>
+                          </div>
+              
+              </div>
+
+              <div class="card">
+                <div class="card-image">
+                  <img src="product-photo/product4.webp" alt="Card Image">
+                </div>
+                
+                <div class="card-content">
+                              <h2 class="card-title">Card Title</h2>
+                              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                            </div>
+                  <div class="card-actions">
+                    <button class="btn">Read More</button>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <div class="card-image">
+                    <img src="product-photo/product5.webp" alt="Card Image">
+                  </div>
+                  
+                  <div class="card-content">
+                                <h2 class="card-title">Card Title</h2>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+                                <div class="card-actions">
+                                  <button class="btn add-to-cart">Add to cart</button><button class="btn">Buy now</button>
+                                </div>
+                              </div>
+                 
+                  </div>
+
+
+		</div>	
+
+    <!-- Dots Navigation -->
+    <div class="dots" id="dotsContainer"></div>
+</div>
+
+  <script>
+    const scrollContainer = document.getElementById("card-scroll");
+    const dotsContainer = document.getElementById("dotsContainer");
+    const products = document.querySelectorAll(".card");
+    const totalDots = products.length;
+    let dots = [];
+
+    // Create dots dynamically
+    for (let i = 0; i < totalDots; i++) {
+        let dot = document.createElement("div");
+        dot.classList.add("dot");
+        dotsContainer.appendChild(dot);
+        dots.push(dot);
+    }
+    
+    // Function to update active dot
+    function updateActiveDot() {
+        let scrollLeft = scrollContainer.scrollLeft;
+        let maxScroll = scrollContainer.scrollWidth - scrollContainer.clientWidth;
+        let currentIndex = Math.round((scrollLeft / maxScroll) * (totalDots - 1));
+        
+        dots.forEach((dot, index) => {
+            dot.classList.toggle("active", index === currentIndex);
+        });
+    }
+
+    // Initial Active Dot
+    dots[0].classList.add("active");
+
+
+    // Scroll Event Listener
+    scrollContainer.addEventListener("scroll", updateActiveDot);
+    
+    // Click Event on Dots (optional)
+    dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+            let productWidth = products[0].offsetWidth + 10; // Include gap
+            scrollContainer.scrollTo({ left: index * productWidth, behavior: "smooth" });
+        });
+    });
+</script>
+
+<!--card container end here  ------------------------------------------------------------------------------->
+
+
+
+ <!-- Footer ---------------------<link rel="stylesheet" href="../css/footer.css"/>------------------------------------------------->
+    <footer>
+        <div class="footer-decoration"></div>
+        <div class="footer-container">
+          <!-- Company Info -->
+          <div class="footer-section">
+            <h5>Agro Pharma</h5>
+            <p>Delivering innovative agricultural and pharmaceutical solutions. Committed to sustainability, productivity, and empowering communities with reliable, high-quality products.</p>
+          </div>
+    
+          <!-- Quick Links -->
+          <div class="footer-section footer-links">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About/AboutUs.html">About</a></li>
+              <li><a href="Product/Products.html">Products</a></li>
+              <li><a href="../myContact/contact.html">Contact</a></li>
+              <li><a href="../privacy&policy/privacy&policy.html">Privacy & Policy</a></li>
+            </ul>
+          </div>
+    
+          <!-- Newsletter -->
+          <div class="footer-section newsletter">
+            <h5>Subscribe to Our Newsletter</h5>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+          </div>
+    
+          <!-- Contact -->
+          <div class="footer-section contact-info">
+            <h5>Contact Us</h5>
+            <p>Email: <a href="mailto:abc@gmail.com">abc@gmail.com</a></p>
+            <p>Phone: <a href="tel:+919999999999">+91 9999999999</a></p>
+            <p>Location: Pune, India</p>
+          </div>
+        </div>
+    
+        <!-- Social Media & Copyright -->
+        <div class="footer-bottom">
+          <div class="social-icons">
+            <a href="#" style="color: #1877F2;">Meta</a>
+            <a href="#" style="color: #1DA1F2;">Twitter</a>
+            <a href="#" style="color: #E4405F;">Instagram</a>
+            <a href="#" style="color: #0A66C2;">LinkedIn</a>
+            <a href="#" style="color: #c20a0a;">YouTube</a>
+          </div>
+          <p>© 2025 Agro Pharma. All rights reserved.</p>
+        </div>
+      </footer>
+      <script>
+        function whatsappSend(msg) {
+          
+
+            // Mobile number (without + or leading zeros, only country code and number)
+            let phoneNumber = "918446898397"; // Change this to your desired number
+
+            // Custom message
+            let message = msg;
+
+            // WhatsApp URL
+            let whatsappUrl = "https://wa.me/" + phoneNumber + "?text=" +"I intersted in " +message+" so plz give more information about that product.";
+
+            // Open WhatsApp
+            window.open(whatsappUrl, "_blank");
+        }
+    </script>
+
+</body>
+</html>
