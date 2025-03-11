@@ -26,7 +26,7 @@ function displayData(users) {
       userDiv.classList.add("card"); // Add class for styling
       userDiv.innerHTML = 
       ` <div class="card-image">
-          <img src="${user.imgpath}" alt="Card Image">
+          <img src="${user.imgpath}" alt="Card Image" width="100%" height="100%">
         </div>
         
         <div class="card-content">
