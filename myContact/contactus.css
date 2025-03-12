@@ -126,15 +126,14 @@ h2{
 
 #message{
     height:400px;
-    width:700px;
+    width:650px;
     
-    padding:50px;
-    top:50%;
-    left:5%;
-    padding-left: 90px;
-    padding-bottom: 250px;
-    display: flex;
-    margin-top: -20px;
+    padding-bottom:50px;
+   
+   padding-left: 20%;
+  
+  
+    
     
     }
 
