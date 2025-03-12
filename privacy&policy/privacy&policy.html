@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/About/aboutus.css" />
     <link rel="stylesheet" href="../css/navbar-style.css" />
     <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/wave.css" />
+    <link rel="stylesheet" href="../css/headerWave.css" />
   </head>
   <body>
     <!-----Navigation bar start here - ------<link rel="stylesheet" type="text/css" href="css/navbar-style.css">------>
@@ -35,44 +35,58 @@
 
     <!-- Navbar Ends -->
 
-    <!-- Heading Banner And Title Starts -->
-
-    <section class="about-us">
-      <div class="bg-parent">
-        <div class="bg-img">
-          <img class="bg-photo" src="tree-in-globe.jpg" width="100%"/>
-        </div>
-        <p class="container-title">Privacy And Policy</p>
+   
+    <!-- Fancy title start-->
+    <div class="fancy-title">
+      <!--Content before waves-->
+      
+      <div class="inner-header flex">
+        <img class="bg-photo"  src="tree-in-globe.jpg" alt="image"  />
+        <h1 class="page-heading">FAQ helps you.</h1>
       </div>
 
-      <!-- Heading Banner And Title Ends -->
-
-      <!-- Wave Container Starts -->
-      <div class="top-wave-section">
-        <div class="about-top-wave-container">
-          <div class="wave wave1"></div>
-          <div class="wave wave2"></div>
-          <div class="wave wave3"></div>
-          <div class="wave wave4"></div>
-        </div>
+      <!--Waves Container-->
+      <div>
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(240,255,242,0.7"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgba(240,255,242,0.5)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(240,255,242,0.3)"
+            />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#f0fff2" />
+          </g>
+        </svg>
       </div>
-      <!-- Wave Container Ends -->
-
-      
-    
-
-      
-
-         
-            
-            
-
-            
-               
-      
-
-      
-        <!-- Bottom Wave Ends -->
+      <!--Waves end-->
+    </div>
+    <!--fancy title ends here -->
 
         <!-- Know more container Starts -->
         <div id="know-more">
