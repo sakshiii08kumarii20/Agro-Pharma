@@ -20,12 +20,6 @@
     gap: 20px; /* Creates space between green line and title */
 }
 
-/* Green Line - Placed to the Left of Title */
-.green-line1 {
-    width: 4px;
-    height: 70px;
-    background-color: green;
-}
 
 /* Our Products Title */
 .products-title h2 {
@@ -41,6 +35,8 @@
     color: #333;
     max-width: 600px;
     margin-top: 10px;
+    padding-left: 30px;
+    border-left: 3px solid green;
 }
 
 
@@ -152,6 +148,10 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
+    .products-title{
+        flex-direction: column;
+    }
     .product-grid {
         flex-wrap: nowrap;
         overflow-x: auto;
@@ -164,9 +164,7 @@
     .products-title strong {
         font-size: 30px;
     }
-}
 
-@media (max-width: 480px) {
     .product-grid {
         flex-wrap: nowrap;
         overflow-x: auto;

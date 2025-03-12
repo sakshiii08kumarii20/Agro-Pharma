@@ -5,6 +5,7 @@
   margin-top: 55px;
   margin-bottom: 30px;
 }
+
 .adv-title {
   width: 200px;
   height: 60px;
@@ -22,10 +23,10 @@
   float: right;
   margin-right: 250px;
 }
+
 /* Hero Section */
 .hero {
   position: relative;
-  height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,32 +34,30 @@
   text-align: center;
   color: white;
   padding: 0 20px;
-    position: relative;
-    height: 85vh; /* Increased height for better spacing */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    padding: 0 20px;
+  height: 85vh;
+  margin: 0px 0px;
+  /* Increased height for better spacing */
 }
+
 .hero h1 {
-    font-size: 50px; /* Increase the font size */
-    font-weight: 800; /* Make it extra bold */
-    margin-bottom: 15px;
-    line-height: 1.2; /* Adjust line height for better readability */
+  font-size: 50px;
+  /* Increase the font size */
+  font-weight: 800;
+  /* Make it extra bold */
+  margin-bottom: 15px;
+  line-height: 1.2;
+  /* Adjust line height for better readability */
 }
 
 /* Background Image */
 .hero-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: url('../resource/homebaground.webp') no-repeat center center/cover;
-    filter: brightness(60%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('../resource/homebaground.webp') no-repeat center center/cover;
+  filter: brightness(60%);
 }
 
 /* Hero Content */
@@ -70,102 +69,52 @@
 
 /* Hero Info Box */
 .hero-info-box {
-    position: absolute;
-    bottom: -100px; /* Moved slightly higher into hero section */
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    max-width: 1000px;
-    width: 90%;
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
-    z-index: 10; /* Ensures it stays above the background */
+  position: absolute;
+  bottom: -100px;
+  /* Moved slightly higher into hero section */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  max-width: 1000px;
+  width: 90%;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  /* Ensures it stays above the background */
 }
 
 /* Left (Green Section) */
 .hero-info-left {
-    background: #2e7d32;
-    flex: 1;
-    color: white;
-    padding: 25px;
-    font-size: 18px;
-    text-align: left;
-    display: flex;
-    align-items: center;
+  background: #2e7d32;
+  flex: 1;
+  color: white;
+  padding: 25px;
+  font-size: 18px;
+  text-align: left;
+  display: flex;
+  align-items: center;
 }
 
 /* Right (White Section) */
 .hero-info-right {
-    background: white;
-    flex: 1;
-    color: black;
-    padding: 25px;
-    font-size: 18px;
-    text-align: left;
-    display: flex;
-    align-items: center;
-}
-
-
-
-
-
-
-
-
-
-/* Founder Section */
-.founder {
-    background: white;
-    padding: 120px 20px 60px; /* Adjusted padding to account for overlap */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-top: 50px; /* Pushes it down to avoid overlap */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero {
-        height: auto;
-        padding: 50px 20px;
-    }
-
-    .hero-info-box {
-        flex-direction: column;
-        bottom: -60px; /* Adjusted for smaller screens */
-    }
-
-    .hero-info-left, 
-    .hero-info-right {
-        text-align: center;
-        padding: 20px;
-    }
-
-    .founder {
-        padding: 140px 20px 60px; /* Adjusted padding to accommodate overlap */
-    }
-}
-
-
-
-/* Founder Section */
-.founder {
-    background: #f0faeb;
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: white;
+  flex: 1;
+  color: black;
+  padding: 25px;
+  font-size: 18px;
+  text-align: left;
+  display: flex;
+  align-items: center;
 }
 
 /* Container Box */
-.founder .container {
+.founder{
   max-width: 1100px;
   width: 100%;
   background: #f9f9f9;
+  margin: 150px auto;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
@@ -186,13 +135,6 @@
   font-weight: bold;
   text-align: left;
   line-height: 1.2;
-}
-
-/* Green Divider */
-.green-line {
-  width: 3px;
-  height: 50px;
-  background-color: green;
 }
 
 /* Founder Name */
@@ -271,17 +213,138 @@
   margin-right: 8px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .founder .container {
-    padding: 30px;
+
+
+
+
+
+/* --------------------- */
+/* Subscribe Section (Above Footer) */
+/* --------------------- */
+.subscribe-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  background-color: #f0faeb;
+  margin-bottom: -20px;
+  /* Ensures it is placed right above the footer */
+}
+
+  /* Why Choose Us Section */
+  .why-choose-us {
+    background: #f9f9f9;
+    /* Light grey background */
+    text-align: center;
+    padding: 60px 20px;
   }
 
-  .title-section {
+  .why-choose-us h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+
+  .benefits-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .subscribe-box {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+
+  .subscribe-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .subscribe-content img {
+    width: 150px;
+  }
+
+  .subscribe-text h2 {
+    font-size: 18px;
+    color: #1e4d2b;
+    margin-bottom: 10px;
+  }
+
+  .subscribe-btn {
+    padding: 10px 18px;
+    background-color: #1e4d2b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .subscribe-btn:hover {
+    background-color: #155a24;
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content h1{
+    margin-top: 50px;
+    font-size: 32px;
+   
+  }
+  .hero {
+    padding: 4px;
+    height: auto;
+    
+  }
+
+  .hero-info-box {
+    flex-direction: column;
+    top: 300px;
+    height: 400px;
+    /* Adjusted for smaller screens */
+  }
+
+  .hero-info-left,
+  .hero-info-right {
+    text-align: center;
+   
+  }
+
+  .founder {
+   margin-top: 550px;
+  overflow: hidden;
+    /* Adjusted padding to accommodate overlap */
+  }
+
+  .title-section{
+    width: 100%;
+    height: 100px;
     flex-direction: row;
     align-items: flex-start;
     gap: 10px;
+
+  
   }
+
+  .title-section h2{
+    font-size: 1.5rem;
+  }
+
+  .title-section h1{
+    font-size: 1.5rem;
+  }
+
 
   .title-text h2,
   .founder-name h1,
@@ -314,88 +377,7 @@
     justify-content: center;
   }
 
-  .hero-info-box{
-    top:300px;
-  }
-
-  
-}
 
 
-
-
-/* --------------------- */
-/* Subscribe Section (Above Footer) */
-/* --------------------- */
-.subscribe-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px 0;
-    background-color: #f0faeb;
-    margin-bottom: -20px; /* Ensures it is placed right above the footer */
-
-/* Why Choose Us Section */
-.why-choose-us {
-  background: #f9f9f9; /* Light grey background */
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.why-choose-us h2 {
-  font-size: 32px;
-  color: #333;
-  margin-bottom: 30px;
-  font-weight: bold;
-}
-
-.benefits-container {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.subscribe-box {
-    display: flex;
-    align-items: center;
-    background: #fff;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 400px;
-}
-
-.subscribe-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.subscribe-content img {
-    width: 150px;
-}
-
-.subscribe-text h2 {
-    font-size: 18px;
-    color: #1e4d2b;
-    margin-bottom: 10px;
-}
-
-.subscribe-btn {
-    padding: 10px 18px;
-    background-color: #1e4d2b;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.subscribe-btn:hover {
-    background-color: #155a24;
-}
 
 }
