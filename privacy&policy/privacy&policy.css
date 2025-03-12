@@ -1,63 +1,14 @@
-/* General Styling */
-body {
-    font-family: 'Roboto', 'Segoe UI', Tahoma, 'Geneva';
-    margin: 0;
-    padding: 0;
-    background-color: #f4f9f4;
-    color: #333;
-    line-height: 1.8;
+ .sec-privacy{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 20px;
 }
 
-/* Header */
-header {
-    background-color: #2E7D32;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 28px;
-    font-weight: bold;
-    letter-spacing: 1px;
+.sec-terms{
+
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 20px;
 }
-
-/* Content Section */
-.content {
-    max-width: 80%;
-    margin: 30px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.container {
-    padding: 10px 20px;
-}
-
-h2 {
-    color: #2E7D32;
-    border-left: 5px solid #2E7D32;
-    padding-left: 10px;
-    font-size: 22px;
-    margin-top: 20px;
-}
-
-p {
-    font-size: 16px;
-    color: #555;
-}
-
-/* List Styling */
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-ul li {
-    background: url('check-icon.png') no-repeat left center;
-    background-size: 18px;
-    padding-left: 30px;
-    margin: 10px 0;
-}
-
-
-
