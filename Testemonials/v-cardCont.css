@@ -1,110 +1,121 @@
-.card-container {
+.card-container { 
   width: 100%;
   padding: 5.5em 0;
   display: flex;
   justify-content: center;
+
 }
 
 .cards {
-  width: 70%;
-  padding: 5px;
-  margin-top: 8px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
 }
 
 .card {
-  width: 100%;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
-  margin: 10px 5px 10px 5px;
-  display: inline-flex;
-  white-space: wrap;
-  padding: 10px;
-  transition: all .2s ease-in;
+  width: 31%;
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 10px 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 15px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
-.card:hover{
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.377);
-  transform: scale(1.05);
+
+.card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
 }
 
 .card-image {
   text-align: center;
   width: 100%;
-  height: 300px;
+  height: 280px;
   overflow: hidden;
-  border-radius: 10px 10px 0 0;
+  border-radius: 15px 15px 0 0;
 }
 
 .card-image img {
-  border-radius: 8px;
-  margin-top: 3px;
- height: 300px;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card-content {
   text-align: left;
-  padding: 10px;
+  padding: 15px;
 }
+
 .card-title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #333;
 }
 
 .card-text {
-  font-size: 14px;
+  font-size: 15px;
   color: #666;
+  line-height: 1.5;
 }
 
 .card-actions {
-  padding: 10px;
+  padding: 15px;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .btn {
-  background-color: #4caf50;
-  color: #fff;
-  padding: 10px 20px;
+  background: linear-gradient(135deg, #4caf50, #45a049);
+  color: white;
+  padding: 12px 22px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  margin: 5px;
-  border: 2px solid #4caf50;
-  float: right;
-}
-.add-to-cart {
-  background-color: #ffffff;
-  color: #4caf50;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 5px;
-  border: 2px solid #4caf50;
-  float: right;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
-  background-color: #3e8e41;
+  background: linear-gradient(135deg, #3e8e41, #369636);
+  transform: scale(1.05);
+}
+
+.add-to-cart {
+  background-color: white;
+  color: #4caf50;
+  padding: 12px 22px;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .add-to-cart:hover {
-  color: #fff;
+  background-color: #4caf50;
+  color: white;
+  transform: scale(1.05);
 }
 
 .key-benefits li {
-  font-size: 12px;
+  font-size: 14px;
+  color: #555;
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-
-  .cards{
+  .cards {
     width: 95%;
   }
   .card {
     display: block;
-    overflow: hidden;
   }
 }
-

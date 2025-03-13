@@ -1,0 +1,62 @@
+[
+    {
+        "imgpath": "./profile1.jpg",
+        "clientName": "Ms. Priya Sharma",
+        "srarrating": 4,
+        "reviewText": "Good quality and easy to use. I found this product quite helpful, but the delivery took longer than expected. Overall, a decent buy! - Priya S."
+    },
+    {
+        "imgpath": "./profile2.jpg",
+        "clientName": "Mr. Anil Mehta",
+        "srarrating": 5,
+        "reviewText": "Excellent product! Works exactly as described. I am very satisfied with my purchase and would definitely recommend it. - Anil M."
+    },
+    {
+        "imgpath": "./profile3.jpg",
+        "clientName": "Ms. Rina Das",
+        "srarrating": 3,
+        "reviewText": "Average product. It does the job but nothing extraordinary. I was expecting better quality for the price. - Rina D."
+    },
+    {
+        "imgpath": "./profile.jpg",
+        "clientName": "Mr. Rohit Kapoor",
+        "srarrating": 5,
+        "reviewText": "Fantastic purchase! The product exceeded my expectations, and the build quality is impressive. Highly recommended! - Rohit K."
+    },
+    {
+        "imgpath": "./profile.jpg",
+        "clientName": "Ms. Anita Verma",
+        "srarrating": 2,
+        "reviewText": "Not satisfied. The product stopped working after a week, and customer support was not very helpful. Disappointed with the experience. - Anita V."
+    },
+    {
+        "imgpath": "./profile.jpg",
+        "clientName": "Mr. Vinod Bansal",
+        "srarrating": 4,
+        "reviewText": "Good product but could be better. The design is nice, and it functions well, but I expected a bit more durability. - Vinod B."
+    },
+    {
+        "imgpath": "./profile.jpg",
+        "clientName": "Ms. Komal Rathi",
+        "srarrating": 5,
+        "reviewText": "Absolutely love it! This product has been a game-changer for me. The quality is top-notch, and I have had no issues so far. - Komal R."
+    },
+    {
+        "imgpath": "./profile.jpg",
+        "clientName": "Mr. Rajesh Gupta",
+        "srarrating": 3,
+        "reviewText": "Decent but not exceptional. It works as intended, but I feel like there are better options in the market at this price point. - Rajesh G."
+    },
+    {
+        "imgpath": "./profile.jpg",
+        "clientName": "Ms. Neha Malhotra",
+        "srarrating": 4,
+        "reviewText": "Good value for money! The product meets my expectations, and I haven't faced any issues so far. Worth considering. - Neha M."
+    },
+    {
+        "imgpath": "./profile.jpg",
+        "clientName": "Mr. Suresh Nair",
+        "srarrating": 1,
+        "reviewText": "Very disappointed. The product didn't work as described, and the return process was a hassle. Would not recommend. - Suresh N."
+    }
+]
