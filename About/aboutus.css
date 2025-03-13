@@ -1,27 +1,21 @@
-
-
 /* Content properties which should be in grey color */
 .content {
   font-family: 'Roboto', 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
-
   color: #808285;
   line-height: 1.86;
   font-size: 1em;
 }
 
-
-
-
-
-/* who we are container also Parent Container for right and left container*/
+/* who we are container also Parent Container for right and left container */
 .who-we-are {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 6.5em 10em;  
+  padding: 6.5em 10em;
+  flex-wrap: wrap;
 }
 
-/* Right and Left container*/
+/* Right and Left container */
 #about-us-left-container,
 #about-us-right-container {
   padding: 0 2em;
@@ -37,20 +31,21 @@
   width: 50%;
 }
 
-/*about us Second Container */
+/* About us Second Container */
 .about-us-second-container {
   background-color: #f9f9f9;
   text-align: center;
   padding: 4em 0;
 }
 
-/* Child Container for about us Second container*/
+/* Child Container for about us Second container */
 .second-child-container {
-  width: 1140px; /* Ensures Width for whole about us second container*/
-  margin: 0 auto; /* centers content */
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1em;
 }
 
-/* Title for about us second container*/
+/* Title for about us second container */
 #second-title {
   font-size: 2.5em;
   font-weight: 500;
@@ -59,8 +54,8 @@
 
 /* Second container content alignment */
 .about-us-second-container .content {
-  width: 560px;
-  height: 100px;
+  max-width: 560px;
+  height: auto;
   margin: 1em auto;
 }
 
@@ -73,7 +68,7 @@
   margin: 4.5em auto;
 }
 
-/*about us third container */
+/* About us third container */
 .about-us-third-container {
   background-color: #fff;
   text-align: center;
@@ -88,8 +83,8 @@
 
 /* Third container content alignment */
 .about-us-third-container .content {
-  width: 570px;
-  height: 100px;
+  max-width: 570px;
+  height: auto;
   margin: 2em auto 6em;
 }
 
@@ -99,64 +94,38 @@
   margin: 1em;
 }
 
-/*our Founder container Title alignment */
-.founder-title {
-  padding-right: 35em;
-}
-
-/*Properties for our Founder container*/
-#founder-name {
-  font-size: 29px;
-  border-top: 2px solid #75c32c; /*Applies top border only*/
-  padding-top: 10px;
-}
-
 /* Founder Card Properties */
 .founder-view {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
   margin: auto;
   border-radius: 20px;
   background-color: #317d3f;
   color: white;
-  width: 912px;
-  height: 236px;
+  max-width: 912px;
+  width: 100%;
+  padding: 2em;
   line-height: 1.7;
 }
 
 /* Content Property in founder card */
 .left-container {
-  padding: 2em 1em 0 2.3em;
-  text-align: left;
-}
-
-/* List Title Alignment */
-#list-title {
-  font-size: 20px;
-  font-weight: bold;
-  position: relative;
-  right: 14px;
-}
-
-/* founder Png alignment */
-.right-container {
-  position: relative;
-  bottom: 200px;
-  left: 10px;
+  text-align: center;
+  padding: 1em;
 }
 
 /* Founder intro below card */
 .founder-intro {
   font-size: 1.1em;
-  width: 54%;
+  max-width: 80%;
   margin: 2em auto;
   padding-bottom: 3em;
   line-height: 1.6;
-  text-align: left;
-  right: 40px;
+  text-align: center;
 }
 
-/* Links for facebook and instagram */
+/* Social Media Links */
 .social-links {
   display: flex;
   justify-content: center;
@@ -164,11 +133,11 @@
   gap: 0.5em;
   border-bottom: 2px solid #75c32c;
   margin: 2em auto;
-  width: 5%;
+  width: fit-content;
   padding-bottom: 0.5em;
 }
 
-/* icons Properties for Instagram and facebook logo */
+/* Icons Properties for Instagram and Facebook logo */
 .icon svg {
   height: 2em;
   width: 2em;
@@ -176,7 +145,6 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* icons Hover Properties for Instagram and facebook logo */
 .icon svg:hover {
   fill: #83c941;
   cursor: pointer;
@@ -187,54 +155,35 @@
   background-color: #317d3f;
   color: white;
   text-align: center;
-  position: relative;
-  padding-top: 0;
+  padding-top: 3em;
 }
 
 /* Fourth Container Title Properties */
 .about-us-fourth-container p {
-  padding-top: 200px;
-  font-size: 40px;
+  font-size: 2em;
+  padding: 1em;
 }
 
-#know-more {
-  width: 60%;
-  margin: auto;
-}
-
-/* Buttons Properties */
+/* Buttons */
 .buttons {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2em 0.5em 6em;
+  margin: 1em;
   font-size: 19px;
   font-weight: bold;
   border-radius: 40px;
   cursor: pointer;
   text-decoration: none;
   color: white;
-  width: 204px;
-  height: 58px;
-}
-
-/* Call logo Properties */
-#phone {
-  height: 22px;
-  width: 22px;
-  padding-right: 5px;
-}
-
-/* Whatsapp logo Properties */
-#whatsapp {
-  height: 26px;
-  padding-right: 3px;
-  width: 26px;
+  width: 180px;
+  height: 50px;
 }
 
 /* Call Button Properties */
@@ -243,7 +192,97 @@
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 }
 
-/* Whatsapp Button Properties */
+/* WhatsApp Button Properties */
 .whatsapp-button {
   background-color: #117303;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .who-we-are {
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 2em;
+  }
+
+  #about-us-left-container,
+  .about-us-right-container {
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+  }
+
+  .founder-view {
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    height: auto;
+    padding: 1.5em;
+  }
+
+  .founder-intro {
+    width: 90%;
+    text-align: center;
+  }
+
+  .social-links {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #second-title, 
+  .about-us-third-container .third-title {
+    font-size: 2em;
+  }
+
+  .about-us-second-container .content, 
+  .about-us-third-container .content {
+    width: 90%;
+    height: auto;
+  }
+
+  .founder-view {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .button {
+    width: 160px;
+    height: 45px;
+    font-size: 17px;
+  }
+
+  .about-us-fourth-container p {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .who-we-are {
+    padding: 2em 1em;
+  }
+
+  #second-title, 
+  .about-us-third-container .third-title {
+    font-size: 1.8em;
+  }
+
+  .about-us-second-container .content, 
+  .about-us-third-container .content {
+    width: 100%;
+    padding: 0 1em;
+  }
+
+  .button {
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .about-us-fourth-container p {
+    font-size: 1.5em;
+  }
+}
+
+
