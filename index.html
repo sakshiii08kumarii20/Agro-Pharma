@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     
     <link rel="stylesheet" type="text/css" href="indexSrc/index.css">
-    <link rel="stylesheet" type="text/css" href="indexSrc/home_product.css"
+    <link rel="stylesheet" type="text/css" href="indexSrc/home_product.css">
     <link rel="stylesheet" type="text/css" href="indexSrc/h-CardContainer.css">
     <link rel="stylesheet" type="text/css" href="indexSrc/home_testemonials.css">
     <link rel="stylesheet" type="text/css" href="indexSrc/section-heading.css" >
@@ -134,8 +134,7 @@
         <div class="product-grid">
             <div class="product-card">
                 <img src="indexSrc/product-photo/product1.webp" alt="Agro Yield">
-                <h3>Agro Yield</h3>
-                <span class="price">₹ 380.00</span>
+                <h3>Agro Yield <span class="price">₹ 380.00</span></h3>
                 <div class="stars">⭐⭐⭐⭐☆</div>
                 <p>Homeopathic medicine for all trees and spices like coconut...<a href="#">Readmore</a></p>
                 <div class="product-buttons">
@@ -145,8 +144,7 @@
             </div>
             <div class="product-card">
                 <img src="indexSrc/product-photo/product10.webp" alt="Areca Cure">
-                <h3>Areca Cure</h3>
-                <span class="price">₹ 380.00</span>
+                <h3>Areca Cure  <span class="price">₹ 380.00</span></h3>
                 <div class="stars">⭐⭐⭐⭐☆</div>
                 <p>Homeopathic medicine for all trees and spices like coconut...<a href="#">Readmore</a></p>
                 <div class="product-buttons">
@@ -155,9 +153,8 @@
                 </div>
             </div>
             <div class="product-card">
-                <img src="product3.webp" alt="Cardamom Care">
-                <h3>Cardamom Care</h3>
-                <span class="price">₹ 380.00</span>
+                <img src="indexSrc/product-photo/HybridMaiz.webp" alt="Cardamom Care">
+                <h3>Cardamom Care <span class="price">₹ 380.00</span></h3>
                 <div class="stars">⭐⭐⭐⭐☆</div>
                 <p>Homeopathic medicine for all trees and spices like coconut...<a href="#">Readmore</a></p>
                 <div class="product-buttons">
@@ -166,9 +163,8 @@
                 </div>
             </div>
             <div class="product-card">
-                <img src="product4.webp" alt="Cereals Care">
-                <h3>Cereals Care</h3>
-                <span class="price">₹ 380.00</span>
+                <img src="indexSrc/product-photo/NitroBoost.webp" alt="Cereals Care">
+                <h3 >Cereals Care  <span class="price" >₹ 380.00</span></h3>
                 <div class="stars">⭐⭐⭐⭐☆</div>
                 <p>Homeopathic medicine for all trees and spices like coconut...<a href="#">Readmore</a></p>
                 <div class="product-buttons">
@@ -178,12 +174,12 @@
             </div>
         </div>
 
-        <!-- Dots Navigation -->
-        <div class="dots-navigation">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+        <!-- :Ine Navigation -->
+        <div class="lines-navigation">
+            <span class="line active"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
         </div>
     </div>
 </section>
@@ -270,15 +266,6 @@
       </div>
   </div>
 </section>
-
-
-
-    
-
-
-
-
-
   <!-- Subscribe Section (Above Footer) -->
 <section class="subscribe-section">
   <div class="subscribe-box">
@@ -341,12 +328,12 @@
 </footer>
 </body>
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function () {
     const productGrid = document.querySelector(".product-grid");
-    const dots = document.querySelectorAll(".dot");
+    const lines = document.querySelectorAll(".line");
+    const productCards = document.querySelectorAll(".product-card");
 
     // Clone product cards to create infinite scroll effect
-    const productCards = document.querySelectorAll(".product-card");
     productCards.forEach((card) => {
         const clone = card.cloneNode(true);
         productGrid.appendChild(clone);
@@ -361,18 +348,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Add click event listeners to dots
-    dots.forEach((dot, index) => {
-        dot.addEventListener("click", () => {
+    // Add click event listeners to lines
+    lines.forEach((line, index) => {
+        line.addEventListener("click", () => {
             scrollToCard(index);
-            setActiveDot(index);
+            setActiveLine(index);
         });
     });
 
-    // Function to set the active dot
-    function setActiveDot(index) {
-        dots.forEach((dot) => dot.classList.remove("active"));
-        dots[index].classList.add("active");
+    // Function to set the active line
+    function setActiveLine(index) {
+        lines.forEach((line) => line.classList.remove("active"));
+        lines[index].classList.add("active");
     }
 
     // Automatic continuous scroll
@@ -387,7 +374,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (scrollPosition >= maxScroll) {
                 productGrid.scrollTo({
                     left: 0,
-                    behavior: "auto", // Instant scroll to start
+                    behavior: "auto",
                 });
             } else {
                 productGrid.scrollBy({
@@ -395,7 +382,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     behavior: "smooth",
                 });
             }
-        }, 5000); // Adjust scroll speed (3 seconds)
+        }, 5000); // Adjust scroll speed (5 seconds)
     }
 
     function stopAutoScroll() {
@@ -408,6 +395,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Pause auto scroll on hover
     productGrid.addEventListener("mouseenter", stopAutoScroll);
     productGrid.addEventListener("mouseleave", startAutoScroll);
+
+    // Update lines based on scroll position
+    productGrid.addEventListener("scroll", () => {
+        const scrollPosition = productGrid.scrollLeft;
+        const cardWidth = document.querySelector(".product-card").offsetWidth;
+        const activeIndex = Math.round(scrollPosition / cardWidth) % productCards.length;
+        setActiveLine(activeIndex);
+    });
 });
-</script>
+</script> 
 </html>
