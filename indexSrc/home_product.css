@@ -193,15 +193,10 @@ color: green;
     }
 
     .product-card {
-        min-width: 220px; /* Smaller card width for mobile */
-    }
-
-    .product-buttons {
-        flex-direction: column; /* Stack buttons vertically on mobile */
-        gap: 8px;
+        min-width: 150px; /* Smaller card width for mobile */
     }
 
     .add-to-cart, .buy-now {
-        width: 100%; /* Full-width buttons on mobile */
+        width: 100px;
     }
 }
