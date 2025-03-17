@@ -1,0 +1,32 @@
+[
+  {
+    "imgpath": "./H-CardTestimonial/customer-photo/profile1.jpg",
+    "customerName": "Aditya Sharma",
+    "starRating": 4,
+    "reply": "This product is very good it helps <span class='more-text'>me to maintain my plant health well.</span>"
+  },
+  {
+    "imgpath": "./H-CardTestimonial/customer-photo/profile2.jpg",
+    "customerName": "Riya Verma",
+    "starRating": 5,
+    "reply": "Absolutely amazing! <span class='more-text'>My plants have never looked healthier.</span>"
+  },
+  {
+    "imgpath": "./H-CardTestimonial/customer-photo/profile3.jpg",
+    "customerName": "Vikram Patel",
+    "starRating": 3,
+    "reply": "It's okay, but I expected more. <span class='more-text'>The results are decent but not outstanding.</span>"
+  },
+  {
+    "imgpath": "./H-CardTestimonial/customer-photo/profile.webp",
+    "customerName": "Neha Singh",
+    "starRating": 5,
+    "reply": "Highly recommended! <span class='more-text'>This has become a must-have for my garden.</span>"
+  },
+  {
+    "imgpath": "./H-CardTestimonial/customer-photo/profile.webp",
+    "customerName": "Rahul Mehta",
+    "starRating": 4,
+    "reply": "Good quality and effective. <span class='more-text'>Would buy again for sure.</span>"
+  }
+]

@@ -44,12 +44,36 @@
             padding: 20px;
             background-color: #f8f9fa;
         }
+
+        .product-price-container{
+            padding:5px;
+             display: flex;
+            justify-content: space-between;
+         }
+
+
         .card-title {
             font-size: 1.5rem;
             font-weight: 600;
             color: #2C3E50;
             margin-bottom: 10px;
             transition: color 0.3s ease;
+        }
+
+        .product-price {
+            font-size: 20px;
+           
+            font-weight: bold;
+         
+            margin-left: auto;
+           
+        }
+
+        .rating {
+            font-size: 18px;
+            color: #f39c12;
+           padding: 5px;
+           margin: 0px 5px;
         }
         .card:hover .card-title {
             color: #E74C3C;
@@ -64,10 +88,10 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px;
-            background-color: #e9ecef;
+          
         }
         .btn {
-            background-color: #3498DB;
+            background-color: #27ae60;
             color: #ffffff;
             padding: 10px 20px;
             border: none;
@@ -77,20 +101,20 @@
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
         .btn:hover {
-            background-color: #2980B9;
+            background-color: #27ae60;
             transform: scale(1.05);
         }
         .add-to-cart {
             background-color: transparent;
-            color: #3498DB;
+            color:#27ae60;
             padding: 10px 20px;
-            border: 2px solid #3498DB;
+            border: 2px solid #27ae60;
             border-radius: 25px;
             cursor: pointer;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
         .add-to-cart:hover {
-            background-color: #3498DB;
+            background-color: #27ae60;
             color: #ffffff;
         }
 
