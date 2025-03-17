@@ -30,13 +30,19 @@ function displayData(users) {
         </div>
         
         <div class="card-content">
+                  <div class="product-price-container">
                       <h2 id="product-name"  class="card-title">${user.productName}
                       </h2>
+                        <p class="product-price">₹ ${user.productPrize}
+                      </p>
+
+                      </div>
+
+                      <div class="rating">
 
                       ${'⭐'.repeat(user.srarrating)}
-            
-                      <p>500g: ₹600
-                      </p>
+                      </div>
+                    
                       <p class="card-text">${user.productinfo}</p>
 
                       <div class="card-actions">

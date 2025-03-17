@@ -1,6 +1,6 @@
 [
   {
-    "imgpath": "./product-photo/pestshild.webp",
+    "imgpath": "./H-cardData/product-photo/pestshild.webp",
     "productCategory": "Pesticides",
     "productName": "PestShield",
     "productPrize": 300,
@@ -9,7 +9,7 @@
     "addtocart": 1
   },
   {
-    "imgpath": "./product-photo/HybridMaiz.webp",
+    "imgpath": "./H-cardData/product-photo/HybridMaiz.webp",
     "productCategory": "Fertilizers",
     "productName": "FertiBoost",
     "productPrize": 450,
@@ -18,7 +18,7 @@
     "addtocart": 1
   },
   {
-    "imgpath": "./product-photo/NitroBoost.webp",
+    "imgpath": "./H-cardData/product-photo/NitroBoost.webp",
     "productCategory": "Herbicides",
     "productName": "WeedSafe",
     "productPrize": 350,
@@ -27,7 +27,7 @@
     "addtocart": 1
   },
   {
-    "imgpath": "./product-photo/product1.webp",
+    "imgpath": "./H-cardData/product-photo/product1.webp",
     "productCategory": "Fertilizers",
     "productName": "GrowMax",
     "productPrize": 500,
@@ -36,7 +36,7 @@
     "addtocart": 1
   },
   {
-    "imgpath": "./product-photo/BugFree.webp",
+    "imgpath": "./H-cardData/product-photo/BugFree.webp",
     "productCategory": "Insecticides",
     "productName": "InsectAway",
     "productPrize": 320,
@@ -45,7 +45,7 @@
     "addtocart": 1
   },
   {
-    "imgpath": "./product-photo/product12.webp",
+    "imgpath": "./H-cardData/product-photo/product12.webp",
     "productCategory": "Growth Stimulants",
     "productName": "GreenZyme",
     "productPrize": 480,
@@ -54,7 +54,7 @@
     "addtocart": 1
   },
   {
-    "imgpath": "./product-photo/product11.webp",
+    "imgpath": "./H-cardData/product-photo/product11.webp",
     "productCategory": "Pesticides",
     "productName": "FarmGuard",
     "productPrize": 280,
@@ -63,7 +63,7 @@
     "addtocart": 1
   },
   {
-    "imgpath": "./product-photo/product10.webp",
+    "imgpath": "./H-cardData/product-photo/product10.webp",
     "productCategory": "Soil Conditioners",
     "productName": "SoilCare",
     "productPrize": 400,
@@ -72,7 +72,7 @@
     "addtocart": 1
   },
   {
-    "imgpath": "./product-photo/product9.webp",
+    "imgpath": "./H-cardData/product-photo/product9.webp",
     "productCategory": "Yield Enhancers",
     "productName": "HarvestMax",
     "productPrize": 530,
@@ -81,7 +81,7 @@
     "addtocart": 1
   },
   {
-    "imgpath": "./product-photo/product8.webp",
+    "imgpath": "./H-cardData/product-photo/product8.webp",
     "productCategory": "Pesticides",
     "productName": "ProtectCrop",
     "productPrize": 310,
