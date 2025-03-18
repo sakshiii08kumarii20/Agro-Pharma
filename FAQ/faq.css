@@ -1,35 +1,86 @@
-#box {
-    height: auto; 
-    width: 100%;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    flex-wrap: wrap; 
-    text-align: center; 
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333; /* Ensures text is visible */
 }
 
+/* FAQ Box */
+#box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Image Section */
 #image {
-    height: 300px; 
-    width: 100%; 
+    height: 300px;
+    width: 100%;
     background-image: url(faq.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 
+/* Questions Section */
 #questions {
-    width: 100%; 
-    max-width: 600px; 
-    padding: 20px;
-}
-
-.details {
     width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    color: #333; /* Ensures text contrast */
 }
 
+/* Headings */
+h4 {
+    color: green;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* FAQ Details */
+details {
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    transition: 0.3s;
+    color: #333; /* Ensures text is visible */
+}
+
+summary {
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000; /* Makes sure summary is visible */
+}
+
+details p {
+    padding-top: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Responsive Styles */
 @media (min-width: 768px) {
     #box {
-        flex-direction: row; 
+        flex-direction: row;
     }
 
     #image {
@@ -42,38 +93,12 @@
     }
 }
 
-
-.details{
-    padding-bottom: 10px;
-}
-
-
-
-@media (max-width: 768px){
-    #box{
+@media (max-width: 768px) {
+    #box {
         flex-direction: column;
     }
-@media (max-width: 768px) {
-  #questions {
-    text-align: center;
-    padding: 20px;
-  }
 
-  #questions h4,
-  #questions h2,
-  .details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  details {
-    width: 90%; 
-  }
-
-  summary {
-    text-align: center;
-  }
-}
-
+    #questions {
+        text-align: center;
+    }
 }
